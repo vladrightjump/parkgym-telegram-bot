@@ -43,7 +43,7 @@ interface SentMessage {
 export async function sendMessage(
   chatId: number | string,
   text: string,
-  options?: { reply_markup?: { inline_keyboard: InlineKeyboard } },
+  options?: { reply_markup?: Record<string, unknown> },
 ): Promise<TelegramResponse<SentMessage>> {
   return call<SentMessage>("sendMessage", {
     chat_id: chatId,

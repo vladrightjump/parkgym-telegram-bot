@@ -141,33 +141,90 @@ async function resolveMember(
   return null;
 }
 
+// Prompt shown to an unknown user so they can self-register by typing their name.
+// force_reply pops the keyboard straight into a reply, so it feels like a form field.
+const NAME_PROMPT =
+  "Salut! 👋 Ca să te înscriu la antrenamente, scrie-mi numele și prenumele tău complet (ex. Vlad Filip).";
+
+async function askForName(chatId: number) {
+  await sendMessage(chatId, NAME_PROMPT, { reply_markup: { force_reply: true } });
+}
+
+// Handles private-chat messages: the /start onboarding + the name reply that
+// creates a member. Group messages are ignored.
 async function handleMessage(msg: NonNullable<TgUpdate["message"]>) {
-  const text = (msg.text ?? "").trim();
   if (msg.chat.type !== "private") return;
-  if (!(text === "/start" || text.startsWith("/start"))) return;
   if (!msg.from) return;
+  const text = (msg.text ?? "").trim();
 
   const supabase = createAdminClient();
-  const { data } = await supabase
+  const { data: existing } = await supabase
     .from("members")
     .select("id, full_name")
     .eq("telegram_user_id", msg.from.id)
     .maybeSingle();
+  const member = existing as { id: string; full_name: string } | null;
 
-  if (!data) {
-    // Not a known member — stay quiet, an admin links them from the backoffice.
+  // ── /start ──────────────────────────────────────────────────────────────
+  if (text === "/start" || text.startsWith("/start")) {
+    if (member) {
+      // Already registered — just (re)enable DMs and greet.
+      await supabase
+        .from("members")
+        .update({ bot_dm_enabled: true })
+        .eq("id", member.id);
+      const firstName = member.full_name.split(/\s+/)[0] || member.full_name;
+      await sendMessage(
+        msg.chat.id,
+        `Salut, ${firstName}! 👋 Ești deja înscris. Îți voi trimite aici mesaje despre antrenamente.`,
+      );
+      return;
+    }
+    // Unknown → start the name form.
+    await askForName(msg.chat.id);
     return;
   }
 
-  const member = data as { id: string; full_name: string };
-  await supabase
-    .from("members")
-    .update({ bot_dm_enabled: true })
-    .eq("id", member.id);
+  // ── Any other private message ─────────────────────────────────────────────
+  if (member) return; // registered members: nothing to do here.
 
-  const firstName = member.full_name.split(/\s+/)[0] || member.full_name;
+  // Unknown user typing (expected: their name, in reply to the prompt).
+  const name = text.replace(/\s+/g, " ").trim();
+  if (name.startsWith("/") || name.length < 2 || name.length > 80) {
+    await askForName(msg.chat.id);
+    return;
+  }
+
+  // Create the member, linked to this Telegram account, and clear any earlier
+  // "unmatched" parking row for them.
+  const { data: created } = await supabase
+    .from("members")
+    .insert({
+      full_name: name,
+      status: "active",
+      telegram_user_id: msg.from.id,
+      telegram_username: msg.from.username ?? null,
+      bot_dm_enabled: true,
+    })
+    .select("id")
+    .maybeSingle();
+
+  await supabase
+    .from("telegram_unmatched")
+    .delete()
+    .eq("telegram_user_id", msg.from.id);
+
+  if (!created) {
+    await sendMessage(
+      msg.chat.id,
+      "Ceva n-a mers la înscriere. Mai încearcă o dată, te rog.",
+    );
+    return;
+  }
+
+  const firstName = name.split(/\s+/)[0] || name;
   await sendMessage(
     msg.chat.id,
-    `Salut, ${firstName}! 👋 Ești conectat. Îți voi trimite aici mesaje despre antrenamente.`,
+    `Gata, ${firstName}! ✅ Ești înscris. Vei primi aici mesajele despre antrenamente și poți răspunde la sondaje.`,
   );
 }

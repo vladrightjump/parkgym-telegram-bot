@@ -4,6 +4,9 @@
   "private": true,
   "description": "parkgym.fit attendance bot — Telegram webhook + scheduled polls, running as a Railway worker. Extracted from the gym-app Next.js project.",
   "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
