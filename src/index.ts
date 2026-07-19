@@ -4,7 +4,8 @@ import cron from "node-cron";
 import { handleUpdate, type TgUpdate } from "./webhook.js";
 import { sendPoll } from "./jobs/send-poll.js";
 import { morningSummary } from "./jobs/morning-summary.js";
-import { GYM_TZ } from "./lib/tz.js";
+import { GYM_TZ, localWeekdayAndTime } from "./lib/tz.js";
+import { getBotConfig } from "./lib/config.js";
 
 const PORT = Number(process.env.PORT ?? 3000);
 
@@ -33,30 +34,54 @@ app.listen(PORT, () => {
   console.log(`[server] webhook listening on :${PORT}`);
 });
 
-// ── Scheduled jobs (replaces Vercel cron) ─────────────────────────────────────
-// Times are LOCAL to the gym timezone and DST-proof — node-cron re-evaluates
-// against GYM_TZ, so no seasonal offset juggling is needed.
+// ── Scheduled jobs — DB-driven (config editable from the gym-app admin UI) ────
+// A single tick fires every minute (in GYM_TZ). Each tick reads the live
+// bot_config row and, if the master switch is on and the current local
+// weekday+time matches the configured poll/summary schedule, runs the job.
+// Schedule changes therefore take effect within a minute, no redeploy needed.
 //
-//   send-poll        — 20:00, Mon & Wed  (posts tomorrow's attendance poll)
-//   morning-summary  — 06:00, Tue & Thu  (DMs admins today's roster)
-const cronOpts = { timezone: GYM_TZ } as const;
+//   send-poll        — posts tomorrow's attendance poll (idempotent)
+//   morning-summary  — DMs admins today's roster
+const firedThisMinute = new Set<string>();
+let lastMinute = "";
 
 cron.schedule(
-  "0 20 * * 1,3",
-  () => {
-    void sendPoll().catch((err) => console.error("[cron/send-poll]", err));
+  "* * * * *",
+  async () => {
+    try {
+      const cfg = await getBotConfig();
+      if (!cfg.enabled) return;
+
+      const { weekday, hhmm } = localWeekdayAndTime(GYM_TZ);
+      if (hhmm !== lastMinute) {
+        firedThisMinute.clear();
+        lastMinute = hhmm;
+      }
+
+      if (
+        cfg.pollDays.includes(weekday) &&
+        hhmm === cfg.pollTime &&
+        !firedThisMinute.has("poll")
+      ) {
+        firedThisMinute.add("poll");
+        void sendPoll().catch((err) => console.error("[cron/send-poll]", err));
+      }
+
+      if (
+        cfg.summaryDays.includes(weekday) &&
+        hhmm === cfg.summaryTime &&
+        !firedThisMinute.has("summary")
+      ) {
+        firedThisMinute.add("summary");
+        void morningSummary().catch((err) =>
+          console.error("[cron/morning-summary]", err),
+        );
+      }
+    } catch (err) {
+      console.error("[cron/tick]", err);
+    }
   },
-  cronOpts,
+  { timezone: GYM_TZ },
 );
 
-cron.schedule(
-  "0 6 * * 2,4",
-  () => {
-    void morningSummary().catch((err) =>
-      console.error("[cron/morning-summary]", err),
-    );
-  },
-  cronOpts,
-);
-
-console.log(`[cron] scheduled jobs registered (tz=${GYM_TZ})`);
+console.log(`[cron] DB-driven scheduler running (tz=${GYM_TZ}, tick=1m)`);

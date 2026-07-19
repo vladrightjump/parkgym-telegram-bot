@@ -26,3 +26,22 @@ export function tomorrowInTz(tz: string = GYM_TZ): string {
   dt.setUTCDate(dt.getUTCDate() + 1);
   return dt.toISOString().slice(0, 10);
 }
+
+// Current local weekday (0=Sun … 6=Sat) and "HH:MM" in the given timezone.
+// Used by the minute scheduler to compare against the configured schedule.
+export function localWeekdayAndTime(
+  tz: string = GYM_TZ,
+): { weekday: number; hhmm: string } {
+  const now = new Date();
+  const weekday = new Date(ymdInTz(now, tz) + "T00:00:00Z").getUTCDay();
+  const parts = new Intl.DateTimeFormat("en-GB", {
+    timeZone: tz,
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(now);
+  let hh = parts.find((p) => p.type === "hour")?.value ?? "00";
+  const mm = parts.find((p) => p.type === "minute")?.value ?? "00";
+  if (hh === "24") hh = "00"; // some ICU builds render midnight as 24
+  return { weekday, hhmm: `${hh.padStart(2, "0")}:${mm.padStart(2, "0")}` };
+}
