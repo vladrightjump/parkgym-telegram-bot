@@ -74,7 +74,7 @@ async function handleCallbackQuery(
     const autoName =
       [from.first_name, from.last_name].filter(Boolean).join(" ").trim() ||
       (from.username ? `@${from.username}` : `Membru ${from.id}`);
-    const { data: created } = await supabase
+    const ins = await supabase
       .from("members")
       .insert({
         full_name: autoName.slice(0, 80),
@@ -85,16 +85,29 @@ async function handleCallbackQuery(
       })
       .select("id")
       .maybeSingle();
+    if (ins.data) {
+      member = ins.data as { id: string };
+      console.log(
+        `[vote] auto-created member "${autoName}" (tg ${from.id} @${from.username ?? "-"})`,
+      );
+    } else {
+      // Insert failed (likely a concurrent create / race) — re-resolve so the
+      // vote is never dropped.
+      if (ins.error) console.error("[vote] member insert error:", ins.error.message);
+      member = await resolveMember(supabase, from);
+    }
     // Clear any earlier "unmatched" parking row for them.
     await supabase
       .from("telegram_unmatched")
       .delete()
       .eq("telegram_user_id", from.id);
-    if (!created) {
-      await answerCallbackQuery(cb.id);
+    if (!member) {
+      console.error(
+        `[vote] LOST: could not resolve/create member for tg ${from.id} (@${from.username ?? "-"}), response=${response}`,
+      );
+      await answerCallbackQuery(cb.id, "Eroare, te rog mai apasă o dată");
       return;
     }
-    member = created as { id: string };
   }
 
   // First training = member has never confirmed a 'yes' before (any earlier
@@ -111,7 +124,7 @@ async function handleCallbackQuery(
   }
 
   // Upsert on (session_id, member_id) — changing one's mind is allowed.
-  await supabase.from("attendance").upsert(
+  const attRes = await supabase.from("attendance").upsert(
     {
       session_id: sessionId,
       member_id: member.id,
@@ -121,6 +134,15 @@ async function handleCallbackQuery(
     },
     { onConflict: "session_id,member_id" },
   );
+  if (attRes.error) {
+    console.error(
+      `[vote] FAILED to record: member ${member.id} → ${response} (session ${sessionId}): ${attRes.error.message}`,
+    );
+  } else {
+    console.log(
+      `[vote] recorded: member ${member.id} → ${response} (session ${sessionId})`,
+    );
+  }
 
   await answerCallbackQuery(cb.id, response === "yes" ? "Notat ✅" : "Notat ❌");
 
