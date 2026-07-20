@@ -9,6 +9,8 @@ export interface BotConfig {
   pollTime: string; // "HH:MM"
   summaryDays: number[];
   summaryTime: string; // "HH:MM"
+  trainingTime: string; // "HH:MM" — shown in the poll
+  location: string; // shown in the poll
 }
 
 // Mirrors the original hard-coded schedule; used if the row/DB is unavailable.
@@ -18,6 +20,8 @@ export const DEFAULT_CONFIG: BotConfig = {
   pollTime: "20:00",
   summaryDays: [2, 4],
   summaryTime: "06:00",
+  trainingTime: "06:30",
+  location: "Parcul Dumitru Râșcanu",
 };
 
 export function normalizeTime(t: unknown): string | null {
@@ -40,7 +44,9 @@ export async function getBotConfig(): Promise<BotConfig> {
     const supabase = createAdminClient();
     const { data, error } = await supabase
       .from("bot_config")
-      .select("enabled, poll_days, poll_time, summary_days, summary_time")
+      .select(
+        "enabled, poll_days, poll_time, summary_days, summary_time, training_time, location",
+      )
       .eq("id", 1)
       .maybeSingle();
     if (error || !data) return DEFAULT_CONFIG;
@@ -50,6 +56,11 @@ export async function getBotConfig(): Promise<BotConfig> {
       pollTime: normalizeTime(data.poll_time) ?? DEFAULT_CONFIG.pollTime,
       summaryDays: normalizeDays(data.summary_days, DEFAULT_CONFIG.summaryDays),
       summaryTime: normalizeTime(data.summary_time) ?? DEFAULT_CONFIG.summaryTime,
+      trainingTime: normalizeTime(data.training_time) ?? DEFAULT_CONFIG.trainingTime,
+      location:
+        typeof data.location === "string" && data.location.trim()
+          ? data.location
+          : DEFAULT_CONFIG.location,
     };
   } catch (err) {
     console.error("[config] read failed, using defaults:", err);

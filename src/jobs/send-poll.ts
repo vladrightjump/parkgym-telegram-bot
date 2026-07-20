@@ -2,13 +2,11 @@ import { createAdminClient } from "../lib/supabase.js";
 import { sendMessage, type InlineKeyboard } from "../lib/telegram.js";
 import { tomorrowInTz } from "../lib/tz.js";
 import { buildPollText, pollHeader } from "../lib/poll-text.js";
-
-const START_TIME = "06:30";
-const LOCATION = "Parcul Dumitru Râșcanu";
+import { getBotConfig } from "../lib/config.js";
 
 // Creates (idempotently) tomorrow's training session and posts the attendance
-// poll into the Telegram group. Safe to run more than once: if tomorrow's
-// session already has a poll_message_id, nothing is sent.
+// poll into the Telegram group. Skips if tomorrow's session is cancelled or the
+// poll was already sent. Training time / location come from bot_config.
 export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
   const groupChatId = process.env.TELEGRAM_GROUP_CHAT_ID;
   if (!groupChatId) {
@@ -17,11 +15,12 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
   }
 
   const supabase = createAdminClient();
+  const cfg = await getBotConfig();
   const sessionDate = tomorrowInTz();
 
   const { data: existing, error: selErr } = await supabase
     .from("training_sessions")
-    .select("id, poll_message_id")
+    .select("id, poll_message_id, status")
     .eq("session_date", sessionDate)
     .maybeSingle();
   if (selErr) {
@@ -29,6 +28,10 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
     return { ok: false, detail: "select" };
   }
 
+  if (existing?.status === "cancelled") {
+    console.log(`[send-poll] ${sessionDate} is cancelled — skipping.`);
+    return { ok: true, detail: "cancelled" };
+  }
   if (existing?.poll_message_id) {
     return { ok: true, detail: "already-sent" };
   }
@@ -39,8 +42,8 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
       .from("training_sessions")
       .insert({
         session_date: sessionDate,
-        starts_at: START_TIME,
-        location: LOCATION,
+        starts_at: cfg.trainingTime,
+        location: cfg.location,
         status: "scheduled",
       })
       .select("id")
@@ -66,7 +69,7 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
     .eq("status", "active");
 
   const text = buildPollText(
-    pollHeader(START_TIME, LOCATION),
+    pollHeader(cfg.trainingTime, cfg.location),
     [],
     [],
     activeCount ?? 0,
