@@ -9,6 +9,7 @@ import { inactivityAlert } from "./jobs/inactivity-alert.js";
 import { GYM_TZ, localWeekdayAndTime } from "./lib/tz.js";
 import { getBotConfig } from "./lib/config.js";
 import { isDue } from "./lib/schedule.js";
+import { alertAdmins } from "./lib/notify.js";
 
 const PORT = Number(process.env.PORT ?? 3000);
 
@@ -69,7 +70,15 @@ cron.schedule(
         !firedThisMinute.has("poll")
       ) {
         firedThisMinute.add("poll");
-        void sendPoll().catch((err) => console.error("[cron/send-poll]", err));
+        void sendPoll()
+          .then((r) => {
+            if (!r.ok)
+              void alertAdmins(`⚠️ Sondajul automat n-a plecat — ${r.detail ?? "?"}`);
+          })
+          .catch((err) => {
+            console.error("[cron/send-poll]", err);
+            void alertAdmins(`⚠️ Eroare la trimiterea sondajului: ${err}`);
+          });
       }
 
       if (
@@ -77,9 +86,15 @@ cron.schedule(
         !firedThisMinute.has("summary")
       ) {
         firedThisMinute.add("summary");
-        void morningSummary().catch((err) =>
-          console.error("[cron/morning-summary]", err),
-        );
+        void morningSummary()
+          .then((r) => {
+            if (!r.ok)
+              void alertAdmins(`⚠️ Raportul de dimineață n-a plecat — ${r.detail ?? "?"}`);
+          })
+          .catch((err) => {
+            console.error("[cron/morning-summary]", err);
+            void alertAdmins(`⚠️ Eroare la raportul de dimineață: ${err}`);
+          });
       }
 
       // Weekly digest of inactive / never-attended members — Monday 09:00 local.
