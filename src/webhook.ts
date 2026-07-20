@@ -1,5 +1,11 @@
 import { createAdminClient } from "./lib/supabase.js";
-import { answerCallbackQuery, sendMessage } from "./lib/telegram.js";
+import {
+  answerCallbackQuery,
+  editMessageText,
+  sendMessage,
+  type InlineKeyboard,
+} from "./lib/telegram.js";
+import { buildPollText, pollHeader } from "./lib/poll-text.js";
 
 // ── Telegram update payload (only the fields we use) ──────────────────────────
 interface TgUser {
@@ -19,6 +25,7 @@ export interface TgUpdate {
     id: string;
     from: TgUser;
     data?: string;
+    message?: { message_id: number; chat: TgChat };
   };
   message?: {
     from?: TgUser;
@@ -104,6 +111,71 @@ async function handleCallbackQuery(
   );
 
   await answerCallbackQuery(cb.id, response === "yes" ? "Notat ✅" : "Notat ❌");
+
+  // Refresh the poll message in place with the live tally. Editing a message
+  // does NOT notify group members, so this updates silently on every vote.
+  if (cb.message) {
+    await refreshPollMessage(
+      supabase,
+      cb.message.chat.id,
+      cb.message.message_id,
+      sessionId,
+    );
+  }
+}
+
+interface AttNameRow {
+  response: "yes" | "no";
+  member: { full_name: string } | null;
+}
+
+// Rebuilds the poll text from current attendance and edits the message.
+async function refreshPollMessage(
+  supabase: ReturnType<typeof createAdminClient>,
+  chatId: number,
+  messageId: number,
+  sessionId: string,
+) {
+  try {
+    const [sessionRes, attRes, activeRes] = await Promise.all([
+      supabase
+        .from("training_sessions")
+        .select("starts_at, location")
+        .eq("id", sessionId)
+        .maybeSingle(),
+      supabase
+        .from("attendance")
+        .select("response, member:members(full_name)")
+        .eq("session_id", sessionId),
+      supabase.from("members").select("id").eq("status", "active"),
+    ]);
+
+    const att = (attRes.data ?? []) as unknown as AttNameRow[];
+    const session = sessionRes.data as { starts_at: string; location: string } | null;
+    const activeCount = (activeRes.data ?? []).length;
+
+    const nameOf = (a: AttNameRow) => a.member?.full_name ?? "necunoscut";
+    const yes = att.filter((a) => a.response === "yes").map(nameOf);
+    const no = att.filter((a) => a.response === "no").map(nameOf);
+    const noResponse = activeCount - yes.length - no.length;
+
+    const header = pollHeader(session?.starts_at ?? "06:30", session?.location ?? "");
+    const text = buildPollText(header, yes, no, noResponse);
+
+    const keyboard: InlineKeyboard = [
+      [
+        { text: "✅ Vin", callback_data: `att:yes:${sessionId}` },
+        { text: "❌ Nu vin", callback_data: `att:no:${sessionId}` },
+      ],
+    ];
+
+    // Ignore "message is not modified" and similar — best-effort live update.
+    await editMessageText(chatId, messageId, text, {
+      reply_markup: { inline_keyboard: keyboard },
+    });
+  } catch (err) {
+    console.error("[refresh-poll]", err);
+  }
 }
 
 // Resolve a Telegram user to a member. Primary key is telegram_user_id; falls

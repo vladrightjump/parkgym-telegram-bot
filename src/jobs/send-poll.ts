@@ -1,6 +1,7 @@
 import { createAdminClient } from "../lib/supabase.js";
 import { sendMessage, type InlineKeyboard } from "../lib/telegram.js";
 import { tomorrowInTz } from "../lib/tz.js";
+import { buildPollText, pollHeader } from "../lib/poll-text.js";
 
 const START_TIME = "06:30";
 const LOCATION = "Parcul Dumitru Râșcanu";
@@ -58,11 +59,22 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
     ],
   ];
 
-  const sent = await sendMessage(
-    groupChatId,
-    "🏃 Antrenament mâine, 6:30, Parcul Dumitru Râșcanu. Vii?",
-    { reply_markup: { inline_keyboard: keyboard } },
+  // Initial message with a 0-tally board; edited live as people vote.
+  const { count: activeCount } = await supabase
+    .from("members")
+    .select("id", { count: "exact", head: true })
+    .eq("status", "active");
+
+  const text = buildPollText(
+    pollHeader(START_TIME, LOCATION),
+    [],
+    [],
+    activeCount ?? 0,
   );
+
+  const sent = await sendMessage(groupChatId, text, {
+    reply_markup: { inline_keyboard: keyboard },
+  });
 
   if (!sent.ok || !sent.result) {
     console.error("[send-poll] sendMessage failed:", sent.description);
