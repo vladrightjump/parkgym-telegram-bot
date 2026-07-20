@@ -65,24 +65,36 @@ async function handleCallbackQuery(
   const supabase = createAdminClient();
   const from = cb.from;
 
-  const member = await resolveMember(supabase, from);
+  let member = await resolveMember(supabase, from);
 
   if (!member) {
-    // Unknown Telegram account — park it for an admin to link later.
-    await supabase.from("telegram_unmatched").upsert(
-      {
+    // Unknown Telegram account — auto-create a member from the Telegram name so
+    // their vote counts immediately and shows on the live board. The admin can
+    // rename / merge duplicates later from the dashboard.
+    const autoName =
+      [from.first_name, from.last_name].filter(Boolean).join(" ").trim() ||
+      (from.username ? `@${from.username}` : `Membru ${from.id}`);
+    const { data: created } = await supabase
+      .from("members")
+      .insert({
+        full_name: autoName.slice(0, 80),
+        status: "active",
         telegram_user_id: from.id,
-        username: from.username ?? null,
-        first_name: from.first_name ?? null,
-        last_name: from.last_name ?? null,
-      },
-      { onConflict: "telegram_user_id" },
-    );
-    await answerCallbackQuery(
-      cb.id,
-      "Te-am notat, un admin te va lega de profil",
-    );
-    return;
+        telegram_username: from.username ?? null,
+        bot_dm_enabled: false,
+      })
+      .select("id")
+      .maybeSingle();
+    // Clear any earlier "unmatched" parking row for them.
+    await supabase
+      .from("telegram_unmatched")
+      .delete()
+      .eq("telegram_user_id", from.id);
+    if (!created) {
+      await answerCallbackQuery(cb.id);
+      return;
+    }
+    member = created as { id: string };
   }
 
   // First training = member has never confirmed a 'yes' before (any earlier
@@ -169,10 +181,12 @@ async function refreshPollMessage(
       ],
     ];
 
-    // Ignore "message is not modified" and similar — best-effort live update.
-    await editMessageText(chatId, messageId, text, {
+    const res = await editMessageText(chatId, messageId, text, {
       reply_markup: { inline_keyboard: keyboard },
     });
+    if (!res.ok && res.description !== "Bad Request: message is not modified") {
+      console.error("[refresh-poll] edit failed:", res.description);
+    }
   } catch (err) {
     console.error("[refresh-poll]", err);
   }
