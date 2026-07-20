@@ -20,14 +20,14 @@ export const DEFAULT_CONFIG: BotConfig = {
   summaryTime: "06:00",
 };
 
-function normalizeTime(t: unknown): string | null {
+export function normalizeTime(t: unknown): string | null {
   if (typeof t !== "string") return null;
   const m = /^(\d{1,2}):(\d{2})/.exec(t.trim());
   if (!m) return null;
   return `${m[1].padStart(2, "0")}:${m[2]}`;
 }
 
-function normalizeDays(v: unknown, fallback: number[]): number[] {
+export function normalizeDays(v: unknown, fallback: number[]): number[] {
   if (!Array.isArray(v)) return fallback;
   const days = v
     .map((n) => Number(n))

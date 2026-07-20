@@ -67,6 +67,27 @@ export async function editMessageText(
   });
 }
 
+// Remove a user from a group/supergroup. Requires the bot to be an admin with
+// "ban users" permission. Pairs with unbanChatMember below to kick without a
+// permanent ban (so the person can be re-added later).
+export async function banChatMember(
+  chatId: number | string,
+  userId: number,
+): Promise<TelegramResponse> {
+  return call("banChatMember", { chat_id: chatId, user_id: userId });
+}
+
+export async function unbanChatMember(
+  chatId: number | string,
+  userId: number,
+): Promise<TelegramResponse> {
+  return call("unbanChatMember", {
+    chat_id: chatId,
+    user_id: userId,
+    only_if_banned: true,
+  });
+}
+
 // Acknowledge a callback query so Telegram stops the loading spinner; the
 // optional text is shown as a toast to the user who tapped the button.
 export async function answerCallbackQuery(

@@ -31,8 +31,8 @@ export function tomorrowInTz(tz: string = GYM_TZ): string {
 // Used by the minute scheduler to compare against the configured schedule.
 export function localWeekdayAndTime(
   tz: string = GYM_TZ,
+  now: Date = new Date(),
 ): { weekday: number; hhmm: string } {
-  const now = new Date();
   const weekday = new Date(ymdInTz(now, tz) + "T00:00:00Z").getUTCDay();
   const parts = new Intl.DateTimeFormat("en-GB", {
     timeZone: tz,

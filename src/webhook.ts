@@ -150,6 +150,16 @@ async function askForName(chatId: number) {
   await sendMessage(chatId, NAME_PROMPT, { reply_markup: { force_reply: true } });
 }
 
+// Normalize a free-text name reply: collapse inner whitespace and trim.
+export function cleanName(text: string): string {
+  return text.replace(/\s+/g, " ").trim();
+}
+
+// Whether a cleaned string is a plausible full name to auto-register with.
+export function isValidName(name: string): boolean {
+  return !name.startsWith("/") && name.length >= 2 && name.length <= 80;
+}
+
 // Handles private-chat messages: the /start onboarding + the name reply that
 // creates a member. Group messages are ignored.
 async function handleMessage(msg: NonNullable<TgUpdate["message"]>) {
@@ -189,8 +199,8 @@ async function handleMessage(msg: NonNullable<TgUpdate["message"]>) {
   if (member) return; // registered members: nothing to do here.
 
   // Unknown user typing (expected: their name, in reply to the prompt).
-  const name = text.replace(/\s+/g, " ").trim();
-  if (name.startsWith("/") || name.length < 2 || name.length > 80) {
+  const name = cleanName(text);
+  if (!isValidName(name)) {
     await askForName(msg.chat.id);
     return;
   }

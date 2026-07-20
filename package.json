@@ -11,6 +11,7 @@
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
     "start": "node dist/index.js",
+    "test": "node --import tsx --test test/*.test.ts",
     "set-webhook": "tsx scripts/set-webhook.ts"
   },
   "dependencies": {

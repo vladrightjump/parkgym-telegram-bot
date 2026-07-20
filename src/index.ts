@@ -4,8 +4,11 @@ import cron from "node-cron";
 import { handleUpdate, type TgUpdate } from "./webhook.js";
 import { sendPoll } from "./jobs/send-poll.js";
 import { morningSummary } from "./jobs/morning-summary.js";
+import { processCommands } from "./jobs/process-commands.js";
+import { inactivityAlert } from "./jobs/inactivity-alert.js";
 import { GYM_TZ, localWeekdayAndTime } from "./lib/tz.js";
 import { getBotConfig } from "./lib/config.js";
+import { isDue } from "./lib/schedule.js";
 
 const PORT = Number(process.env.PORT ?? 3000);
 
@@ -49,6 +52,9 @@ cron.schedule(
   "* * * * *",
   async () => {
     try {
+      // Always drain the command queue (kick, etc.), even if scheduling is off.
+      await processCommands().catch((err) => console.error("[commands]", err));
+
       const cfg = await getBotConfig();
       if (!cfg.enabled) return;
 
@@ -59,8 +65,7 @@ cron.schedule(
       }
 
       if (
-        cfg.pollDays.includes(weekday) &&
-        hhmm === cfg.pollTime &&
+        isDue(cfg.pollDays, cfg.pollTime, weekday, hhmm) &&
         !firedThisMinute.has("poll")
       ) {
         firedThisMinute.add("poll");
@@ -68,13 +73,24 @@ cron.schedule(
       }
 
       if (
-        cfg.summaryDays.includes(weekday) &&
-        hhmm === cfg.summaryTime &&
+        isDue(cfg.summaryDays, cfg.summaryTime, weekday, hhmm) &&
         !firedThisMinute.has("summary")
       ) {
         firedThisMinute.add("summary");
         void morningSummary().catch((err) =>
           console.error("[cron/morning-summary]", err),
+        );
+      }
+
+      // Weekly digest of inactive / never-attended members — Monday 09:00 local.
+      if (
+        weekday === 1 &&
+        hhmm === "09:00" &&
+        !firedThisMinute.has("inactivity")
+      ) {
+        firedThisMinute.add("inactivity");
+        void inactivityAlert().catch((err) =>
+          console.error("[cron/inactivity-alert]", err),
         );
       }
     } catch (err) {
