@@ -57,15 +57,20 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
 
   const keyboard: InlineKeyboard = [
     [
-      { text: "✅ Vin", callback_data: `att:yes:${sessionId}` },
-      { text: "❌ Nu vin", callback_data: `att:no:${sessionId}` },
+      { text: "✅ Vin!", callback_data: `att:yes:${sessionId}` },
+      { text: "❌ Nu pot", callback_data: `att:no:${sessionId}` },
     ],
   ];
 
-  // Initial message with a 0-tally board; edited live as people vote.
-  const text = buildPollText(pollHeader(cfg.trainingTime, cfg.location), [], []);
+  // Initial message with a friendly call-to-action; edited live as people vote.
+  const text = buildPollText(
+    pollHeader(sessionDate, cfg.trainingTime, cfg.location),
+    [],
+    [],
+  );
 
   const sent = await sendMessage(groupChatId, text, {
+    parse_mode: "HTML",
     reply_markup: { inline_keyboard: keyboard },
   });
 

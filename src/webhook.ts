@@ -215,7 +215,7 @@ async function refreshPollMessage(
     const [sessionRes, attRes] = await Promise.all([
       supabase
         .from("training_sessions")
-        .select("starts_at, location")
+        .select("session_date, starts_at, location")
         .eq("id", sessionId)
         .maybeSingle(),
       supabase
@@ -225,23 +225,32 @@ async function refreshPollMessage(
     ]);
 
     const att = (attRes.data ?? []) as unknown as AttNameRow[];
-    const session = sessionRes.data as { starts_at: string; location: string } | null;
+    const session = sessionRes.data as {
+      session_date: string;
+      starts_at: string;
+      location: string;
+    } | null;
 
     const nameOf = (a: AttNameRow) => a.member?.full_name ?? "necunoscut";
     const yes = att.filter((a) => a.response === "yes").map(nameOf);
     const no = att.filter((a) => a.response === "no").map(nameOf);
 
-    const header = pollHeader(session?.starts_at ?? "06:30", session?.location ?? "");
+    const header = pollHeader(
+      session?.session_date ?? "",
+      session?.starts_at ?? "06:30",
+      session?.location ?? "",
+    );
     const text = buildPollText(header, yes, no);
 
     const keyboard: InlineKeyboard = [
       [
-        { text: "✅ Vin", callback_data: `att:yes:${sessionId}` },
-        { text: "❌ Nu vin", callback_data: `att:no:${sessionId}` },
+        { text: "✅ Vin!", callback_data: `att:yes:${sessionId}` },
+        { text: "❌ Nu pot", callback_data: `att:no:${sessionId}` },
       ],
     ];
 
     const res = await editMessageText(chatId, messageId, text, {
+      parse_mode: "HTML",
       reply_markup: { inline_keyboard: keyboard },
     });
     if (!res.ok && res.description !== "Bad Request: message is not modified") {
