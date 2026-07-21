@@ -8,15 +8,18 @@ import { processCommands } from "./jobs/process-commands.js";
 import { inactivityAlert } from "./jobs/inactivity-alert.js";
 import { GYM_TZ, localWeekdayAndTime } from "./lib/tz.js";
 import { getBotConfig } from "./lib/config.js";
-import { isDue } from "./lib/schedule.js";
+import { isDue, minusMinutes } from "./lib/schedule.js";
 import { alertAdmins } from "./lib/notify.js";
+import { autoReminder } from "./jobs/auto-reminder.js";
+import { getWebhookInfo } from "./lib/telegram.js";
 
 const PORT = Number(process.env.PORT ?? 3000);
 
 // ── Webhook HTTP server ───────────────────────────────────────────────────────
-// Telegram POSTs updates here. We verify the secret-token header, then answer
-// 200 for everything (Telegram retries on any non-2xx). Only unauthenticated
-// callers get 401.
+// Telegram POSTs updates here. We verify the secret-token header. Successful /
+// ignorable updates get 200; a TRANSIENT processing failure (e.g. DB write
+// error) gets 500 so Telegram REDELIVERS the update — no vote is ever silently
+// dropped. The attendance upsert is idempotent, so redelivery is safe.
 const app = express();
 app.use(express.json());
 
@@ -30,7 +33,8 @@ app.post("/telegram/webhook", async (req, res) => {
     return res.status(401).json({ ok: false });
   }
 
-  await handleUpdate(req.body as TgUpdate);
+  const ok = await handleUpdate(req.body as TgUpdate);
+  if (!ok) return res.status(500).json({ ok: false }); // Telegram will retry
   return res.json({ ok: true });
 });
 
@@ -107,6 +111,56 @@ cron.schedule(
         void inactivityAlert().catch((err) =>
           console.error("[cron/inactivity-alert]", err),
         );
+      }
+
+      // Auto-reminder ~2h before training on the training day, if confirmations
+      // are still below the configured threshold.
+      if (
+        cfg.autoReminderEnabled &&
+        hhmm === minusMinutes(cfg.trainingTime, 120) &&
+        !firedThisMinute.has("autorem")
+      ) {
+        firedThisMinute.add("autorem");
+        void autoReminder(cfg.reminderThreshold).catch((err) =>
+          console.error("[cron/auto-reminder]", err),
+        );
+      }
+
+      // Weekly webhook self-check — Monday 09:05. Alerts only on problems.
+      if (
+        weekday === 1 &&
+        hhmm === "09:05" &&
+        !firedThisMinute.has("webhookcheck")
+      ) {
+        firedThisMinute.add("webhookcheck");
+        void (async () => {
+          const info = await getWebhookInfo();
+          const i = info.result;
+          if (!info.ok || !i) {
+            return alertAdmins("⚠️ Verificare webhook: nu am putut citi starea de la Telegram.");
+          }
+          const expected =
+            (process.env.PUBLIC_URL ?? "").replace(/\/$/, "") + "/telegram/webhook";
+          const probs: string[] = [];
+          if (process.env.PUBLIC_URL && i.url !== expected) {
+            probs.push(`URL greșit (${i.url || "gol"})`);
+          }
+          if ((i.pending_update_count ?? 0) > 20) {
+            probs.push(`${i.pending_update_count} update-uri în așteptare`);
+          }
+          if (
+            i.last_error_message &&
+            i.last_error_date &&
+            Date.now() / 1000 - i.last_error_date < 3 * 86400
+          ) {
+            probs.push(`eroare recentă: ${i.last_error_message}`);
+          }
+          if (probs.length) {
+            await alertAdmins(`⚠️ Webhook Telegram: ${probs.join("; ")}`);
+          } else {
+            console.log("[webhook-check] OK");
+          }
+        })().catch((err) => console.error("[cron/webhook-check]", err));
       }
     } catch (err) {
       console.error("[cron/tick]", err);

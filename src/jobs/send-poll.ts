@@ -63,17 +63,7 @@ export async function sendPoll(): Promise<{ ok: boolean; detail?: string }> {
   ];
 
   // Initial message with a 0-tally board; edited live as people vote.
-  const { count: activeCount } = await supabase
-    .from("members")
-    .select("id", { count: "exact", head: true })
-    .eq("status", "active");
-
-  const text = buildPollText(
-    pollHeader(cfg.trainingTime, cfg.location),
-    [],
-    [],
-    activeCount ?? 0,
-  );
+  const text = buildPollText(pollHeader(cfg.trainingTime, cfg.location), [], []);
 
   const sent = await sendMessage(groupChatId, text, {
     reply_markup: { inline_keyboard: keyboard },

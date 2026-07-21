@@ -1,5 +1,5 @@
 import { createAdminClient } from "../lib/supabase.js";
-import { banChatMember, unbanChatMember } from "../lib/telegram.js";
+import { banChatMember, sendMessage, unbanChatMember } from "../lib/telegram.js";
 import { tomorrowInTz } from "../lib/tz.js";
 import { alertAdmins } from "../lib/notify.js";
 import { sendPoll } from "./send-poll.js";
@@ -40,6 +40,36 @@ export async function processCommands(): Promise<void> {
         result = "kicked";
       } else {
         result = ban.description ?? "ban failed";
+      }
+    } else if (cmd.action === "send_reminder") {
+      // Gentle group nudge listing active members who haven't voted yet on
+      // tomorrow's session.
+      const { data: sess } = await supabase
+        .from("training_sessions")
+        .select("id")
+        .eq("session_date", tomorrowInTz())
+        .maybeSingle();
+      if (!sess) {
+        result = "no session for tomorrow";
+      } else {
+        const [{ data: att }, { data: act }] = await Promise.all([
+          supabase.from("attendance").select("member_id").eq("session_id", sess.id),
+          supabase.from("members").select("id, full_name").eq("status", "active"),
+        ]);
+        const voted = new Set((att ?? []).map((a) => a.member_id));
+        const missing = (act ?? []).filter((m) => !voted.has(m.id));
+        if (missing.length === 0) {
+          result = "everyone voted";
+          ok = true;
+        } else {
+          const names = missing.map((m) => m.full_name).join(", ");
+          const r = await sendMessage(
+            groupChatId,
+            `👋 Reamintire — încă n-au răspuns la sondaj (${missing.length}): ${names}. Apăsați ✅/❌ pe sondajul de mai sus!`,
+          );
+          ok = r.ok;
+          result = r.ok ? `reminded ${missing.length}` : (r.description ?? "send failed");
+        }
       }
     } else if (cmd.action === "send_summary") {
       const r = await morningSummary();

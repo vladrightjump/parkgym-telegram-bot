@@ -11,6 +11,8 @@ export interface BotConfig {
   summaryTime: string; // "HH:MM"
   trainingTime: string; // "HH:MM" — shown in the poll
   location: string; // shown in the poll
+  autoReminderEnabled: boolean; // auto group nudge 2h before training
+  reminderThreshold: number; // skip the nudge if confirmations >= this
 }
 
 // Mirrors the original hard-coded schedule; used if the row/DB is unavailable.
@@ -22,6 +24,8 @@ export const DEFAULT_CONFIG: BotConfig = {
   summaryTime: "06:00",
   trainingTime: "06:30",
   location: "Parcul Dumitru Râșcanu",
+  autoReminderEnabled: true,
+  reminderThreshold: 6,
 };
 
 export function normalizeTime(t: unknown): string | null {
@@ -45,7 +49,7 @@ export async function getBotConfig(): Promise<BotConfig> {
     const { data, error } = await supabase
       .from("bot_config")
       .select(
-        "enabled, poll_days, poll_time, summary_days, summary_time, training_time, location",
+        "enabled, poll_days, poll_time, summary_days, summary_time, training_time, location, auto_reminder_enabled, reminder_threshold",
       )
       .eq("id", 1)
       .maybeSingle();
@@ -61,6 +65,11 @@ export async function getBotConfig(): Promise<BotConfig> {
         typeof data.location === "string" && data.location.trim()
           ? data.location
           : DEFAULT_CONFIG.location,
+      autoReminderEnabled: data.auto_reminder_enabled ?? true,
+      reminderThreshold:
+        Number.isInteger(data.reminder_threshold) && data.reminder_threshold >= 0
+          ? data.reminder_threshold
+          : DEFAULT_CONFIG.reminderThreshold,
     };
   } catch (err) {
     console.error("[config] read failed, using defaults:", err);

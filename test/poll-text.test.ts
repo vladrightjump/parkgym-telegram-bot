@@ -21,20 +21,13 @@ test("pollHeader: omits location when empty; falls back on empty time", () => {
 });
 
 // ── buildPollText ────────────────────────────────────────────────────────────
-test("buildPollText: lists names with counts", () => {
-  const out = buildPollText("H", ["Ana", "Vlad"], ["Ion"], 5);
-  assert.equal(
-    out,
-    "H\n\n✅ Vin (2): Ana, Vlad\n❌ Nu vin (1): Ion\n❔ N-au răspuns: 5",
-  );
+test("buildPollText: lists names with counts, no non-responder line", () => {
+  const out = buildPollText("H", ["Ana", "Vlad"], ["Ion"]);
+  assert.equal(out, "H\n\n✅ Vin (2): Ana, Vlad\n❌ Nu vin (1): Ion");
+  assert.ok(!out.includes("N-au răspuns"));
 });
 
 test("buildPollText: empty lists show only counts", () => {
-  const out = buildPollText("H", [], [], 0);
-  assert.equal(out, "H\n\n✅ Vin (0)\n❌ Nu vin (0)\n❔ N-au răspuns: 0");
-});
-
-test("buildPollText: negative no-response is clamped to 0", () => {
-  const out = buildPollText("H", ["A"], [], -4);
-  assert.equal(out, "H\n\n✅ Vin (1): A\n❌ Nu vin (0)\n❔ N-au răspuns: 0");
+  const out = buildPollText("H", [], []);
+  assert.equal(out, "H\n\n✅ Vin (0)\n❌ Nu vin (0)");
 });

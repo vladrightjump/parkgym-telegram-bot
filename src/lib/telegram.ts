@@ -67,6 +67,18 @@ export async function editMessageText(
   });
 }
 
+export interface WebhookInfo {
+  url?: string;
+  pending_update_count?: number;
+  last_error_date?: number;
+  last_error_message?: string;
+}
+
+// Current webhook registration state — used by the weekly self-check.
+export async function getWebhookInfo(): Promise<TelegramResponse<WebhookInfo>> {
+  return call<WebhookInfo>("getWebhookInfo", {});
+}
+
 // Remove a user from a group/supergroup. Requires the bot to be an admin with
 // "ban users" permission. Pairs with unbanChatMember below to kick without a
 // permanent ban (so the person can be re-added later).

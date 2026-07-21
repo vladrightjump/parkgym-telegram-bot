@@ -31,33 +31,49 @@ export interface TgUpdate {
     from?: TgUser;
     chat: TgChat;
     text?: string;
+    new_chat_members?: TgUser[];
   };
 }
 
-// Process a single Telegram update. Never throws to the caller — errors are
-// logged so the webhook can always answer 2xx and avoid Telegram retry loops.
-export async function handleUpdate(update: TgUpdate): Promise<void> {
+// Throttled admin alert for vote-pipeline failures (max one DM / 10 min so a
+// DB outage doesn't flood the admins).
+let lastFailAlertAt = 0;
+async function voteFailureAlert(detail: string) {
+  const now = Date.now();
+  if (now - lastFailAlertAt < 10 * 60_000) return;
+  lastFailAlertAt = now;
+  const { alertAdmins } = await import("./lib/notify.js");
+  await alertAdmins(`⚠️ Problemă la înregistrarea voturilor: ${detail}. Telegram reîncearcă automat.`);
+}
+
+// Process a single Telegram update. Returns false ONLY on a transient failure
+// (e.g. DB write failed) — the server then answers non-2xx and Telegram
+// REDELIVERS the update, so no vote is ever silently dropped. The attendance
+// upsert is idempotent, which makes redelivery safe.
+export async function handleUpdate(update: TgUpdate): Promise<boolean> {
   try {
     if (update.callback_query) {
-      await handleCallbackQuery(update.callback_query);
+      return await handleCallbackQuery(update.callback_query);
     } else if (update.message) {
       await handleMessage(update.message);
     }
+    return true;
   } catch (err) {
-    // Never surface an error to Telegram — that would trigger a retry loop.
     console.error("[telegram/webhook] handler error:", err);
+    void voteFailureAlert(String(err));
+    return false; // transient — let Telegram retry
   }
 }
 
 async function handleCallbackQuery(
   cb: NonNullable<TgUpdate["callback_query"]>,
-) {
+): Promise<boolean> {
   const data = cb.data ?? "";
   // Expected: "att:yes:<session_id>" / "att:no:<session_id>"
   const match = /^att:(yes|no):(.+)$/.exec(data);
   if (!match) {
     await answerCallbackQuery(cb.id);
-    return;
+    return true; // garbage callback — nothing to retry
   }
   const response = match[1] as "yes" | "no";
   const sessionId = match[2];
@@ -102,11 +118,23 @@ async function handleCallbackQuery(
       .delete()
       .eq("telegram_user_id", from.id);
     if (!member) {
+      // Last resort: park the identity so nothing about the person is lost,
+      // alert the admins (throttled), and let Telegram redeliver the vote.
       console.error(
-        `[vote] LOST: could not resolve/create member for tg ${from.id} (@${from.username ?? "-"}), response=${response}`,
+        `[vote] RETRY: could not resolve/create member for tg ${from.id} (@${from.username ?? "-"}), response=${response}`,
       );
-      await answerCallbackQuery(cb.id, "Eroare, te rog mai apasă o dată");
-      return;
+      await supabase.from("telegram_unmatched").upsert(
+        {
+          telegram_user_id: from.id,
+          username: from.username ?? null,
+          first_name: from.first_name ?? null,
+          last_name: from.last_name ?? null,
+        },
+        { onConflict: "telegram_user_id" },
+      );
+      void voteFailureAlert(`nu pot crea membrul pentru @${from.username ?? from.id}`);
+      await answerCallbackQuery(cb.id, "Moment — se reîncearcă automat");
+      return false;
     }
   }
 
@@ -138,11 +166,23 @@ async function handleCallbackQuery(
     console.error(
       `[vote] FAILED to record: member ${member.id} → ${response} (session ${sessionId}): ${attRes.error.message}`,
     );
-  } else {
-    console.log(
-      `[vote] recorded: member ${member.id} → ${response} (session ${sessionId})`,
-    );
+    void voteFailureAlert(attRes.error.message);
+    await answerCallbackQuery(cb.id, "Moment — se reîncearcă automat");
+    return false; // Telegram redelivers; upsert is idempotent
   }
+  console.log(
+    `[vote] recorded: member ${member.id} → ${response} (session ${sessionId})`,
+  );
+
+  // Append-only audit trail — every tap (incl. changes of mind) kept forever.
+  const logRes = await supabase.from("attendance_log").insert({
+    session_id: sessionId,
+    member_id: member.id,
+    telegram_user_id: from.id,
+    response,
+    source: "telegram",
+  });
+  if (logRes.error) console.error("[vote-log]", logRes.error.message);
 
   await answerCallbackQuery(cb.id, response === "yes" ? "Notat ✅" : "Notat ❌");
 
@@ -156,6 +196,7 @@ async function handleCallbackQuery(
       sessionId,
     );
   }
+  return true;
 }
 
 interface AttNameRow {
@@ -171,7 +212,7 @@ async function refreshPollMessage(
   sessionId: string,
 ) {
   try {
-    const [sessionRes, attRes, activeRes] = await Promise.all([
+    const [sessionRes, attRes] = await Promise.all([
       supabase
         .from("training_sessions")
         .select("starts_at, location")
@@ -181,20 +222,17 @@ async function refreshPollMessage(
         .from("attendance")
         .select("response, member:members(full_name)")
         .eq("session_id", sessionId),
-      supabase.from("members").select("id").eq("status", "active"),
     ]);
 
     const att = (attRes.data ?? []) as unknown as AttNameRow[];
     const session = sessionRes.data as { starts_at: string; location: string } | null;
-    const activeCount = (activeRes.data ?? []).length;
 
     const nameOf = (a: AttNameRow) => a.member?.full_name ?? "necunoscut";
     const yes = att.filter((a) => a.response === "yes").map(nameOf);
     const no = att.filter((a) => a.response === "no").map(nameOf);
-    const noResponse = activeCount - yes.length - no.length;
 
     const header = pollHeader(session?.starts_at ?? "06:30", session?.location ?? "");
-    const text = buildPollText(header, yes, no, noResponse);
+    const text = buildPollText(header, yes, no);
 
     const keyboard: InlineKeyboard = [
       [
@@ -271,6 +309,34 @@ export function isValidName(name: string): boolean {
 // Handles private-chat messages: the /start onboarding + the name reply that
 // creates a member. Group messages are ignored.
 async function handleMessage(msg: NonNullable<TgUpdate["message"]>) {
+  // Group join capture: anyone added to the group lands in the unmatched list
+  // automatically (unless already a linked member), so admins see newcomers.
+  if (msg.new_chat_members?.length && msg.chat.type !== "private") {
+    const supabase = createAdminClient();
+    for (const u of msg.new_chat_members) {
+      if (!u?.id) continue;
+      const { data: existing } = await supabase
+        .from("members")
+        .select("id")
+        .eq("telegram_user_id", u.id)
+        .maybeSingle();
+      if (existing) continue; // already known
+      await supabase.from("telegram_unmatched").upsert(
+        {
+          telegram_user_id: u.id,
+          username: u.username ?? null,
+          first_name: u.first_name ?? null,
+          last_name: u.last_name ?? null,
+        },
+        { onConflict: "telegram_user_id" },
+      );
+      console.log(
+        `[join] captured new group member tg ${u.id} (@${u.username ?? "-"})`,
+      );
+    }
+    return;
+  }
+
   if (msg.chat.type !== "private") return;
   if (!msg.from) return;
   const text = (msg.text ?? "").trim();

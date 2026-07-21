@@ -5,6 +5,14 @@
 //   time    — "HH:MM"
 //   weekday — current local weekday (0=Sun … 6=Sat)
 //   hhmm    — current local time "HH:MM"
+// "HH:MM" minus N minutes, wrapping over midnight.
+export function minusMinutes(hhmm: string, mins: number): string {
+  const [h, m] = hhmm.split(":").map(Number);
+  let t = h * 60 + m - mins;
+  while (t < 0) t += 1440;
+  return `${String(Math.floor(t / 60)).padStart(2, "0")}:${String(t % 60).padStart(2, "0")}`;
+}
+
 export function isDue(
   days: number[],
   time: string,
