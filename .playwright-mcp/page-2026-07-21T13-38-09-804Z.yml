@@ -1,0 +1,885 @@
+- generic [active] [ref=f24e1]:
+  - banner [ref=f24e2]:
+    - generic [ref=f24e3]:
+      - link "Treci la conținutul principal al paginii" [ref=f24e4] [cursor=pointer]:
+        - /url: "#skippedLink"
+        - text: Conținut principal
+      - generic [ref=f24e6]:
+        - navigation [ref=f24e7]:
+          - link [ref=f24e8] [cursor=pointer]:
+            - /url: /promo
+            - img "Promoții" [ref=f24e9]
+            - paragraph [ref=f24e10]: Promoții
+          - link [ref=f24e11] [cursor=pointer]:
+            - /url: /delivery
+            - paragraph [ref=f24e12]: Livrare
+          - link [ref=f24e13] [cursor=pointer]:
+            - /url: /contacts
+            - paragraph [ref=f24e14]: Contacte
+          - link "Vedeți poziția noastră pe hartă" [ref=f24e16] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/nuqDoRi2Z8N82kLo8
+            - generic [ref=f24e20]: str. Columna 170
+        - link "Acasă" [ref=f24e22] [cursor=pointer]:
+          - /url: https://ultra.md
+        - generic [ref=f24e26]:
+          - generic [ref=f24e27]:
+            - button "+373-6000-0000" [ref=f24e29] [cursor=pointer]
+            - 'button "Lu – Du: 09:00 - 20:00" [ref=f24e38] [cursor=pointer]'
+          - generic [ref=f24e46]:
+            - generic [ref=f24e47]: RO
+            - link "RU" [ref=f24e48] [cursor=pointer]:
+              - /url: https://ultra.md/ru/product/27-dell-p2725qe
+      - generic [ref=f24e50]:
+        - button "Deschideți meniul catalogului" [ref=f24e51] [cursor=pointer]:
+          - generic [ref=f24e55]: Catalogul de produse
+        - search [ref=f24e60]:
+          - textbox "Căutare produse..." [ref=f24e65]
+        - generic [ref=f24e66]:
+          - link "Coș" [ref=f24e67] [cursor=pointer]:
+            - /url: https://ultra.md/cart
+          - link "Favorite" [ref=f24e73] [cursor=pointer]:
+            - /url: https://ultra.md/favorites
+          - link "Comparare" [ref=f24e79] [cursor=pointer]:
+            - /url: https://ultra.md/compare
+          - button "Favorite" [ref=f24e85] [cursor=pointer]:
+            - generic [ref=f24e89]: Logare
+    - list [ref=f24e92]:
+      - listitem [ref=f24e93]:
+        - link [ref=f24e94] [cursor=pointer]:
+          - /url: https://ultra.md
+      - listitem [ref=f24e98]:
+        - link "Tehnică Computer" [ref=f24e99] [cursor=pointer]:
+          - /url: https://ultra.md/tehnica-computer
+      - listitem [ref=f24e100]:
+        - link "Monitoare" [ref=f24e101] [cursor=pointer]:
+          - /url: https://ultra.md/tehnica-computer/monitoare
+      - listitem [ref=f24e102]: Monitor DELL P2725QE Negru | Argintiu
+  - main [ref=f24e103]:
+    - generic [ref=f24e105]:
+      - generic [ref=f24e106]:
+        - generic [ref=f24e107]:
+          - generic [ref=f24e108]:
+            - button "Adaugă la favorite" [ref=f24e110] [cursor=pointer]
+            - button "Adaugă pentru comparare" [ref=f24e115] [cursor=pointer]
+          - generic [ref=f24e119]:
+            - generic [ref=f24e120]:
+              - group "1 / 10" [ref=f24e121]:
+                - button [ref=f24e122] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e123]
+              - group "2 / 10" [ref=f24e124]:
+                - button [ref=f24e125] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e126]
+              - group "3 / 10" [ref=f24e127]:
+                - button [ref=f24e128] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e129]
+              - group "4 / 10" [ref=f24e130]:
+                - button [ref=f24e131] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e132]
+              - group "5 / 10" [ref=f24e133]:
+                - button [ref=f24e134] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e135]
+              - group "6 / 10" [ref=f24e136]:
+                - button [ref=f24e137] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e138]
+              - group "7 / 10" [ref=f24e139]:
+                - button [ref=f24e140] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e141]
+              - group "8 / 10" [ref=f24e142]:
+                - button [ref=f24e143] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e144]
+              - group "9 / 10" [ref=f24e145]:
+                - button [ref=f24e146] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e147]
+              - group "10 / 10" [ref=f24e148]:
+                - button [ref=f24e149] [cursor=pointer]:
+                  - img "Monitor DELL P2725QE Negru | Argintiu" [ref=f24e150]
+            - button "Previous slide" [disabled]
+            - button "Next slide" [ref=f24e151] [cursor=pointer]
+        - generic [ref=f24e163]:
+          - group "1 / 10" [ref=f24e164] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e165]
+          - group "2 / 10" [ref=f24e166] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e167]
+          - group "3 / 10" [ref=f24e168] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e169]
+          - group "4 / 10" [ref=f24e170] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e171]
+          - group "5 / 10" [ref=f24e172] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e173]
+          - group "6 / 10" [ref=f24e174] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e175]
+          - group "7 / 10" [ref=f24e176] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e177]
+          - group "8 / 10" [ref=f24e178] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e179]
+          - group "9 / 10" [ref=f24e180] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e181]
+          - group "10 / 10" [ref=f24e182] [cursor=pointer]:
+            - img "P2725QE" [ref=f24e183]
+      - heading "Monitor DELL P2725QE Negru | Argintiu 27\" | IPS | 3840x2160 | 100 Hz | 163 ppi | 8 ms" [level=1] [ref=f24e185]:
+        - text: Monitor DELL P2725QE Negru | Argintiu
+        - generic [ref=f24e186]: 27" | IPS | 3840x2160 | 100 Hz | 163 ppi | 8 ms
+      - generic [ref=f24e187]:
+        - generic [ref=f24e188]:
+          - generic [ref=f24e189]: "Articol: 210-BRDS"
+          - generic [ref=f24e190]: "Cod produs: 238250"
+        - generic [ref=f24e191]:
+          - generic [ref=f24e192]: În stoc
+          - generic [ref=f24e196]: În showroom
+      - generic [ref=f24e201]:
+        - paragraph [ref=f24e202]: "Descriere scurtă:"
+        - generic [ref=f24e204]:
+          - generic [ref=f24e205]: Diagonala ecranului
+          - generic [ref=f24e207]: 27 "
+        - generic [ref=f24e209]:
+          - generic [ref=f24e210]: Rezoluția Display-ului
+          - generic [ref=f24e212]: 3840x2160 4K UHD
+        - generic [ref=f24e214]:
+          - generic [ref=f24e215]: Tip panou
+          - generic [ref=f24e217]: IPS
+        - generic [ref=f24e219]:
+          - generic [ref=f24e220]: Rata maximă de reîmprospătare
+          - generic [ref=f24e222]: 100 Hz
+        - generic [ref=f24e224]:
+          - generic [ref=f24e225]: Timp de răspuns
+          - generic [ref=f24e227]: 8 ms
+        - generic [ref=f24e229]:
+          - generic [ref=f24e230]: Intrări HDMI
+          - generic [ref=f24e232]: 1x HDMI 2.1
+        - generic [ref=f24e234]:
+          - generic [ref=f24e235]: DisplayPort
+          - generic [ref=f24e237]: 1x DP 1.4
+      - generic [ref=f24e238]:
+        - generic [ref=f24e239]:
+          - paragraph [ref=f24e241]: 11 599 lei
+          - generic [ref=f24e242]:
+            - button "În coș" [ref=f24e243] [cursor=pointer]
+            - button "Cu 1 click" [ref=f24e248] [cursor=pointer]
+          - link [ref=f24e253] [cursor=pointer]:
+            - /url: https://ultra.md/page/returnare-si-garantie
+        - generic [ref=f24e261]:
+          - generic [ref=f24e262]:
+            - generic [ref=f24e263]: Preț Rate Ultra
+            - paragraph [ref=f24e264]: 11 599 lei
+          - generic [ref=f24e265]:
+            - generic [ref=f24e266]:
+              - generic [ref=f24e267]: "0"
+              - generic [ref=f24e268]: "%"
+              - generic [ref=f24e270]: "8"
+              - generic [ref=f24e271]: luni
+            - generic [ref=f24e273]: 1 450 lei / lună
+          - button "Cumpără în rate" [ref=f24e274] [cursor=pointer]
+        - generic [ref=f24e280]:
+          - heading "Livrare" [level=3] [ref=f24e281]
+          - generic [ref=f24e283]:
+            - button "În Chișinău - Gratuit Mâine de la 10:00 până la 19:00" [ref=f24e284] [cursor=pointer]:
+              - generic [ref=f24e289]:
+                - generic [ref=f24e290]: În Chișinău - Gratuit
+                - generic [ref=f24e291]: Mâine de la 10:00 până la 19:00
+            - button "În toate regiunile - Gratuit Mâine de la 10:00 până la 18:00" [ref=f24e295] [cursor=pointer]:
+              - generic [ref=f24e300]:
+                - generic [ref=f24e301]: În toate regiunile - Gratuit
+                - generic [ref=f24e302]: Mâine de la 10:00 până la 18:00
+            - 'button "Ridicare de la str. Columna 170 Lu – Du: 09:00 – 20:00" [ref=f24e306] [cursor=pointer]':
+              - generic [ref=f24e311]:
+                - generic [ref=f24e312]: Ridicare de la str. Columna 170
+                - generic [ref=f24e313]: "Lu – Du: 09:00 – 20:00"
+    - generic [ref=f24e317]:
+      - heading "Cu acestea se cumpără frecvent" [level=2] [ref=f24e318]
+      - generic [ref=f24e319]:
+        - generic [ref=f24e321]:
+          - group "1 / 4" [ref=f24e322] [cursor=pointer]:
+            - generic [ref=f24e323]: Toate categoriile
+          - group "2 / 4" [ref=f24e324] [cursor=pointer]:
+            - generic [ref=f24e325]: Suporturi pentru Monitoare
+          - group "3 / 4" [ref=f24e326] [cursor=pointer]:
+            - generic [ref=f24e327]: Cabluri și Adaptoare Video
+          - group "4 / 4" [ref=f24e328] [cursor=pointer]:
+            - generic [ref=f24e329]: Accesorii de curățare
+        - generic [ref=f24e333]:
+          - generic [ref=f24e334]:
+            - group "1 / 18" [ref=f24e335]:
+              - link [ref=f24e336] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-stand-for-6-monitors-reflecta-plano-deskstand-23-1010-s-13-23-100x100-8kgbracket
+                - img "Suport pentru monitoare Reflecta PLANO DeskStand 23-1010 S Argintiu" [ref=f24e337]
+                - generic [ref=f24e338]:
+                  - generic [ref=f24e339]:
+                    - paragraph [ref=f24e340]: Suport pentru monitoare Reflecta PLANO DeskStand 23-1010 S Argintiu
+                    - paragraph [ref=f24e341]: 13" | 23" | 8 kg
+                  - paragraph [ref=f24e343]: 2 269 lei
+                  - button [ref=f24e344]
+            - group "2 / 18" [ref=f24e348]:
+              - link [ref=f24e349] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-hdmi-to-hdmi-active-optical-80-0m-cablexpert-4k-uhd-at-60hz-ccbp-hdmi-aoc-80m-02
+                - img "Audio-video cablu Cablexpert CCBP-HDMI-AOC-80M-02 Negru" [ref=f24e350]
+                - generic [ref=f24e351]:
+                  - generic [ref=f24e352]:
+                    - paragraph [ref=f24e353]: Audio-video cablu Cablexpert CCBP-HDMI-AOC-80M-02 Negru
+                    - paragraph [ref=f24e354]: HDMI to HDMI | 80 m
+                  - paragraph [ref=f24e356]: 1 699 lei
+                  - button [ref=f24e357]
+            - group "3 / 18" [ref=f24e361]:
+              - link [ref=f24e362] [cursor=pointer]:
+                - /url: https://ultra.md/product/multifunctional-cleaning-set-proove-mr-cleaner-8in1-white
+                - img "Set de curățare Proove Mr. Cleaner 8in1" [ref=f24e363]
+                - generic [ref=f24e364]:
+                  - generic [ref=f24e365]:
+                    - paragraph [ref=f24e366]: Set de curățare Proove Mr. Cleaner 8in1
+                    - paragraph [ref=f24e367]
+                  - paragraph [ref=f24e369]: 299 lei
+                  - button [ref=f24e370]
+            - group "4 / 18" [ref=f24e374]:
+              - link [ref=f24e375] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-stand-for-2-monitors-barkan-m142p-13-29-75x75100x100-up-to-12kg
+                - img "Suport pentru monitoare BARKAN M142P Negru" [ref=f24e376]
+                - generic [ref=f24e377]:
+                  - generic [ref=f24e378]:
+                    - paragraph [ref=f24e379]: Suport pentru monitoare BARKAN M142P Negru
+                    - paragraph [ref=f24e380]: 13" | 29" | 12 kg
+                  - paragraph [ref=f24e382]: 1 989 lei
+                  - button [ref=f24e383]
+            - group "5 / 18" [ref=f24e387]:
+              - link [ref=f24e388] [cursor=pointer]:
+                - /url: https://ultra.md/product/converts-analog-s-videocomposite-video-to-hdmi-energenie-dsc-svideo-hdmi
+                - img "Convertor Video/Audio Energenie S-VIDEO to HDMI Converter Negru" [ref=f24e389]
+                - generic [ref=f24e390]:
+                  - generic [ref=f24e391]:
+                    - paragraph [ref=f24e392]: Convertor Video/Audio Energenie S-VIDEO to HDMI Converter Negru
+                    - paragraph [ref=f24e393]: Analog Video to HDMI
+                  - paragraph [ref=f24e395]: 1 569 lei
+                  - button [ref=f24e396]
+            - group "6 / 18" [ref=f24e400]:
+              - link [ref=f24e401] [cursor=pointer]:
+                - /url: https://ultra.md/product/multifunctional-cleaning-set-proove-mr-cleaner-5in1-white
+                - img "Set de curățare Proove Mr. Cleaner 5in1" [ref=f24e402]
+                - generic [ref=f24e403]:
+                  - generic [ref=f24e404]:
+                    - paragraph [ref=f24e405]: Set de curățare Proove Mr. Cleaner 5in1
+                    - paragraph [ref=f24e406]
+                  - paragraph [ref=f24e408]: 199 lei
+                  - button [ref=f24e409]
+            - group "7 / 18" [ref=f24e413]:
+              - link [ref=f24e414] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-stand-for-6-monitors-reflecta-plano-desk-23-1010s-13-23-75x75-100x100-8kgbracket
+                - img "Suport pentru monitoare Reflecta PLANO Desk 23-1010S Argintiu" [ref=f24e415]
+                - generic [ref=f24e416]:
+                  - generic [ref=f24e417]:
+                    - paragraph [ref=f24e418]: Suport pentru monitoare Reflecta PLANO Desk 23-1010S Argintiu
+                    - paragraph [ref=f24e419]: 13" | 23" | 8 kg
+                  - paragraph [ref=f24e421]: 1 899 lei
+                  - button [ref=f24e422]
+            - group "8 / 18" [ref=f24e426]:
+              - link [ref=f24e427] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-hdmi-to-hdmi-300m-cablexpert-male-male-v14-black-bulk-cc-hdmi4-30m
+                - img "Cablu Video Cablexpert CC-HDMI4-30M Negru" [ref=f24e428]
+                - generic [ref=f24e429]:
+                  - generic [ref=f24e430]:
+                    - paragraph [ref=f24e431]: Cablu Video Cablexpert CC-HDMI4-30M Negru
+                    - paragraph [ref=f24e432]: HDMI | 30 m
+                  - paragraph [ref=f24e434]: 1 459 lei
+                  - button [ref=f24e435]
+            - group "9 / 18" [ref=f24e439]:
+              - link [ref=f24e440] [cursor=pointer]:
+                - /url: https://ultra.md/product/cleaning-set-universal-patron-f3-019-twice-sprey-50mlwipe-patron
+                - img "Set de curățare Patron F3-019" [ref=f24e441]
+                - generic [ref=f24e442]:
+                  - generic [ref=f24e443]:
+                    - paragraph [ref=f24e444]: Set de curățare Patron F3-019
+                    - paragraph [ref=f24e445]: Spray lichid | Universal
+                  - paragraph [ref=f24e447]: 85 lei
+                  - button [ref=f24e448]
+            - group "10 / 18" [ref=f24e452]:
+              - link [ref=f24e453] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-2-display-mounting-ma-da2-04-gembird-rotatetiltswivel-17-32up-to-8-kgvesa75x
+                - img "Suport pentru monitoare Gembird MA-DA2-04 Negru" [ref=f24e454]
+                - generic [ref=f24e455]:
+                  - generic [ref=f24e456]:
+                    - paragraph [ref=f24e457]: Suport pentru monitoare Gembird MA-DA2-04 Negru
+                    - paragraph [ref=f24e458]: 17" | 32" | 8 kg
+                  - paragraph [ref=f24e460]: 1 879 lei
+                  - button [ref=f24e461]
+            - group "11 / 18" [ref=f24e465]:
+              - link [ref=f24e466] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-hdmi-to-hdmi-active-optical-50-0m-cablexpert-4k-uhd-at-60hz-ccbp-hdmi-aoc-50m-02
+                - img "Cablu Video Cablexpert CCBP-HDMI-AOC-50M-02 Negru"
+                - generic [ref=f24e467]:
+                  - generic [ref=f24e468]:
+                    - paragraph [ref=f24e469]: Cablu Video Cablexpert CCBP-HDMI-AOC-50M-02 Negru
+                    - paragraph [ref=f24e470]: HDMI to HDMI | 50 m
+                  - paragraph [ref=f24e472]: 1 382 lei
+                  - button [ref=f24e473]
+            - group "12 / 18" [ref=f24e477]:
+              - link [ref=f24e478] [cursor=pointer]:
+                - /url: https://ultra.md/product/compressed-air-patron-f3-020-400-ml
+                - img "Spray de curățare cu aer comprimat Patron F3-020"
+                - generic [ref=f24e479]:
+                  - generic [ref=f24e480]:
+                    - paragraph [ref=f24e481]: Spray de curățare cu aer comprimat Patron F3-020
+                    - paragraph [ref=f24e482]: Universal
+                  - paragraph [ref=f24e484]: 80 lei
+                  - button [ref=f24e485]
+            - group "13 / 18" [ref=f24e489]:
+              - link [ref=f24e490] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-3-display-mounting-arm-gembird-rotatetiltswivel17-27up-to-7-kgvesa75x75100x100-209300
+                - img "Suport pentru monitoare Gembird MA-DA3-01 Negru"
+                - generic [ref=f24e491]:
+                  - generic [ref=f24e492]:
+                    - paragraph [ref=f24e493]: Suport pentru monitoare Gembird MA-DA3-01 Negru
+                    - paragraph [ref=f24e494]: 17" | 27" | 7 kg
+                  - paragraph [ref=f24e496]: 1 679 lei
+                  - button [ref=f24e497]
+            - group "14 / 18" [ref=f24e501]:
+              - link [ref=f24e502] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-dp-to-dp-aoc-premium-series-30-0m-cablexpert-8k-uhd60hz
+                - img "Cablu Video Cablexpert AOC Premium Series Negru"
+                - generic [ref=f24e503]:
+                  - generic [ref=f24e504]:
+                    - paragraph [ref=f24e505]: Cablu Video Cablexpert AOC Premium Series Negru
+                    - paragraph [ref=f24e506]: DisplayPort | 30 m
+                  - paragraph [ref=f24e508]: 1 179 lei
+                  - button [ref=f24e509]
+            - group "15 / 18" [ref=f24e513]:
+              - link [ref=f24e514] [cursor=pointer]:
+                - /url: https://ultra.md/product/compressed-air-gembird-ck-cad-fl750-01-750-ml
+                - img "Spray de curățare cu aer comprimat Gembird Power duster"
+                - generic [ref=f24e515]:
+                  - generic [ref=f24e516]:
+                    - paragraph [ref=f24e517]: Spray de curățare cu aer comprimat Gembird Power duster
+                    - paragraph [ref=f24e518]: Spray lichid | Universal
+                  - paragraph [ref=f24e520]: 71 lei
+                  - button [ref=f24e521]
+            - group "16 / 18" [ref=f24e525]:
+              - link [ref=f24e526] [cursor=pointer]:
+                - /url: https://ultra.md/product/wall-mount-for-2-monitors-gembird-ma-wa2-02-17-32-per-screen-max8kg-vesa-75x75-100x100
+                - img "Suport pentru monitoare Gembird MA-WA2-02 Gri"
+                - generic [ref=f24e527]:
+                  - generic [ref=f24e528]:
+                    - paragraph [ref=f24e529]: Suport pentru monitoare Gembird MA-WA2-02 Gri
+                    - paragraph [ref=f24e530]: 17" | 32" | 8 kg
+                  - paragraph [ref=f24e532]: 1 609 lei
+                  - button "Vezi în showroom" [ref=f24e533]
+            - group "17 / 18" [ref=f24e537]:
+              - link [ref=f24e538] [cursor=pointer]:
+                - /url: https://ultra.md/product/splitter-hdmi-cablexpert-dsp-8ph4-03-8-ports
+                - img "Splitter HDMI Cablexpert DSP-8PH4-03 Negru"
+                - generic [ref=f24e539]:
+                  - generic [ref=f24e540]:
+                    - paragraph [ref=f24e541]: Splitter HDMI Cablexpert DSP-8PH4-03 Negru
+                    - paragraph [ref=f24e542]: HDMI
+                  - paragraph [ref=f24e544]: 1 029 lei
+                  - button [ref=f24e545]
+            - group "18 / 18" [ref=f24e549]:
+              - link [ref=f24e550] [cursor=pointer]:
+                - /url: https://ultra.md/product/cleaning-set-patron-f3-018-sprey-100mlwipe-patron
+                - img "Set de curățare Patron F3-018"
+                - generic [ref=f24e551]:
+                  - generic [ref=f24e552]:
+                    - paragraph [ref=f24e553]: Set de curățare Patron F3-018
+                    - paragraph [ref=f24e554]: Spray lichid | Universal
+                  - paragraph [ref=f24e556]: 50 lei
+                  - button [ref=f24e557]
+          - generic [ref=f24e567]:
+            - button "Previous slide" [ref=f24e568] [cursor=pointer]
+            - generic [ref=f24e572]: 2 / 18
+            - button "Next slide" [ref=f24e573] [cursor=pointer]
+    - generic [ref=f24e578]:
+      - generic [ref=f24e580]:
+        - button "Caracteristici" [ref=f24e581] [cursor=pointer]
+        - button "Recenzii" [ref=f24e583] [cursor=pointer]
+        - button "Instrucțiuni" [ref=f24e585] [cursor=pointer]
+      - generic [ref=f24e589]:
+        - generic [ref=f24e590]:
+          - heading "Caracteristici de Bază" [level=3] [ref=f24e591]
+          - generic [ref=f24e592]:
+            - generic [ref=f24e593]: Tip
+            - generic [ref=f24e594]: Monitor
+          - generic [ref=f24e595]:
+            - generic [ref=f24e596]: Serie
+            - generic [ref=f24e597]: Dell Pro
+          - generic [ref=f24e598]:
+            - generic [ref=f24e599]: Ecran tactil
+            - generic [ref=f24e600]: Nu
+          - generic [ref=f24e601]:
+            - generic [ref=f24e602]: Nuanță culoare
+            - generic [ref=f24e603]: Negru | Argintiu
+          - generic [ref=f24e604]:
+            - generic [ref=f24e605]: Culoare
+            - generic [ref=f24e606]: Negru
+          - generic [ref=f24e607]:
+            - generic [ref=f24e608]: Model
+            - generic [ref=f24e609]: P2725QE
+        - generic [ref=f24e610]:
+          - heading "Display" [level=3] [ref=f24e611]
+          - generic [ref=f24e612]:
+            - generic [ref=f24e613]: Diagonala ecranului (inch)
+            - generic [ref=f24e614]: "27"
+          - generic [ref=f24e615]:
+            - generic [ref=f24e616]: Curbura ecranului
+            - generic [ref=f24e617]: Plat
+          - generic [ref=f24e618]:
+            - generic [ref=f24e619]: Tip panou
+            - generic [ref=f24e620]: IPS
+          - generic [ref=f24e621]:
+            - generic [ref=f24e622]: Rata maximă de reîmprospătare
+            - generic [ref=f24e623]: 100 Hz
+          - generic [ref=f24e624]:
+            - generic [ref=f24e625]: Aspect imagine
+            - generic [ref=f24e626]: 16:9
+          - generic [ref=f24e627]:
+            - generic [ref=f24e628]: Rezoluția Display-ului
+            - generic [ref=f24e629]: 3840x2160
+          - generic [ref=f24e630]:
+            - generic [ref=f24e631]: Densitatea pixelilor (ppi)
+            - generic [ref=f24e632]: "163"
+          - generic [ref=f24e633]:
+            - generic [ref=f24e634]: Iluminarea de fundal
+            - generic [ref=f24e635]: ELED
+          - generic [ref=f24e636]:
+            - generic [ref=f24e637]: Timp de răspuns
+            - generic [ref=f24e638]: 8 ms
+          - generic [ref=f24e639]:
+            - generic [ref=f24e640]: Unghi de vizualizare
+            - generic [ref=f24e641]: 178° / 178°
+          - generic [ref=f24e642]:
+            - generic [ref=f24e643]: Raport de contrast
+            - generic [ref=f24e644]: "1 500: 1"
+          - generic [ref=f24e645]:
+            - generic [ref=f24e646]: Luminozitate (tipica)
+            - generic [ref=f24e647]: 350 cd/m²
+          - generic [ref=f24e648]:
+            - generic [ref=f24e649]: Gama de culori
+            - generic [ref=f24e650]: 99% sRGB
+          - generic [ref=f24e651]:
+            - generic [ref=f24e652]: Acoperire ecran
+            - generic [ref=f24e653]: Anti-luciu
+        - generic [ref=f24e654]:
+          - heading "Conexiuni" [level=3] [ref=f24e655]
+          - generic [ref=f24e656]:
+            - generic [ref=f24e657]: DisplayPort
+            - generic [ref=f24e658]: 1x DP 1.4
+          - generic [ref=f24e659]:
+            - generic [ref=f24e660]: Intrări HDMI
+            - generic [ref=f24e661]: 1x HDMI 2.1
+          - generic [ref=f24e662]:
+            - generic [ref=f24e663]: USB-Hub
+            - generic [ref=f24e664]: 2x USB-A Downstream
+          - generic [ref=f24e665]:
+            - generic [ref=f24e666]: Alimentare prin USB-C
+            - generic [ref=f24e667]: Până la 90W
+          - generic [ref=f24e668]:
+            - generic [ref=f24e669]: Stație de andocare și LAN
+            - generic [ref=f24e670]: 1x RJ45 Gigabit Ethernet
+          - generic [ref=f24e671]:
+            - generic [ref=f24e672]: Accesorii în set
+            - generic [ref=f24e673]: Cablu de alimentare, DisplayPort la DisplayPort, USB-C la C, USB Tip-C la Tip-A
+        - generic [ref=f24e674]:
+          - heading "Caracteristici" [level=3] [ref=f24e675]
+          - generic [ref=f24e676]:
+            - generic [ref=f24e677]: Tehnologia de protecție a ochilor
+            - generic [ref=f24e678]: Da
+        - generic [ref=f24e679]:
+          - heading "Dimensiuni și Greutate" [level=3] [ref=f24e680]
+          - generic [ref=f24e681]:
+            - generic [ref=f24e682]: Greutate (kg)
+            - generic [ref=f24e683]: "6.6"
+          - generic [ref=f24e684]:
+            - generic [ref=f24e685]: Lățime (mm)
+            - generic [ref=f24e686]: "612.5"
+          - generic [ref=f24e687]:
+            - generic [ref=f24e688]: Înălțime (mm)
+            - generic [ref=f24e689]: "385.7"
+          - generic [ref=f24e690]:
+            - generic [ref=f24e691]: Adâncime (mm)
+            - generic [ref=f24e692]: "192.1"
+        - generic [ref=f24e693]:
+          - heading "Ergonomie" [level=3] [ref=f24e694]
+          - generic [ref=f24e695]:
+            - generic [ref=f24e696]: Interval de înclinare
+            - generic [ref=f24e697]: "-5° ~ 21°"
+          - generic [ref=f24e698]:
+            - generic [ref=f24e699]: Intervalul de reglare a înălțimii (mm)
+            - generic [ref=f24e700]: "150"
+          - generic [ref=f24e701]:
+            - generic [ref=f24e702]: Rotație
+            - generic [ref=f24e703]: "-90° - 90°"
+          - generic [ref=f24e704]:
+            - generic [ref=f24e705]: Balama
+            - generic [ref=f24e706]: "-45° ~ 45°"
+          - generic [ref=f24e707]:
+            - generic [ref=f24e708]: Interfață de montare VESA
+            - generic [ref=f24e709]: 100x100
+    - generic [ref=f24e711]:
+      - heading "Produse similare" [level=3] [ref=f24e712]
+      - generic [ref=f24e713]:
+        - generic [ref=f24e714]:
+          - generic [ref=f24e716]:
+            - generic [ref=f24e717]:
+              - button "Adaugă la favorite" [ref=f24e719] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f24e724] [cursor=pointer]
+            - link [ref=f24e728] [cursor=pointer]:
+              - /url: https://ultra.md/product/23-8-dell-p2424heb
+              - img "Monitor DELL P2424HEB Negru | Argintiu" [ref=f24e729]
+              - paragraph [ref=f24e730]: Monitor DELL P2424HEB Negru | Argintiu
+              - paragraph [ref=f24e731]: 23.8" | IPS | 1920x1080 | 60 Hz | 92 ppi | 5 ms
+            - generic [ref=f24e732]:
+              - paragraph [ref=f24e733]: 9 699 lei
+              - generic [ref=f24e734]:
+                - generic [ref=f24e735]: 1 212 lei
+                - generic [ref=f24e737]:
+                  - generic [ref=f24e738]: 0%
+                  - generic [ref=f24e740]: 8 luni
+              - generic [ref=f24e741]:
+                - button "În coș" [ref=f24e742] [cursor=pointer]
+                - button "Cu 1 click" [ref=f24e747] [cursor=pointer]
+          - generic [ref=f24e752]:
+            - generic [ref=f24e753]:
+              - button "Adaugă la favorite" [ref=f24e755] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f24e760] [cursor=pointer]
+            - link [ref=f24e764] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-dell-p2724deb
+              - img "Monitor DELL P2724DEB Argintiu" [ref=f24e765]
+              - paragraph [ref=f24e766]: Monitor DELL P2724DEB Argintiu
+              - paragraph [ref=f24e767]: 27" | IPS | 2560x1440 | 60 Hz | 109 ppi | 5 ms
+            - generic [ref=f24e768]:
+              - paragraph [ref=f24e769]: 10 799 lei
+              - generic [ref=f24e770]:
+                - generic [ref=f24e771]: 1 350 lei
+                - generic [ref=f24e773]:
+                  - generic [ref=f24e774]: 0%
+                  - generic [ref=f24e776]: 8 luni
+              - generic [ref=f24e777]:
+                - button "În coș" [ref=f24e778] [cursor=pointer]
+                - button "Cu 1 click" [ref=f24e783] [cursor=pointer]
+          - generic [ref=f24e788]:
+            - generic [ref=f24e789]:
+              - button "Adaugă la favorite" [ref=f24e791] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f24e796] [cursor=pointer]
+            - link [ref=f24e800] [cursor=pointer]:
+              - /url: https://ultra.md/product/31-5-dell-pro-32-plus-qhd-usb-c-hub-monitor-p3225de
+              - img "Monitor DELL P3225DE Argintiu" [ref=f24e801]
+              - paragraph [ref=f24e802]: Monitor DELL P3225DE Argintiu
+              - paragraph [ref=f24e803]: 31.5" | IPS | 2560x1440 | 100 Hz | 93 ppi | 8 ms
+            - generic [ref=f24e804]:
+              - paragraph [ref=f24e805]: 10 299 lei
+              - generic [ref=f24e806]:
+                - generic [ref=f24e807]: 1 287 lei
+                - generic [ref=f24e809]:
+                  - generic [ref=f24e810]: 0%
+                  - generic [ref=f24e812]: 8 luni
+              - generic [ref=f24e813]:
+                - button "În coș" [ref=f24e814] [cursor=pointer]
+                - button "Cu 1 click" [ref=f24e819] [cursor=pointer]
+          - generic [ref=f24e824]:
+            - generic [ref=f24e825]:
+              - button "Adaugă la favorite" [ref=f24e827] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f24e832] [cursor=pointer]
+            - link [ref=f24e836] [cursor=pointer]:
+              - /url: https://ultra.md/product/34-dell-s3425dw
+              - img "Monitor DELL S3425DW Argintiu" [ref=f24e837]
+              - paragraph [ref=f24e838]: Monitor DELL S3425DW Argintiu
+              - paragraph [ref=f24e839]: 34" | VA | 3440x1440 | 120 Hz | 109 ppi | 1 ms
+            - generic [ref=f24e840]:
+              - paragraph [ref=f24e841]: 9 999 lei
+              - generic [ref=f24e842]:
+                - generic [ref=f24e843]: 1 250 lei
+                - generic [ref=f24e845]:
+                  - generic [ref=f24e846]: 0%
+                  - generic [ref=f24e848]: 8 luni
+              - generic [ref=f24e849]:
+                - button "În coș" [ref=f24e850] [cursor=pointer]
+                - button "Cu 1 click" [ref=f24e855] [cursor=pointer]
+          - generic [ref=f24e860]:
+            - generic [ref=f24e861]:
+              - button "Adaugă la favorite" [ref=f24e863] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f24e868] [cursor=pointer]
+            - link [ref=f24e872] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/dell-p2726deb-27-ips-2560x1440-100-hz-argintiu
+              - img "Monitor DELL P2726DEB Argintiu" [ref=f24e873]
+              - paragraph [ref=f24e874]: Monitor DELL P2726DEB Argintiu
+              - paragraph [ref=f24e875]: 27" | IPS | 2560x1440 | 100 Hz | 109 ppi | 5 ms
+            - generic [ref=f24e876]:
+              - paragraph [ref=f24e877]: 11 599 lei
+              - generic [ref=f24e878]:
+                - generic [ref=f24e879]: 1 450 lei
+                - generic [ref=f24e881]:
+                  - generic [ref=f24e882]: 0%
+                  - generic [ref=f24e884]: 8 luni
+              - generic [ref=f24e885]:
+                - button "În coș" [ref=f24e886] [cursor=pointer]
+                - button "Cu 1 click" [ref=f24e891] [cursor=pointer]
+          - generic [ref=f24e896]:
+            - generic [ref=f24e897]:
+              - button "Adaugă la favorite" [ref=f24e899] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f24e904] [cursor=pointer]
+            - link [ref=f24e908] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-dell-ultrasharp-u2724de
+              - img "Monitor DELL U2724DE Argintiu" [ref=f24e909]
+              - paragraph [ref=f24e910]: Monitor DELL U2724DE Argintiu
+              - paragraph [ref=f24e911]: 27" | IPS | 2560x1440 | 120 Hz | 109 ppi | 5 ms
+            - generic [ref=f24e912]:
+              - paragraph [ref=f24e913]: 11 999 lei
+              - generic [ref=f24e914]:
+                - generic [ref=f24e915]: 1 500 lei
+                - generic [ref=f24e917]:
+                  - generic [ref=f24e918]: 0%
+                  - generic [ref=f24e920]: 8 luni
+              - generic [ref=f24e921]:
+                - button "În coș" [ref=f24e922] [cursor=pointer]
+                - button "Cu 1 click" [ref=f24e927] [cursor=pointer]
+        - generic [ref=f24e932]:
+          - button [ref=f24e933] [cursor=pointer]
+          - generic [ref=f24e938]:
+            - generic [ref=f24e939]: "1"
+            - generic [ref=f24e940]: /
+            - generic [ref=f24e941]: "6"
+          - button [ref=f24e942] [cursor=pointer]
+  - contentinfo [ref=f24e946]:
+    - generic [ref=f24e947]:
+      - generic [ref=f24e948]:
+        - generic [ref=f24e949]:
+          - img "footer-top-gradient"
+        - generic [ref=f24e953]:
+          - link "facebook" [ref=f24e954] [cursor=pointer]:
+            - /url: https://www.facebook.com/ultra.moldova
+          - link "instagram" [ref=f24e958] [cursor=pointer]:
+            - /url: https://www.instagram.com/ultra.moldova
+          - link "tiktok" [ref=f24e962] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@ultra.moldova
+          - link "youtube" [ref=f24e966] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCGs9xB1rdCvik526qeoiRCw
+        - generic [ref=f24e970]:
+          - generic [ref=f24e971]:
+            - button [ref=f24e972]:
+              - paragraph [ref=f24e973]: Informație
+            - list [ref=f24e974]:
+              - listitem [ref=f24e975]:
+                - link "Contactele noastre" [ref=f24e976] [cursor=pointer]:
+                  - /url: contacts
+              - listitem [ref=f24e977]:
+                - link "Livrare" [ref=f24e978] [cursor=pointer]:
+                  - /url: delivery
+              - listitem [ref=f24e979]:
+                - link "Politica de confidențialitate" [ref=f24e980] [cursor=pointer]:
+                  - /url: page/politica-de-confidentialitate
+              - listitem [ref=f24e981]:
+                - link "Returnare si Garantie" [ref=f24e982] [cursor=pointer]:
+                  - /url: page/returnare-si-garantie
+              - listitem [ref=f24e983]:
+                - link "Metode de plată" [ref=f24e984] [cursor=pointer]:
+                  - /url: payment-methods
+              - listitem [ref=f24e985]:
+                - link "Ultra Credit" [ref=f24e986] [cursor=pointer]:
+                  - /url: credit
+          - generic [ref=f24e987]:
+            - button [ref=f24e988]:
+              - paragraph [ref=f24e989]: Promoții și Certificate
+            - list [ref=f24e990]:
+              - listitem [ref=f24e991]:
+                - link "Promoții" [ref=f24e992] [cursor=pointer]:
+                  - /url: /promo
+              - listitem [ref=f24e993]:
+                - link "Certificate cadou" [ref=f24e994] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-cadou
+              - listitem [ref=f24e995]:
+                - link "Certificate de instalare" [ref=f24e996] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-de-instalare
+              - listitem [ref=f24e997]:
+                - link "Certificate promotionale" [ref=f24e998] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-promotionale
+          - generic [ref=f24e999]:
+            - button [ref=f24e1000]:
+              - paragraph [ref=f24e1001]: Categorii populare
+            - list [ref=f24e1002]:
+              - listitem [ref=f24e1003]:
+                - link "Telefoane" [ref=f24e1004] [cursor=pointer]:
+                  - /url: telefoane/smartphone
+              - listitem [ref=f24e1005]:
+                - link "Laptopuri" [ref=f24e1006] [cursor=pointer]:
+                  - /url: tehnica-computer/laptopuri
+              - listitem [ref=f24e1007]:
+                - link "Televizoare" [ref=f24e1008] [cursor=pointer]:
+                  - /url: televizoare-si-accesorii/televizoare
+              - listitem [ref=f24e1009]:
+                - link "Frigidere" [ref=f24e1010] [cursor=pointer]:
+                  - /url: electrocasnice-mari-pentru-bucatarie/frigidere
+              - listitem [ref=f24e1011]:
+                - link "Aspiratoare" [ref=f24e1012] [cursor=pointer]:
+                  - /url: ingrijire-locuinta/aspiratoare
+              - listitem [ref=f24e1013]:
+                - link "Mașini de Spălat Rufe" [ref=f24e1014] [cursor=pointer]:
+                  - /url: spalare-si-uscare/masini-de-spalat-rufe
+          - generic [ref=f24e1015]:
+            - generic [ref=f24e1016]:
+              - paragraph [ref=f24e1017]: Online - magazin
+              - list [ref=f24e1018]:
+                - listitem [ref=f24e1019]:
+                  - text: "Email:"
+                  - link "online@ultra.md" [ref=f24e1020] [cursor=pointer]:
+                    - /url: mailto:online@ultra.md
+                - listitem [ref=f24e1021]:
+                  - text: "Tel:"
+                  - link "+373-6000-0000" [ref=f24e1022] [cursor=pointer]:
+                    - /url: tel:+37360000000
+            - generic [ref=f24e1023]:
+              - paragraph [ref=f24e1024]: Vânzări persoane juridice
+              - list [ref=f24e1025]:
+                - listitem [ref=f24e1026]:
+                  - text: "Email:"
+                  - link "sales_sb@ultra.md" [ref=f24e1027] [cursor=pointer]:
+                    - /url: mailto:sales_sb@ultra.md
+                - listitem [ref=f24e1028]:
+                  - text: "Tel:"
+                  - link "+373-6000-0005" [ref=f24e1029] [cursor=pointer]:
+                    - /url: tel:+37360000005
+            - generic [ref=f24e1030]:
+              - paragraph [ref=f24e1031]: Suport clienți
+              - list [ref=f24e1032]:
+                - listitem [ref=f24e1033]:
+                  - text: "Email:"
+                  - link "reclamatii@ultra.md" [ref=f24e1034] [cursor=pointer]:
+                    - /url: mailto:reclamatii@ultra.md
+                - listitem [ref=f24e1035]:
+                  - text: "Tel:"
+                  - link "+373-6000-0009" [ref=f24e1036] [cursor=pointer]:
+                    - /url: tel:+37360000009
+            - generic [ref=f24e1037]:
+              - paragraph [ref=f24e1038]: Showroom
+              - list [ref=f24e1039]:
+                - listitem [ref=f24e1040]:
+                  - link "Vedeți poziția noastră pe hartă" [ref=f24e1041] [cursor=pointer]:
+                    - /url: https://maps.app.goo.gl/nuqDoRi2Z8N82kLo8
+                    - text: Chisinau str. Columna 170
+      - generic [ref=f24e1043]:
+        - generic [ref=f24e1044]:
+          - img "Ultra"
+        - paragraph [ref=f24e1045]: "© 2013-2026 Toate drepturile rezervate. “ULTRA DISTRIBUTION” SRL MD-2069, Republica Moldova, mun. Chișinău, str. Ion Creanga 6/v IDNO: 1012600027403 | Cod TVA: 0506875 Notificarea nr. P-22620/2021 din 10.08.2021 IBAN: MD40ML000000022510361547 | BC' Moldindconbank'S.A. fil.Kiev Chisinau"
+        - generic [ref=f24e1046]:
+          - generic:
+            - img "Visa"
+          - generic:
+            - img "Visa Electron"
+          - generic:
+            - img "Master Card"
+          - generic:
+            - img "Maestro"
+      - generic [ref=f24e1047]:
+        - generic [ref=f24e1049]:
+          - generic [ref=f24e1050]:
+            - link "Telefoane" [ref=f24e1051] [cursor=pointer]:
+              - /url: /telefoane
+            - generic [ref=f24e1052]:
+              - link "Smartphone" [ref=f24e1053] [cursor=pointer]:
+                - /url: /telefoane/smartphone
+              - link "iPhone" [ref=f24e1054] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple
+              - link "iPhone 17" [ref=f24e1055] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17
+              - link "iPhone 17 Pro" [ref=f24e1056] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17-pro
+              - link "iPhone 17 Pro Max" [ref=f24e1057] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17-pro-max
+              - link "Telefoane Samsung" [ref=f24e1058] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung
+              - link "Samsung Galaxy s26" [ref=f24e1059] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26
+              - link "Samsung Galaxy s26 Plus" [ref=f24e1060] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26-plus
+              - link "Samsung Galaxy s26 Ultra" [ref=f24e1061] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26-ultra
+              - link "Telefoane cu butoane" [ref=f24e1062] [cursor=pointer]:
+                - /url: /telefoane/telefoane-cu-butoane
+          - generic [ref=f24e1063]:
+            - link "Accesorii Telefoane Mobile" [ref=f24e1064] [cursor=pointer]:
+              - /url: /accesorii-pentru-telefoane
+            - generic [ref=f24e1065]:
+              - link "Sticle de protecție pentru telefoane" [ref=f24e1066] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/sticle-de-protectie-pentru-telefoane
+              - link "Huse pentru telefoane" [ref=f24e1067] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/huse-pentru-telefoane
+              - link "Încărcătoare" [ref=f24e1068] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/incarcatoare
+              - link "Power Bank" [ref=f24e1069] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/power-bank
+              - link "Cablu și adaptoare USB / Lightning" [ref=f24e1070] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/cablu-si-adaptoare-usb-lightning
+              - link "Trepiede pentru telefoane" [ref=f24e1071] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/trepiede-pentru-telefoane
+          - generic [ref=f24e1072]:
+            - link "Tablete și eBook Readere" [ref=f24e1073] [cursor=pointer]:
+              - /url: /tablete-si-carti-electronice
+            - generic [ref=f24e1074]:
+              - link "Tablete" [ref=f24e1075] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete
+              - link "Tablete grafice" [ref=f24e1076] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete-grafice
+              - link "Cărți electronice" [ref=f24e1077] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/carti-electronice
+              - link "iPad" [ref=f24e1078] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple
+              - link "iPad Air" [ref=f24e1079] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-air
+              - link "iPad Pro" [ref=f24e1080] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-pro
+              - link "Apple iPad 11 2025" [ref=f24e1081] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-11-2025
+              - link "Samsung Galaxy Tab" [ref=f24e1082] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/samsung
+              - link "Tablete Xiaomi" [ref=f24e1083] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/xiaomi
+              - link "Tablete Lenovo" [ref=f24e1084] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/lenovo
+          - generic [ref=f24e1085]:
+            - link "Accesorii pentru Tablete" [ref=f24e1086] [cursor=pointer]:
+              - /url: /accesorii-pentru-tablete
+            - generic [ref=f24e1087]:
+              - link "Sticlă de protecție pentru tablete" [ref=f24e1088] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/sticle-de-protectie-pentru-tablete
+              - link "Huse pentru tablete" [ref=f24e1089] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/huse-pentru-tablete
+              - link "Încărcătoare" [ref=f24e1090] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/incarcatoare
+              - link "Power Bank" [ref=f24e1091] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/power-bank
+              - link "Cablu și adaptoare USB / Lightning" [ref=f24e1092] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/cablu-si-adaptoare-usb-lightning
+              - link "Stilouri pentru tablete" [ref=f24e1093] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/stilouri-pentru-tablete
+          - generic [ref=f24e1094]:
+            - link "Ceasuri și brățări inteligente" [ref=f24e1095] [cursor=pointer]:
+              - /url: /ceasuri-si-bratari-inteligente
+            - generic [ref=f24e1096]:
+              - link "Ceasuri inteligente" [ref=f24e1097] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente
+              - link "Ceasuri inteligente pentru copii" [ref=f24e1098] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/pentru-copii
+              - link "Brățări fitness" [ref=f24e1099] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/bratari-fitness
+              - link "Mi Band" [ref=f24e1100] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/bratari-fitness/xiaomi-smart-band
+              - link "Apple Watch" [ref=f24e1101] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/apple
+              - link "Apple Watch Ultra 3" [ref=f24e1102] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/apple-watch-ultra-3
+              - link "Samsung Galaxy Watch" [ref=f24e1103] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/samsung
+              - link "Ceasuri inteligente Xiaomi" [ref=f24e1104] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/xiaomi
+              - link "Ceasuri inteligente Huawei" [ref=f24e1105] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/huawei
+              - link "Curele pentru ceasuri inteligente" [ref=f24e1106] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/curele-pentru-ceasuri-inteligente
+          - generic [ref=f24e1107]:
+            - link "Produse auto" [ref=f24e1108] [cursor=pointer]:
+              - /url: /produse-auto
+            - generic [ref=f24e1109]:
+              - link "Camere Auto" [ref=f24e1110] [cursor=pointer]:
+                - /url: /produse-auto/camere-auto
+              - link "Suporturi pentru telefoane" [ref=f24e1111] [cursor=pointer]:
+                - /url: /produse-auto/suporturi-pentru-telefoane
+              - link "Accesorii Auto" [ref=f24e1112] [cursor=pointer]:
+                - /url: /produse-auto/accesorii-auto
+        - generic [ref=f24e1113]:
+          - link:
+            - /url: /telefoane/smartphone
+          - link:
+            - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente

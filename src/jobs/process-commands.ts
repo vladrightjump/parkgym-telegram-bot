@@ -3,6 +3,7 @@ import { banChatMember, unbanChatMember } from "../lib/telegram.js";
 import { tomorrowInTz } from "../lib/tz.js";
 import { alertAdmins } from "../lib/notify.js";
 import { sendPoll } from "./send-poll.js";
+import { morningSummary } from "./morning-summary.js";
 
 interface ActionRow {
   id: string;
@@ -40,6 +41,10 @@ export async function processCommands(): Promise<void> {
       } else {
         result = ban.description ?? "ban failed";
       }
+    } else if (cmd.action === "send_summary") {
+      const r = await morningSummary();
+      ok = r.ok;
+      result = r.ok ? "summary sent" : `failed: ${r.detail ?? "?"}`;
     } else if (cmd.action === "send_poll") {
       // Force a fresh poll: clear tomorrow's poll_message_id so it re-posts.
       await supabase

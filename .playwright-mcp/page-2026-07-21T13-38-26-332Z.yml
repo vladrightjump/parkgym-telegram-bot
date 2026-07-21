@@ -1,0 +1,889 @@
+- generic [active] [ref=f29e1]:
+  - banner [ref=f29e2]:
+    - generic [ref=f29e3]:
+      - link "Treci la conținutul principal al paginii" [ref=f29e4] [cursor=pointer]:
+        - /url: "#skippedLink"
+        - text: Conținut principal
+      - generic [ref=f29e6]:
+        - navigation [ref=f29e7]:
+          - link [ref=f29e8] [cursor=pointer]:
+            - /url: /promo
+            - img "Promoții" [ref=f29e9]
+            - paragraph [ref=f29e10]: Promoții
+          - link [ref=f29e11] [cursor=pointer]:
+            - /url: /delivery
+            - paragraph [ref=f29e12]: Livrare
+          - link [ref=f29e13] [cursor=pointer]:
+            - /url: /contacts
+            - paragraph [ref=f29e14]: Contacte
+          - link "Vedeți poziția noastră pe hartă" [ref=f29e16] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/nuqDoRi2Z8N82kLo8
+            - generic [ref=f29e20]: str. Columna 170
+        - link "Acasă" [ref=f29e22] [cursor=pointer]:
+          - /url: https://ultra.md
+        - generic [ref=f29e26]:
+          - generic [ref=f29e27]:
+            - button "+373-6000-0000" [ref=f29e29] [cursor=pointer]
+            - 'button "Lu – Du: 09:00 - 20:00" [ref=f29e38] [cursor=pointer]'
+          - generic [ref=f29e46]:
+            - generic [ref=f29e47]: RO
+            - link "RU" [ref=f29e48] [cursor=pointer]:
+              - /url: https://ultra.md/ru/product/27-benq-ma270uwhiteips3840x216060hz5ms350cdhdr10-hdmi-plusdp-plususb-plustypeckvmspkrspivot
+      - generic [ref=f29e50]:
+        - button "Deschideți meniul catalogului" [ref=f29e51] [cursor=pointer]:
+          - generic [ref=f29e55]: Catalogul de produse
+        - search [ref=f29e60]:
+          - textbox "Căutare produse..." [ref=f29e65]
+        - generic [ref=f29e66]:
+          - link "Coș" [ref=f29e67] [cursor=pointer]:
+            - /url: https://ultra.md/cart
+          - link "Favorite" [ref=f29e73] [cursor=pointer]:
+            - /url: https://ultra.md/favorites
+          - link "Comparare" [ref=f29e79] [cursor=pointer]:
+            - /url: https://ultra.md/compare
+          - button "Favorite" [ref=f29e85] [cursor=pointer]:
+            - generic [ref=f29e89]: Logare
+    - list [ref=f29e92]:
+      - listitem [ref=f29e93]:
+        - link [ref=f29e94] [cursor=pointer]:
+          - /url: https://ultra.md
+      - listitem [ref=f29e98]:
+        - link "Tehnică Computer" [ref=f29e99] [cursor=pointer]:
+          - /url: https://ultra.md/tehnica-computer
+      - listitem [ref=f29e100]:
+        - link "Monitoare" [ref=f29e101] [cursor=pointer]:
+          - /url: https://ultra.md/tehnica-computer/monitoare
+      - listitem [ref=f29e102]: Monitor BenQ MA270U Alb
+  - main [ref=f29e103]:
+    - generic [ref=f29e105]:
+      - generic [ref=f29e106]:
+        - generic [ref=f29e107]:
+          - generic [ref=f29e108]:
+            - button "Adaugă la favorite" [ref=f29e110] [cursor=pointer]
+            - button "Adaugă pentru comparare" [ref=f29e115] [cursor=pointer]
+          - generic [ref=f29e119]:
+            - generic [ref=f29e120]:
+              - group "1 / 5" [ref=f29e121]:
+                - button [ref=f29e122] [cursor=pointer]:
+                  - img "Monitor BenQ MA270U Alb" [ref=f29e123]
+              - group "2 / 5" [ref=f29e124]:
+                - button [ref=f29e125] [cursor=pointer]:
+                  - img "Monitor BenQ MA270U Alb" [ref=f29e126]
+              - group "3 / 5" [ref=f29e127]:
+                - button [ref=f29e128] [cursor=pointer]:
+                  - img "Monitor BenQ MA270U Alb" [ref=f29e129]
+              - group "4 / 5" [ref=f29e130]:
+                - button [ref=f29e131] [cursor=pointer]:
+                  - img "Monitor BenQ MA270U Alb" [ref=f29e132]
+              - group "5 / 5" [ref=f29e133]:
+                - button [ref=f29e134] [cursor=pointer]:
+                  - img "Monitor BenQ MA270U Alb" [ref=f29e135]
+            - button "Previous slide" [disabled]
+            - button "Next slide" [ref=f29e136] [cursor=pointer]
+        - generic [ref=f29e148]:
+          - group "1 / 5" [ref=f29e149] [cursor=pointer]:
+            - img "MA270U" [ref=f29e150]
+          - group "2 / 5" [ref=f29e151] [cursor=pointer]:
+            - img "MA270U" [ref=f29e152]
+          - group "3 / 5" [ref=f29e153] [cursor=pointer]:
+            - img "MA270U" [ref=f29e154]
+          - group "4 / 5" [ref=f29e155] [cursor=pointer]:
+            - img "MA270U" [ref=f29e156]
+          - group "5 / 5" [ref=f29e157] [cursor=pointer]:
+            - img "MA270U" [ref=f29e158]
+      - heading "Monitor BenQ MA270U Alb 27\" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms" [level=1] [ref=f29e160]:
+        - text: Monitor BenQ MA270U Alb
+        - generic [ref=f29e161]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+      - generic [ref=f29e162]:
+        - generic [ref=f29e163]:
+          - generic [ref=f29e164]: "Articol: MA270U"
+          - generic [ref=f29e165]: "Cod produs: 235626"
+        - generic [ref=f29e166]:
+          - generic [ref=f29e167]: În stoc
+          - generic [ref=f29e171]: În showroom
+      - generic [ref=f29e176]:
+        - paragraph [ref=f29e177]: "Descriere scurtă:"
+        - generic [ref=f29e179]:
+          - generic [ref=f29e180]: Diagonala ecranului
+          - generic [ref=f29e182]: 27 "
+        - generic [ref=f29e184]:
+          - generic [ref=f29e185]: Rezoluția Display-ului
+          - generic [ref=f29e187]: 3840x2160 4K UHD
+        - generic [ref=f29e189]:
+          - generic [ref=f29e190]: Tip panou
+          - generic [ref=f29e192]: IPS
+        - generic [ref=f29e194]:
+          - generic [ref=f29e195]: Rata maximă de reîmprospătare
+          - generic [ref=f29e197]: 60 Hz
+        - generic [ref=f29e199]:
+          - generic [ref=f29e200]: Timp de răspuns
+          - generic [ref=f29e202]: 5 ms
+        - generic [ref=f29e204]:
+          - generic [ref=f29e205]: Intrări HDMI
+          - generic [ref=f29e207]: 2 x HDMI 2.0
+      - generic [ref=f29e208]:
+        - generic [ref=f29e209]:
+          - paragraph [ref=f29e211]: 12 199 lei
+          - generic [ref=f29e212]:
+            - button "În coș" [ref=f29e213] [cursor=pointer]
+            - button "Cu 1 click" [ref=f29e218] [cursor=pointer]
+          - link [ref=f29e223] [cursor=pointer]:
+            - /url: https://ultra.md/page/returnare-si-garantie
+        - generic [ref=f29e231]:
+          - generic [ref=f29e232]:
+            - generic [ref=f29e233]: Preț Rate Ultra
+            - paragraph [ref=f29e234]: 12 199 lei
+          - generic [ref=f29e235]:
+            - generic [ref=f29e236]:
+              - generic [ref=f29e237]: "0"
+              - generic [ref=f29e238]: "%"
+              - generic [ref=f29e240]: "8"
+              - generic [ref=f29e241]: luni
+            - generic [ref=f29e243]: 1 525 lei / lună
+          - button "Cumpără în rate" [ref=f29e244] [cursor=pointer]
+        - generic [ref=f29e250]:
+          - heading "Livrare" [level=3] [ref=f29e251]
+          - generic [ref=f29e253]:
+            - button "În Chișinău - Gratuit Mâine de la 10:00 până la 19:00" [ref=f29e254] [cursor=pointer]:
+              - generic [ref=f29e259]:
+                - generic [ref=f29e260]: În Chișinău - Gratuit
+                - generic [ref=f29e261]: Mâine de la 10:00 până la 19:00
+            - button "În toate regiunile - Gratuit Mâine de la 10:00 până la 18:00" [ref=f29e265] [cursor=pointer]:
+              - generic [ref=f29e270]:
+                - generic [ref=f29e271]: În toate regiunile - Gratuit
+                - generic [ref=f29e272]: Mâine de la 10:00 până la 18:00
+            - 'button "Ridicare de la str. Columna 170 Lu – Du: 09:00 – 20:00" [ref=f29e276] [cursor=pointer]':
+              - generic [ref=f29e281]:
+                - generic [ref=f29e282]: Ridicare de la str. Columna 170
+                - generic [ref=f29e283]: "Lu – Du: 09:00 – 20:00"
+    - generic [ref=f29e287]:
+      - heading "Cu acestea se cumpără frecvent" [level=2] [ref=f29e288]
+      - generic [ref=f29e289]:
+        - generic [ref=f29e291]:
+          - group "1 / 4" [ref=f29e292] [cursor=pointer]:
+            - generic [ref=f29e293]: Toate categoriile
+          - group "2 / 4" [ref=f29e294] [cursor=pointer]:
+            - generic [ref=f29e295]: Suporturi pentru Monitoare
+          - group "3 / 4" [ref=f29e296] [cursor=pointer]:
+            - generic [ref=f29e297]: Cabluri și Adaptoare Video
+          - group "4 / 4" [ref=f29e298] [cursor=pointer]:
+            - generic [ref=f29e299]: Accesorii de curățare
+        - generic [ref=f29e303]:
+          - generic [ref=f29e304]:
+            - group "1 / 18" [ref=f29e305]:
+              - link [ref=f29e306] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-stand-for-6-monitors-reflecta-plano-deskstand-23-1010-s-13-23-100x100-8kgbracket
+                - img "Suport pentru monitoare Reflecta PLANO DeskStand 23-1010 S Argintiu" [ref=f29e307]
+                - generic [ref=f29e308]:
+                  - generic [ref=f29e309]:
+                    - paragraph [ref=f29e310]: Suport pentru monitoare Reflecta PLANO DeskStand 23-1010 S Argintiu
+                    - paragraph [ref=f29e311]: 13" | 23" | 8 kg
+                  - paragraph [ref=f29e313]: 2 269 lei
+                  - button [ref=f29e314]
+            - group "2 / 18" [ref=f29e318]:
+              - link [ref=f29e319] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-hdmi-to-hdmi-active-optical-80-0m-cablexpert-4k-uhd-at-60hz-ccbp-hdmi-aoc-80m-02
+                - img "Audio-video cablu Cablexpert CCBP-HDMI-AOC-80M-02 Negru" [ref=f29e320]
+                - generic [ref=f29e321]:
+                  - generic [ref=f29e322]:
+                    - paragraph [ref=f29e323]: Audio-video cablu Cablexpert CCBP-HDMI-AOC-80M-02 Negru
+                    - paragraph [ref=f29e324]: HDMI to HDMI | 80 m
+                  - paragraph [ref=f29e326]: 1 699 lei
+                  - button [ref=f29e327]
+            - group "3 / 18" [ref=f29e331]:
+              - link [ref=f29e332] [cursor=pointer]:
+                - /url: https://ultra.md/product/multifunctional-cleaning-set-proove-mr-cleaner-8in1-white
+                - img "Set de curățare Proove Mr. Cleaner 8in1" [ref=f29e333]
+                - generic [ref=f29e334]:
+                  - generic [ref=f29e335]:
+                    - paragraph [ref=f29e336]: Set de curățare Proove Mr. Cleaner 8in1
+                    - paragraph [ref=f29e337]
+                  - paragraph [ref=f29e339]: 299 lei
+                  - button [ref=f29e340]
+            - group "4 / 18" [ref=f29e344]:
+              - link [ref=f29e345] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-stand-for-2-monitors-barkan-m142p-13-29-75x75100x100-up-to-12kg
+                - img "Suport pentru monitoare BARKAN M142P Negru" [ref=f29e346]
+                - generic [ref=f29e347]:
+                  - generic [ref=f29e348]:
+                    - paragraph [ref=f29e349]: Suport pentru monitoare BARKAN M142P Negru
+                    - paragraph [ref=f29e350]: 13" | 29" | 12 kg
+                  - paragraph [ref=f29e352]: 1 989 lei
+                  - button [ref=f29e353]
+            - group "5 / 18" [ref=f29e357]:
+              - link [ref=f29e358] [cursor=pointer]:
+                - /url: https://ultra.md/product/converts-analog-s-videocomposite-video-to-hdmi-energenie-dsc-svideo-hdmi
+                - img "Convertor Video/Audio Energenie S-VIDEO to HDMI Converter Negru" [ref=f29e359]
+                - generic [ref=f29e360]:
+                  - generic [ref=f29e361]:
+                    - paragraph [ref=f29e362]: Convertor Video/Audio Energenie S-VIDEO to HDMI Converter Negru
+                    - paragraph [ref=f29e363]: Analog Video to HDMI
+                  - paragraph [ref=f29e365]: 1 569 lei
+                  - button [ref=f29e366]
+            - group "6 / 18" [ref=f29e370]:
+              - link [ref=f29e371] [cursor=pointer]:
+                - /url: https://ultra.md/product/multifunctional-cleaning-set-proove-mr-cleaner-5in1-white
+                - img "Set de curățare Proove Mr. Cleaner 5in1" [ref=f29e372]
+                - generic [ref=f29e373]:
+                  - generic [ref=f29e374]:
+                    - paragraph [ref=f29e375]: Set de curățare Proove Mr. Cleaner 5in1
+                    - paragraph [ref=f29e376]
+                  - paragraph [ref=f29e378]: 199 lei
+                  - button [ref=f29e379]
+            - group "7 / 18" [ref=f29e383]:
+              - link [ref=f29e384] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-stand-for-6-monitors-reflecta-plano-desk-23-1010s-13-23-75x75-100x100-8kgbracket
+                - img "Suport pentru monitoare Reflecta PLANO Desk 23-1010S Argintiu" [ref=f29e385]
+                - generic [ref=f29e386]:
+                  - generic [ref=f29e387]:
+                    - paragraph [ref=f29e388]: Suport pentru monitoare Reflecta PLANO Desk 23-1010S Argintiu
+                    - paragraph [ref=f29e389]: 13" | 23" | 8 kg
+                  - paragraph [ref=f29e391]: 1 899 lei
+                  - button [ref=f29e392]
+            - group "8 / 18" [ref=f29e396]:
+              - link [ref=f29e397] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-hdmi-to-hdmi-300m-cablexpert-male-male-v14-black-bulk-cc-hdmi4-30m
+                - img "Cablu Video Cablexpert CC-HDMI4-30M Negru" [ref=f29e398]
+                - generic [ref=f29e399]:
+                  - generic [ref=f29e400]:
+                    - paragraph [ref=f29e401]: Cablu Video Cablexpert CC-HDMI4-30M Negru
+                    - paragraph [ref=f29e402]: HDMI | 30 m
+                  - paragraph [ref=f29e404]: 1 459 lei
+                  - button [ref=f29e405]
+            - group "9 / 18" [ref=f29e409]:
+              - link [ref=f29e410] [cursor=pointer]:
+                - /url: https://ultra.md/product/cleaning-set-universal-patron-f3-019-twice-sprey-50mlwipe-patron
+                - img "Set de curățare Patron F3-019" [ref=f29e411]
+                - generic [ref=f29e412]:
+                  - generic [ref=f29e413]:
+                    - paragraph [ref=f29e414]: Set de curățare Patron F3-019
+                    - paragraph [ref=f29e415]: Spray lichid | Universal
+                  - paragraph [ref=f29e417]: 85 lei
+                  - button [ref=f29e418]
+            - group "10 / 18" [ref=f29e422]:
+              - link [ref=f29e423] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-2-display-mounting-ma-da2-04-gembird-rotatetiltswivel-17-32up-to-8-kgvesa75x
+                - img "Suport pentru monitoare Gembird MA-DA2-04 Negru" [ref=f29e424]
+                - generic [ref=f29e425]:
+                  - generic [ref=f29e426]:
+                    - paragraph [ref=f29e427]: Suport pentru monitoare Gembird MA-DA2-04 Negru
+                    - paragraph [ref=f29e428]: 17" | 32" | 8 kg
+                  - paragraph [ref=f29e430]: 1 879 lei
+                  - button [ref=f29e431]
+            - group "11 / 18" [ref=f29e435]:
+              - link [ref=f29e436] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-hdmi-to-hdmi-active-optical-50-0m-cablexpert-4k-uhd-at-60hz-ccbp-hdmi-aoc-50m-02
+                - img "Cablu Video Cablexpert CCBP-HDMI-AOC-50M-02 Negru"
+                - generic [ref=f29e437]:
+                  - generic [ref=f29e438]:
+                    - paragraph [ref=f29e439]: Cablu Video Cablexpert CCBP-HDMI-AOC-50M-02 Negru
+                    - paragraph [ref=f29e440]: HDMI to HDMI | 50 m
+                  - paragraph [ref=f29e442]: 1 382 lei
+                  - button [ref=f29e443]
+            - group "12 / 18" [ref=f29e447]:
+              - link [ref=f29e448] [cursor=pointer]:
+                - /url: https://ultra.md/product/compressed-air-patron-f3-020-400-ml
+                - img "Spray de curățare cu aer comprimat Patron F3-020"
+                - generic [ref=f29e449]:
+                  - generic [ref=f29e450]:
+                    - paragraph [ref=f29e451]: Spray de curățare cu aer comprimat Patron F3-020
+                    - paragraph [ref=f29e452]: Universal
+                  - paragraph [ref=f29e454]: 80 lei
+                  - button [ref=f29e455]
+            - group "13 / 18" [ref=f29e459]:
+              - link [ref=f29e460] [cursor=pointer]:
+                - /url: https://ultra.md/product/tabledesk-3-display-mounting-arm-gembird-rotatetiltswivel17-27up-to-7-kgvesa75x75100x100-209300
+                - img "Suport pentru monitoare Gembird MA-DA3-01 Negru"
+                - generic [ref=f29e461]:
+                  - generic [ref=f29e462]:
+                    - paragraph [ref=f29e463]: Suport pentru monitoare Gembird MA-DA3-01 Negru
+                    - paragraph [ref=f29e464]: 17" | 27" | 7 kg
+                  - paragraph [ref=f29e466]: 1 679 lei
+                  - button [ref=f29e467]
+            - group "14 / 18" [ref=f29e471]:
+              - link [ref=f29e472] [cursor=pointer]:
+                - /url: https://ultra.md/product/cable-dp-to-dp-aoc-premium-series-30-0m-cablexpert-8k-uhd60hz
+                - img "Cablu Video Cablexpert AOC Premium Series Negru"
+                - generic [ref=f29e473]:
+                  - generic [ref=f29e474]:
+                    - paragraph [ref=f29e475]: Cablu Video Cablexpert AOC Premium Series Negru
+                    - paragraph [ref=f29e476]: DisplayPort | 30 m
+                  - paragraph [ref=f29e478]: 1 179 lei
+                  - button [ref=f29e479]
+            - group "15 / 18" [ref=f29e483]:
+              - link [ref=f29e484] [cursor=pointer]:
+                - /url: https://ultra.md/product/compressed-air-gembird-ck-cad-fl750-01-750-ml
+                - img "Spray de curățare cu aer comprimat Gembird Power duster"
+                - generic [ref=f29e485]:
+                  - generic [ref=f29e486]:
+                    - paragraph [ref=f29e487]: Spray de curățare cu aer comprimat Gembird Power duster
+                    - paragraph [ref=f29e488]: Spray lichid | Universal
+                  - paragraph [ref=f29e490]: 71 lei
+                  - button [ref=f29e491]
+            - group "16 / 18" [ref=f29e495]:
+              - link [ref=f29e496] [cursor=pointer]:
+                - /url: https://ultra.md/product/wall-mount-for-2-monitors-gembird-ma-wa2-02-17-32-per-screen-max8kg-vesa-75x75-100x100
+                - img "Suport pentru monitoare Gembird MA-WA2-02 Gri"
+                - generic [ref=f29e497]:
+                  - generic [ref=f29e498]:
+                    - paragraph [ref=f29e499]: Suport pentru monitoare Gembird MA-WA2-02 Gri
+                    - paragraph [ref=f29e500]: 17" | 32" | 8 kg
+                  - paragraph [ref=f29e502]: 1 609 lei
+                  - button "Vezi în showroom" [ref=f29e503]
+            - group "17 / 18" [ref=f29e507]:
+              - link [ref=f29e508] [cursor=pointer]:
+                - /url: https://ultra.md/product/splitter-hdmi-cablexpert-dsp-8ph4-03-8-ports
+                - img "Splitter HDMI Cablexpert DSP-8PH4-03 Negru"
+                - generic [ref=f29e509]:
+                  - generic [ref=f29e510]:
+                    - paragraph [ref=f29e511]: Splitter HDMI Cablexpert DSP-8PH4-03 Negru
+                    - paragraph [ref=f29e512]: HDMI
+                  - paragraph [ref=f29e514]: 1 029 lei
+                  - button [ref=f29e515]
+            - group "18 / 18" [ref=f29e519]:
+              - link [ref=f29e520] [cursor=pointer]:
+                - /url: https://ultra.md/product/cleaning-set-patron-f3-018-sprey-100mlwipe-patron
+                - img "Set de curățare Patron F3-018"
+                - generic [ref=f29e521]:
+                  - generic [ref=f29e522]:
+                    - paragraph [ref=f29e523]: Set de curățare Patron F3-018
+                    - paragraph [ref=f29e524]: Spray lichid | Universal
+                  - paragraph [ref=f29e526]: 50 lei
+                  - button [ref=f29e527]
+          - generic [ref=f29e537]:
+            - button "Previous slide" [ref=f29e538] [cursor=pointer]
+            - generic [ref=f29e542]: 2 / 18
+            - button "Next slide" [ref=f29e543] [cursor=pointer]
+    - generic [ref=f29e548]:
+      - generic [ref=f29e550]:
+        - button "Caracteristici" [ref=f29e551] [cursor=pointer]
+        - button "Recenzii" [ref=f29e553] [cursor=pointer]
+        - button "Instrucțiuni" [ref=f29e555] [cursor=pointer]
+      - generic [ref=f29e559]:
+        - generic [ref=f29e560]:
+          - heading "Caracteristici de Bază" [level=3] [ref=f29e561]
+          - generic [ref=f29e562]:
+            - generic [ref=f29e563]: Tip
+            - generic [ref=f29e564]: Monitor
+          - generic [ref=f29e565]:
+            - generic [ref=f29e566]: Materiale
+            - generic [ref=f29e567]: Plastic ABS
+          - generic [ref=f29e568]:
+            - generic [ref=f29e569]: Serie
+            - generic [ref=f29e570]: BenQ
+          - generic [ref=f29e571]:
+            - generic [ref=f29e572]: Nuanță culoare
+            - generic [ref=f29e573]: Alb
+          - generic [ref=f29e574]:
+            - generic [ref=f29e575]: Ecran tactil
+            - generic [ref=f29e576]: Nu
+          - generic [ref=f29e577]:
+            - generic [ref=f29e578]: Design Rame
+            - generic [ref=f29e579]: 3-Laturi fără ramă
+          - generic [ref=f29e580]:
+            - generic [ref=f29e581]: Culoare
+            - generic [ref=f29e582]: Alb
+          - generic [ref=f29e583]:
+            - generic [ref=f29e584]: Model
+            - generic [ref=f29e585]: MA270U
+        - generic [ref=f29e586]:
+          - heading "Display" [level=3] [ref=f29e587]
+          - generic [ref=f29e588]:
+            - generic [ref=f29e589]: Diagonala ecranului (inch)
+            - generic [ref=f29e590]: "27"
+          - generic [ref=f29e591]:
+            - generic [ref=f29e592]: Iluminarea de fundal
+            - generic [ref=f29e593]: LED
+          - generic [ref=f29e594]:
+            - generic [ref=f29e595]: Curbura ecranului
+            - generic [ref=f29e596]: Plat
+          - generic [ref=f29e597]:
+            - generic [ref=f29e598]: Rata maximă de reîmprospătare
+            - generic [ref=f29e599]: 60 Hz
+          - generic [ref=f29e600]:
+            - generic [ref=f29e601]: Tip panou
+            - generic [ref=f29e602]: IPS
+          - generic [ref=f29e603]:
+            - generic [ref=f29e604]: Aspect imagine
+            - generic [ref=f29e605]: 16:9
+          - generic [ref=f29e606]:
+            - generic [ref=f29e607]: Rezoluția Display-ului
+            - generic [ref=f29e608]: 3840x2160
+          - generic [ref=f29e609]:
+            - generic [ref=f29e610]: Densitatea pixelilor (ppi)
+            - generic [ref=f29e611]: "163"
+          - generic [ref=f29e612]:
+            - generic [ref=f29e613]: Timp de răspuns
+            - generic [ref=f29e614]: 5 ms
+          - generic [ref=f29e615]:
+            - generic [ref=f29e616]: Unghi de vizualizare
+            - generic [ref=f29e617]: 178° / 178°
+          - generic [ref=f29e618]:
+            - generic [ref=f29e619]: Luminozitate (vârf)
+            - generic [ref=f29e620]: 400 cd/m2
+          - generic [ref=f29e621]:
+            - generic [ref=f29e622]: Nivel de performanță HDR
+            - generic [ref=f29e623]: HDR10
+          - generic [ref=f29e624]:
+            - generic [ref=f29e625]: Raport de contrast
+            - generic [ref=f29e626]: 1200:1
+          - generic [ref=f29e627]:
+            - generic [ref=f29e628]: Luminozitate (tipica)
+            - generic [ref=f29e629]: 400 cd/m2
+          - generic [ref=f29e630]:
+            - generic [ref=f29e631]: Gama de culori
+            - generic [ref=f29e632]: 99% sRGB, 95% P3
+        - generic [ref=f29e633]:
+          - heading "Conexiuni" [level=3] [ref=f29e634]
+          - generic [ref=f29e635]:
+            - generic [ref=f29e636]: Conector căști audio
+            - generic [ref=f29e637]: Da
+          - generic [ref=f29e638]:
+            - generic [ref=f29e639]: Intrări HDMI
+            - generic [ref=f29e640]: 2x HDMI 2.0
+          - generic [ref=f29e641]:
+            - generic [ref=f29e642]: USB-Hub
+            - generic [ref=f29e643]: 2x USB 3.2 Gen1 Type-A Downstream + 1x USB 3.2 Gen1 Downstream
+          - generic [ref=f29e644]:
+            - generic [ref=f29e645]: Alimentare prin USB-C
+            - generic [ref=f29e646]: Până la 90W
+        - generic [ref=f29e647]:
+          - heading "Caracteristici" [level=3] [ref=f29e648]
+          - generic [ref=f29e649]:
+            - generic [ref=f29e650]: Tehnologia de protecție a ochilor
+            - generic [ref=f29e651]: Da
+        - generic [ref=f29e652]:
+          - heading "Sursa De Alimentare" [level=3] [ref=f29e653]
+          - generic [ref=f29e654]:
+            - generic [ref=f29e655]: Tip Sursă Alimentare
+            - generic [ref=f29e656]: Sursă de alimentare încorporată
+        - generic [ref=f29e657]:
+          - heading "Sistem audio" [level=3] [ref=f29e658]
+          - generic [ref=f29e659]:
+            - generic [ref=f29e660]: Boxe încorporate
+            - generic [ref=f29e661]: 6W
+        - generic [ref=f29e662]:
+          - heading "Ergonomie" [level=3] [ref=f29e663]
+          - generic [ref=f29e664]:
+            - generic [ref=f29e665]: Interval de înclinare
+            - generic [ref=f29e666]: "-5° ~ 20°"
+          - generic [ref=f29e667]:
+            - generic [ref=f29e668]: Intervalul de reglare a înălțimii (mm)
+            - generic [ref=f29e669]: "115"
+          - generic [ref=f29e670]:
+            - generic [ref=f29e671]: Rotație
+            - generic [ref=f29e672]: 90°
+          - generic [ref=f29e673]:
+            - generic [ref=f29e674]: Balama
+            - generic [ref=f29e675]: "-15° ~ 15°"
+          - generic [ref=f29e676]:
+            - generic [ref=f29e677]: Interfață de montare VESA
+            - generic [ref=f29e678]: 100x100
+        - generic [ref=f29e679]:
+          - heading "Dimensiuni și Greutate" [level=3] [ref=f29e680]
+          - generic [ref=f29e681]:
+            - generic [ref=f29e682]: Greutate (kg)
+            - generic [ref=f29e683]: "8.2"
+          - generic [ref=f29e684]:
+            - generic [ref=f29e685]: Lățime (mm)
+            - generic [ref=f29e686]: "613.8"
+          - generic [ref=f29e687]:
+            - generic [ref=f29e688]: Înălțime (mm)
+            - generic [ref=f29e689]: "445.1"
+          - generic [ref=f29e690]:
+            - generic [ref=f29e691]: Adâncime (mm)
+            - generic [ref=f29e692]: "220.2"
+    - generic [ref=f29e694]:
+      - heading "Produse similare" [level=3] [ref=f29e695]
+      - generic [ref=f29e696]:
+        - generic [ref=f29e697]:
+          - generic [ref=f29e699]:
+            - generic [ref=f29e700]:
+              - button "Adaugă la favorite" [ref=f29e702] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e707] [cursor=pointer]
+            - link [ref=f29e711] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/benq-bl3290qt
+              - img "Monitor BenQ BL3290QT Negru" [ref=f29e712]
+              - paragraph [ref=f29e713]: Monitor BenQ BL3290QT Negru
+              - paragraph [ref=f29e714]: 31.5" | IPS | 2560x1440 | 75 Hz | 93 ppi | 5 ms
+            - generic [ref=f29e715]:
+              - paragraph [ref=f29e716]: 10 599 lei
+              - generic [ref=f29e717]:
+                - generic [ref=f29e718]: 1 325 lei
+                - generic [ref=f29e720]:
+                  - generic [ref=f29e721]: 0%
+                  - generic [ref=f29e723]: 8 luni
+              - generic [ref=f29e724]:
+                - button "În coș" [ref=f29e725] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e730] [cursor=pointer]
+          - generic [ref=f29e735]:
+            - generic [ref=f29e736]:
+              - button "Adaugă la favorite" [ref=f29e738] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e743] [cursor=pointer]
+            - link [ref=f29e747] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/benq-gw3290qt-315-ips-2560x1440-75-hz-alb
+              - img "Monitor BenQ GW3290QT Alb" [ref=f29e748]
+              - paragraph [ref=f29e749]: Monitor BenQ GW3290QT Alb
+              - paragraph [ref=f29e750]: 31.5" | IPS | 2560x1440 | 75 Hz | 93 ppi | 5 ms
+            - generic [ref=f29e751]:
+              - paragraph [ref=f29e752]: 10 599 lei
+              - generic [ref=f29e753]:
+                - generic [ref=f29e754]: 1 325 lei
+                - generic [ref=f29e756]:
+                  - generic [ref=f29e757]: 0%
+                  - generic [ref=f29e759]: 8 luni
+              - generic [ref=f29e760]:
+                - button "În coș" [ref=f29e761] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e766] [cursor=pointer]
+          - generic [ref=f29e771]:
+            - generic [ref=f29e772]:
+              - button "Adaugă la favorite" [ref=f29e774] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e779] [cursor=pointer]
+            - link [ref=f29e783] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-benq-pd2706ugrayips3840x216060hz5ms350cdhdr10-hdmi-plusdp-plususb-plustypeckvmspkrspivot
+              - img "Monitor BenQ PD2706U Gri" [ref=f29e784]
+              - paragraph [ref=f29e785]: Monitor BenQ PD2706U Gri
+              - paragraph [ref=f29e786]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=f29e787]:
+              - paragraph [ref=f29e788]: 10 699 lei
+              - generic [ref=f29e789]:
+                - generic [ref=f29e790]: 1 337 lei
+                - generic [ref=f29e792]:
+                  - generic [ref=f29e793]: 0%
+                  - generic [ref=f29e795]: 8 luni
+              - generic [ref=f29e796]:
+                - button "În coș" [ref=f29e797] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e802] [cursor=pointer]
+          - generic [ref=f29e807]:
+            - generic [ref=f29e808]:
+              - button "Adaugă la favorite" [ref=f29e810] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e815] [cursor=pointer]
+            - link [ref=f29e819] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/benq-ma320up-32-ips-3840x2160-60-hz-alb
+              - img "Monitor BenQ MA320UP Alb" [ref=f29e820]
+              - paragraph [ref=f29e821]: Monitor BenQ MA320UP Alb
+              - paragraph [ref=f29e822]: 32" | IPS | 3840x2160 | 60 Hz | 140 ppi | 5 ms
+            - generic [ref=f29e823]:
+              - paragraph [ref=f29e824]: 14 499 lei
+              - generic [ref=f29e825]:
+                - generic [ref=f29e826]: 1 812 lei
+                - generic [ref=f29e828]:
+                  - generic [ref=f29e829]: 0%
+                  - generic [ref=f29e831]: 8 luni
+              - generic [ref=f29e832]:
+                - button "În coș" [ref=f29e833] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e838] [cursor=pointer]
+          - generic [ref=f29e843]:
+            - generic [ref=f29e844]:
+              - button "Adaugă la favorite" [ref=f29e846] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e851] [cursor=pointer]
+            - link [ref=f29e855] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-benq-pd2705ublackips3840x216060hz5ms350cdhdr-hdmi-plusdp-plususb-plustypeckvmspkrspivot
+              - img "Monitor BenQ PD2705U Gri" [ref=f29e856]
+              - paragraph [ref=f29e857]: Monitor BenQ PD2705U Gri
+              - paragraph [ref=f29e858]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=f29e859]:
+              - paragraph [ref=f29e860]: 9 999 lei
+              - generic [ref=f29e861]:
+                - generic [ref=f29e862]: 1 250 lei
+                - generic [ref=f29e864]:
+                  - generic [ref=f29e865]: 0%
+                  - generic [ref=f29e867]: 8 luni
+              - generic [ref=f29e868]:
+                - button "În coș" [ref=f29e869] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e874] [cursor=pointer]
+          - generic [ref=f29e879]:
+            - generic [ref=f29e880]:
+              - button "Adaugă la favorite" [ref=f29e882] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e887] [cursor=pointer]
+            - link [ref=f29e891] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/benq-pd3205ua-315-ips-3840x2160-60-hz-negru
+              - img "Monitor de birou BenQ PD3205UA Negru" [ref=f29e892]
+              - paragraph [ref=f29e893]: Monitor de birou BenQ PD3205UA Negru
+              - paragraph [ref=f29e894]: 31.5" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=f29e895]:
+              - paragraph [ref=f29e896]: 14 499 lei
+              - generic [ref=f29e897]:
+                - generic [ref=f29e898]: 1 812 lei
+                - generic [ref=f29e900]:
+                  - generic [ref=f29e901]: 0%
+                  - generic [ref=f29e903]: 8 luni
+              - generic [ref=f29e904]:
+                - button "În coș" [ref=f29e905] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e910] [cursor=pointer]
+          - generic [ref=f29e915]:
+            - generic [ref=f29e916]:
+              - button "Adaugă la favorite" [ref=f29e918] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=f29e923] [cursor=pointer]
+            - link [ref=f29e927] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/benq-pd2705ua-27-ips-3840x2160-60-hz-negru
+              - img "Monitor de birou BenQ PD2705UA Negru" [ref=f29e928]
+              - paragraph [ref=f29e929]: Monitor de birou BenQ PD2705UA Negru
+              - paragraph [ref=f29e930]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=f29e931]:
+              - paragraph [ref=f29e932]: 10 999 lei
+              - generic [ref=f29e933]:
+                - generic [ref=f29e934]: 1 375 lei
+                - generic [ref=f29e936]:
+                  - generic [ref=f29e937]: 0%
+                  - generic [ref=f29e939]: 8 luni
+              - generic [ref=f29e940]:
+                - button "În coș" [ref=f29e941] [cursor=pointer]
+                - button "Cu 1 click" [ref=f29e946] [cursor=pointer]
+        - generic [ref=f29e951]:
+          - button [ref=f29e952] [cursor=pointer]
+          - generic [ref=f29e957]:
+            - generic [ref=f29e958]: "1"
+            - generic [ref=f29e959]: /
+            - generic [ref=f29e960]: "7"
+          - button [ref=f29e961] [cursor=pointer]
+  - contentinfo [ref=f29e965]:
+    - generic [ref=f29e966]:
+      - generic [ref=f29e967]:
+        - generic [ref=f29e968]:
+          - img "footer-top-gradient"
+        - generic [ref=f29e972]:
+          - link "facebook" [ref=f29e973] [cursor=pointer]:
+            - /url: https://www.facebook.com/ultra.moldova
+          - link "instagram" [ref=f29e977] [cursor=pointer]:
+            - /url: https://www.instagram.com/ultra.moldova
+          - link "tiktok" [ref=f29e981] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@ultra.moldova
+          - link "youtube" [ref=f29e985] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCGs9xB1rdCvik526qeoiRCw
+        - generic [ref=f29e989]:
+          - generic [ref=f29e990]:
+            - button [ref=f29e991]:
+              - paragraph [ref=f29e992]: Informație
+            - list [ref=f29e993]:
+              - listitem [ref=f29e994]:
+                - link "Contactele noastre" [ref=f29e995] [cursor=pointer]:
+                  - /url: contacts
+              - listitem [ref=f29e996]:
+                - link "Livrare" [ref=f29e997] [cursor=pointer]:
+                  - /url: delivery
+              - listitem [ref=f29e998]:
+                - link "Politica de confidențialitate" [ref=f29e999] [cursor=pointer]:
+                  - /url: page/politica-de-confidentialitate
+              - listitem [ref=f29e1000]:
+                - link "Returnare si Garantie" [ref=f29e1001] [cursor=pointer]:
+                  - /url: page/returnare-si-garantie
+              - listitem [ref=f29e1002]:
+                - link "Metode de plată" [ref=f29e1003] [cursor=pointer]:
+                  - /url: payment-methods
+              - listitem [ref=f29e1004]:
+                - link "Ultra Credit" [ref=f29e1005] [cursor=pointer]:
+                  - /url: credit
+          - generic [ref=f29e1006]:
+            - button [ref=f29e1007]:
+              - paragraph [ref=f29e1008]: Promoții și Certificate
+            - list [ref=f29e1009]:
+              - listitem [ref=f29e1010]:
+                - link "Promoții" [ref=f29e1011] [cursor=pointer]:
+                  - /url: /promo
+              - listitem [ref=f29e1012]:
+                - link "Certificate cadou" [ref=f29e1013] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-cadou
+              - listitem [ref=f29e1014]:
+                - link "Certificate de instalare" [ref=f29e1015] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-de-instalare
+              - listitem [ref=f29e1016]:
+                - link "Certificate promotionale" [ref=f29e1017] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-promotionale
+          - generic [ref=f29e1018]:
+            - button [ref=f29e1019]:
+              - paragraph [ref=f29e1020]: Categorii populare
+            - list [ref=f29e1021]:
+              - listitem [ref=f29e1022]:
+                - link "Telefoane" [ref=f29e1023] [cursor=pointer]:
+                  - /url: telefoane/smartphone
+              - listitem [ref=f29e1024]:
+                - link "Laptopuri" [ref=f29e1025] [cursor=pointer]:
+                  - /url: tehnica-computer/laptopuri
+              - listitem [ref=f29e1026]:
+                - link "Televizoare" [ref=f29e1027] [cursor=pointer]:
+                  - /url: televizoare-si-accesorii/televizoare
+              - listitem [ref=f29e1028]:
+                - link "Frigidere" [ref=f29e1029] [cursor=pointer]:
+                  - /url: electrocasnice-mari-pentru-bucatarie/frigidere
+              - listitem [ref=f29e1030]:
+                - link "Aspiratoare" [ref=f29e1031] [cursor=pointer]:
+                  - /url: ingrijire-locuinta/aspiratoare
+              - listitem [ref=f29e1032]:
+                - link "Mașini de Spălat Rufe" [ref=f29e1033] [cursor=pointer]:
+                  - /url: spalare-si-uscare/masini-de-spalat-rufe
+          - generic [ref=f29e1034]:
+            - generic [ref=f29e1035]:
+              - paragraph [ref=f29e1036]: Online - magazin
+              - list [ref=f29e1037]:
+                - listitem [ref=f29e1038]:
+                  - text: "Email:"
+                  - link "online@ultra.md" [ref=f29e1039] [cursor=pointer]:
+                    - /url: mailto:online@ultra.md
+                - listitem [ref=f29e1040]:
+                  - text: "Tel:"
+                  - link "+373-6000-0000" [ref=f29e1041] [cursor=pointer]:
+                    - /url: tel:+37360000000
+            - generic [ref=f29e1042]:
+              - paragraph [ref=f29e1043]: Vânzări persoane juridice
+              - list [ref=f29e1044]:
+                - listitem [ref=f29e1045]:
+                  - text: "Email:"
+                  - link "sales_sb@ultra.md" [ref=f29e1046] [cursor=pointer]:
+                    - /url: mailto:sales_sb@ultra.md
+                - listitem [ref=f29e1047]:
+                  - text: "Tel:"
+                  - link "+373-6000-0005" [ref=f29e1048] [cursor=pointer]:
+                    - /url: tel:+37360000005
+            - generic [ref=f29e1049]:
+              - paragraph [ref=f29e1050]: Suport clienți
+              - list [ref=f29e1051]:
+                - listitem [ref=f29e1052]:
+                  - text: "Email:"
+                  - link "reclamatii@ultra.md" [ref=f29e1053] [cursor=pointer]:
+                    - /url: mailto:reclamatii@ultra.md
+                - listitem [ref=f29e1054]:
+                  - text: "Tel:"
+                  - link "+373-6000-0009" [ref=f29e1055] [cursor=pointer]:
+                    - /url: tel:+37360000009
+            - generic [ref=f29e1056]:
+              - paragraph [ref=f29e1057]: Showroom
+              - list [ref=f29e1058]:
+                - listitem [ref=f29e1059]:
+                  - link "Vedeți poziția noastră pe hartă" [ref=f29e1060] [cursor=pointer]:
+                    - /url: https://maps.app.goo.gl/nuqDoRi2Z8N82kLo8
+                    - text: Chisinau str. Columna 170
+      - generic [ref=f29e1062]:
+        - generic [ref=f29e1063]:
+          - img "Ultra"
+        - paragraph [ref=f29e1064]: "© 2013-2026 Toate drepturile rezervate. “ULTRA DISTRIBUTION” SRL MD-2069, Republica Moldova, mun. Chișinău, str. Ion Creanga 6/v IDNO: 1012600027403 | Cod TVA: 0506875 Notificarea nr. P-22620/2021 din 10.08.2021 IBAN: MD40ML000000022510361547 | BC' Moldindconbank'S.A. fil.Kiev Chisinau"
+        - generic [ref=f29e1065]:
+          - generic:
+            - img "Visa"
+          - generic:
+            - img "Visa Electron"
+          - generic:
+            - img "Master Card"
+          - generic:
+            - img "Maestro"
+      - generic [ref=f29e1066]:
+        - generic [ref=f29e1068]:
+          - generic [ref=f29e1069]:
+            - link "Telefoane" [ref=f29e1070] [cursor=pointer]:
+              - /url: /telefoane
+            - generic [ref=f29e1071]:
+              - link "Smartphone" [ref=f29e1072] [cursor=pointer]:
+                - /url: /telefoane/smartphone
+              - link "iPhone" [ref=f29e1073] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple
+              - link "iPhone 17" [ref=f29e1074] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17
+              - link "iPhone 17 Pro" [ref=f29e1075] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17-pro
+              - link "iPhone 17 Pro Max" [ref=f29e1076] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17-pro-max
+              - link "Telefoane Samsung" [ref=f29e1077] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung
+              - link "Samsung Galaxy s26" [ref=f29e1078] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26
+              - link "Samsung Galaxy s26 Plus" [ref=f29e1079] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26-plus
+              - link "Samsung Galaxy s26 Ultra" [ref=f29e1080] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26-ultra
+              - link "Telefoane cu butoane" [ref=f29e1081] [cursor=pointer]:
+                - /url: /telefoane/telefoane-cu-butoane
+          - generic [ref=f29e1082]:
+            - link "Accesorii Telefoane Mobile" [ref=f29e1083] [cursor=pointer]:
+              - /url: /accesorii-pentru-telefoane
+            - generic [ref=f29e1084]:
+              - link "Sticle de protecție pentru telefoane" [ref=f29e1085] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/sticle-de-protectie-pentru-telefoane
+              - link "Huse pentru telefoane" [ref=f29e1086] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/huse-pentru-telefoane
+              - link "Încărcătoare" [ref=f29e1087] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/incarcatoare
+              - link "Power Bank" [ref=f29e1088] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/power-bank
+              - link "Cablu și adaptoare USB / Lightning" [ref=f29e1089] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/cablu-si-adaptoare-usb-lightning
+              - link "Trepiede pentru telefoane" [ref=f29e1090] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/trepiede-pentru-telefoane
+          - generic [ref=f29e1091]:
+            - link "Tablete și eBook Readere" [ref=f29e1092] [cursor=pointer]:
+              - /url: /tablete-si-carti-electronice
+            - generic [ref=f29e1093]:
+              - link "Tablete" [ref=f29e1094] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete
+              - link "Tablete grafice" [ref=f29e1095] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete-grafice
+              - link "Cărți electronice" [ref=f29e1096] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/carti-electronice
+              - link "iPad" [ref=f29e1097] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple
+              - link "iPad Air" [ref=f29e1098] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-air
+              - link "iPad Pro" [ref=f29e1099] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-pro
+              - link "Apple iPad 11 2025" [ref=f29e1100] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-11-2025
+              - link "Samsung Galaxy Tab" [ref=f29e1101] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/samsung
+              - link "Tablete Xiaomi" [ref=f29e1102] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/xiaomi
+              - link "Tablete Lenovo" [ref=f29e1103] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/lenovo
+          - generic [ref=f29e1104]:
+            - link "Accesorii pentru Tablete" [ref=f29e1105] [cursor=pointer]:
+              - /url: /accesorii-pentru-tablete
+            - generic [ref=f29e1106]:
+              - link "Sticlă de protecție pentru tablete" [ref=f29e1107] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/sticle-de-protectie-pentru-tablete
+              - link "Huse pentru tablete" [ref=f29e1108] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/huse-pentru-tablete
+              - link "Încărcătoare" [ref=f29e1109] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/incarcatoare
+              - link "Power Bank" [ref=f29e1110] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/power-bank
+              - link "Cablu și adaptoare USB / Lightning" [ref=f29e1111] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/cablu-si-adaptoare-usb-lightning
+              - link "Stilouri pentru tablete" [ref=f29e1112] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/stilouri-pentru-tablete
+          - generic [ref=f29e1113]:
+            - link "Ceasuri și brățări inteligente" [ref=f29e1114] [cursor=pointer]:
+              - /url: /ceasuri-si-bratari-inteligente
+            - generic [ref=f29e1115]:
+              - link "Ceasuri inteligente" [ref=f29e1116] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente
+              - link "Ceasuri inteligente pentru copii" [ref=f29e1117] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/pentru-copii
+              - link "Brățări fitness" [ref=f29e1118] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/bratari-fitness
+              - link "Mi Band" [ref=f29e1119] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/bratari-fitness/xiaomi-smart-band
+              - link "Apple Watch" [ref=f29e1120] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/apple
+              - link "Apple Watch Ultra 3" [ref=f29e1121] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/apple-watch-ultra-3
+              - link "Samsung Galaxy Watch" [ref=f29e1122] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/samsung
+              - link "Ceasuri inteligente Xiaomi" [ref=f29e1123] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/xiaomi
+              - link "Ceasuri inteligente Huawei" [ref=f29e1124] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/huawei
+              - link "Curele pentru ceasuri inteligente" [ref=f29e1125] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/curele-pentru-ceasuri-inteligente
+          - generic [ref=f29e1126]:
+            - link "Produse auto" [ref=f29e1127] [cursor=pointer]:
+              - /url: /produse-auto
+            - generic [ref=f29e1128]:
+              - link "Camere Auto" [ref=f29e1129] [cursor=pointer]:
+                - /url: /produse-auto/camere-auto
+              - link "Suporturi pentru telefoane" [ref=f29e1130] [cursor=pointer]:
+                - /url: /produse-auto/suporturi-pentru-telefoane
+              - link "Accesorii Auto" [ref=f29e1131] [cursor=pointer]:
+                - /url: /produse-auto/accesorii-auto
+        - generic [ref=f29e1132]:
+          - link:
+            - /url: /telefoane/smartphone
+          - link:
+            - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente

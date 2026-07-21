@@ -1,0 +1,998 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "Treci la conținutul principal al paginii" [ref=e4] [cursor=pointer]:
+        - /url: "#skippedLink"
+        - text: Conținut principal
+      - generic [ref=e6]:
+        - navigation [ref=e7]:
+          - link [ref=e8] [cursor=pointer]:
+            - /url: /promo
+            - img "Promoții" [ref=e9]
+            - paragraph [ref=e10]: Promoții
+          - link [ref=e11] [cursor=pointer]:
+            - /url: /delivery
+            - paragraph [ref=e12]: Livrare
+          - link [ref=e13] [cursor=pointer]:
+            - /url: /contacts
+            - paragraph [ref=e14]: Contacte
+          - link "Vedeți poziția noastră pe hartă" [ref=e16] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/nuqDoRi2Z8N82kLo8
+            - generic [ref=e20]: str. Columna 170
+        - link "Acasă" [ref=e22] [cursor=pointer]:
+          - /url: https://ultra.md
+        - generic [ref=e26]:
+          - generic [ref=e27]:
+            - button "+373-6000-0000" [ref=e29] [cursor=pointer]
+            - 'button "Lu – Du: 09:00 - 20:00" [ref=e38] [cursor=pointer]'
+          - generic [ref=e46]:
+            - generic [ref=e47]: RO
+            - link "RU" [ref=e48] [cursor=pointer]:
+              - /url: https://ultra.md/ru/kompyuternaya-tekhnika/monitory?p%5B2134%5D%5B3%5D=46197&p%5B2169%5D%5B0%5D=46024
+      - generic [ref=e50]:
+        - button "Deschideți meniul catalogului" [ref=e51] [cursor=pointer]:
+          - generic [ref=e55]: Catalogul de produse
+        - search [ref=e60]:
+          - textbox "Căutare produse..." [ref=e65]
+        - generic [ref=e66]:
+          - link "Coș" [ref=e67] [cursor=pointer]:
+            - /url: https://ultra.md/cart
+          - link "Favorite" [ref=e73] [cursor=pointer]:
+            - /url: https://ultra.md/favorites
+          - link "Comparare" [ref=e79] [cursor=pointer]:
+            - /url: https://ultra.md/compare
+          - button "Favorite" [ref=e85] [cursor=pointer]:
+            - generic [ref=e89]: Logare
+    - list [ref=e92]:
+      - listitem [ref=e93]:
+        - link [ref=e94] [cursor=pointer]:
+          - /url: https://ultra.md
+      - listitem [ref=e98]:
+        - link "Tehnică Computer" [ref=e99] [cursor=pointer]:
+          - /url: https://ultra.md/tehnica-computer
+      - listitem [ref=e100]: Monitoare
+  - main [ref=e101]:
+    - generic [ref=e102]:
+      - heading "Monitoare" [level=1] [ref=e104]
+      - group "1 / 1" [ref=e108] [cursor=pointer]:
+        - img "Offer-Category" [ref=e110]
+      - generic [ref=e112]:
+        - generic [ref=e113]:
+          - group "1 / 10" [ref=e114]:
+            - link "Ultra Union Monitoare Gaming Monitoare Gaming 348 produse" [ref=e115] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/gaming
+              - img "Ultra Union" [ref=e116]
+              - img "Monitoare Gaming" [ref=e117]
+              - generic [ref=e119]:
+                - generic [ref=e120]: Monitoare Gaming
+                - paragraph [ref=e121]: 348 produse
+          - group "2 / 10" [ref=e126]:
+            - link "Ultra Union Monitoare 4K Monitoare 4K 127 produse" [ref=e127] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/4k
+              - img "Ultra Union" [ref=e128]
+              - img "Monitoare 4K" [ref=e129]
+              - generic [ref=e131]:
+                - generic [ref=e132]: Monitoare 4K
+                - paragraph [ref=e133]: 127 produse
+          - group "3 / 10" [ref=e138]:
+            - link "Ultra Union Monitoare 2K Monitoare 2K 242 produse" [ref=e139] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/2k
+              - img "Ultra Union" [ref=e140]
+              - img "Monitoare 2K" [ref=e141]
+              - generic [ref=e143]:
+                - generic [ref=e144]: Monitoare 2K
+                - paragraph [ref=e145]: 242 produse
+          - group "4 / 10" [ref=e150]:
+            - link "Ultra Union Monitoare 240 Hz Monitoare 240 Hz 68 produse" [ref=e151] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/240-hz
+              - img "Ultra Union" [ref=e152]
+              - img "Monitoare 240 Hz" [ref=e153]
+              - generic [ref=e155]:
+                - generic [ref=e156]: Monitoare 240 Hz
+                - paragraph [ref=e157]: 68 produse
+          - group "5 / 10" [ref=e162]:
+            - link "Ultra Union Monitoare 144 Hz Monitoare 144 Hz 82 produse" [ref=e163] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/144-hz
+              - img "Ultra Union" [ref=e164]
+              - img "Monitoare 144 Hz" [ref=e165]
+              - generic [ref=e167]:
+                - generic [ref=e168]: Monitoare 144 Hz
+                - paragraph [ref=e169]: 82 produse
+          - group "6 / 10" [ref=e174]:
+            - link "Ultra Union Monitoare ASUS Monitoare ASUS 51 produse" [ref=e175] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/asus
+              - img "Ultra Union" [ref=e176]
+              - img "Monitoare ASUS" [ref=e177]
+              - generic [ref=e179]:
+                - generic [ref=e180]: Monitoare ASUS
+                - paragraph [ref=e181]: 51 produse
+          - group "7 / 10" [ref=e186]:
+            - link "Ultra Union Monitoare LG Monitoare LG 44 produse" [ref=e187] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/lg
+              - img "Ultra Union" [ref=e188]
+              - img "Monitoare LG" [ref=e189]
+              - generic [ref=e191]:
+                - generic [ref=e192]: Monitoare LG
+                - paragraph [ref=e193]: 44 produse
+          - group "8 / 10" [ref=e198]:
+            - link "Ultra Union Monitoare Samsung Monitoare Samsung 155 produse" [ref=e199] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/samsung
+              - img "Ultra Union" [ref=e200]
+              - img "Monitoare Samsung" [ref=e201]
+              - generic [ref=e203]:
+                - generic [ref=e204]: Monitoare Samsung
+                - paragraph [ref=e205]: 155 produse
+          - group "9 / 10" [ref=e210]:
+            - link "Ultra Union Monitoare Philips Monitoare Philips 128 produse" [ref=e211] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/philips
+              - img "Ultra Union" [ref=e212]
+              - img "Monitoare Philips" [ref=e213]
+              - generic [ref=e215]:
+                - generic [ref=e216]: Monitoare Philips
+                - paragraph [ref=e217]: 128 produse
+          - group "10 / 10" [ref=e222]:
+            - link "Ultra Union Monitoare DELL Monitoare DELL 185 produse" [ref=e223] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/dell
+              - img "Ultra Union" [ref=e224]
+              - img "Monitoare DELL" [ref=e225]
+              - generic [ref=e227]:
+                - generic [ref=e228]: Monitoare DELL
+                - paragraph [ref=e229]: 185 produse
+        - generic:
+          - button "Previous slide" [disabled]
+          - button "Next slide" [ref=e234] [cursor=pointer]
+    - generic [ref=e237]:
+      - generic [ref=e241]:
+        - paragraph [ref=e246]: Filtre
+        - generic [ref=e248]:
+          - generic [ref=e250]:
+            - button "Preţ" [ref=e251] [cursor=pointer]
+            - generic [ref=e258]:
+              - generic: De la De la Până la Până la
+              - generic [ref=e259]:
+                - slider "De la": "1499"
+                - slider "Până la": "54890"
+              - generic [ref=e262]:
+                - spinbutton "De la" [ref=e264]: "1499"
+                - spinbutton "Până la" [ref=e266]: "54890"
+          - generic [ref=e268]: Doar în stoc
+          - generic [ref=e276]:
+            - button "Categorii" [ref=e277] [cursor=pointer]
+            - list [ref=e284]:
+              - listitem [ref=e285]:
+                - link "Calculatoare [232]" [ref=e286]:
+                  - /url: https://ultra.md/tehnica-computer/calculatoare
+                  - generic [ref=e287]: Calculatoare
+                  - generic [ref=e288]: "[232]"
+              - listitem [ref=e289]:
+                - generic [ref=e290]:
+                  - generic [ref=e291]: Monitoare
+                  - generic [ref=e292]: "[938]"
+              - listitem [ref=e293]:
+                - link "Mini-PC-uri [281]" [ref=e294]:
+                  - /url: https://ultra.md/tehnica-computer/mini-pc-uri
+                  - generic [ref=e295]: Mini-PC-uri
+                  - generic [ref=e296]: "[281]"
+              - listitem [ref=e297]:
+                - link "All in One PC [676]" [ref=e298]:
+                  - /url: https://ultra.md/tehnica-computer/all-in-one-pc
+                  - generic [ref=e299]: All in One PC
+                  - generic [ref=e300]: "[676]"
+              - listitem [ref=e301]:
+                - link "Suporturi pentru Monitoare [100]" [ref=e302]:
+                  - /url: https://ultra.md/tehnica-computer/suporturi-pentru-monitoare
+                  - generic [ref=e303]: Suporturi pentru Monitoare
+                  - generic [ref=e304]: "[100]"
+              - listitem [ref=e305]:
+                - link "Software [72]" [ref=e306]:
+                  - /url: https://ultra.md/tehnica-computer/software
+                  - generic [ref=e307]: Software
+                  - generic [ref=e308]: "[72]"
+              - listitem [ref=e309]:
+                - link "Laptopuri [1546]" [ref=e310]:
+                  - /url: https://ultra.md/tehnica-computer/laptopuri
+                  - generic [ref=e311]: Laptopuri
+                  - generic [ref=e312]: "[1546]"
+          - generic [ref=e315]:
+            - button "Brand" [ref=e316] [cursor=pointer]
+            - generic [ref=e323]:
+              - generic [ref=e324]:
+                - generic [ref=e328] [cursor=pointer]:
+                  - generic [ref=e329]: DELL
+                  - generic [ref=e330]: "[11]"
+                - generic [ref=e334] [cursor=pointer]:
+                  - generic [ref=e335]: Samsung
+                  - generic [ref=e336]: "[9]"
+                - generic [ref=e340] [cursor=pointer]:
+                  - generic [ref=e341]: BenQ
+                  - generic [ref=e342]: "[7]"
+                - generic [ref=e346] [cursor=pointer]:
+                  - generic [ref=e347]: Lenovo
+                  - generic [ref=e348]: "[6]"
+                - generic [ref=e352] [cursor=pointer]:
+                  - generic [ref=e353]: Philips
+                  - generic [ref=e354]: "[5]"
+                - generic [ref=e358] [cursor=pointer]:
+                  - generic [ref=e359]: ASUS
+                  - generic [ref=e360]: "[5]"
+                - generic [ref=e364] [cursor=pointer]:
+                  - generic [ref=e365]: LG
+                  - generic [ref=e366]: "[5]"
+              - button "Afișează toate" [ref=e367] [cursor=pointer]
+          - generic [ref=e370]:
+            - button "Diagonala ecranului (inch)" [ref=e371] [cursor=pointer]
+            - generic [ref=e378]:
+              - textbox "Caută" [ref=e381]
+              - generic [ref=e382]:
+                - generic [ref=e386] [cursor=pointer]:
+                  - generic [ref=e387]: "27"
+                  - generic [ref=e388]: "[54]"
+                - generic [ref=e392] [cursor=pointer]:
+                  - generic [ref=e393]: "23.7"
+                  - generic [ref=e394]: "[1]"
+                - generic [ref=e398] [cursor=pointer]:
+                  - generic [ref=e399]: "23.8"
+                  - generic [ref=e400]: "[1]"
+                - generic [ref=e404] [cursor=pointer]:
+                  - generic [ref=e405]: "28"
+                  - generic [ref=e406]: "[8]"
+                - generic [ref=e410] [cursor=pointer]:
+                  - generic [ref=e411]: "28.5"
+                  - generic [ref=e412]: "[2]"
+                - generic [ref=e416] [cursor=pointer]:
+                  - generic [ref=e417]: "31"
+                  - generic [ref=e418]: "[1]"
+                - generic [ref=e422] [cursor=pointer]:
+                  - generic [ref=e423]: "31.5"
+                  - generic [ref=e424]: "[35]"
+              - button "Afișează toate" [ref=e425] [cursor=pointer]
+          - generic [ref=e428]:
+            - button "Rezoluția Display-ului" [ref=e429] [cursor=pointer]
+            - generic [ref=e436]:
+              - generic [ref=e437]:
+                - generic [ref=e441] [cursor=pointer]:
+                  - generic [ref=e442]: 3840x2160
+                  - generic [ref=e443]: "[54]"
+                - generic [ref=e447] [cursor=pointer]:
+                  - generic [ref=e448]: 1920x1080
+                  - generic [ref=e449]: "[153]"
+                - generic [ref=e453] [cursor=pointer]:
+                  - generic [ref=e454]: 1920x1200
+                  - generic [ref=e455]: "[1]"
+                - generic [ref=e459] [cursor=pointer]:
+                  - generic [ref=e460]: 2160x1440
+                  - generic [ref=e461]: "[1]"
+                - generic [ref=e465] [cursor=pointer]:
+                  - generic [ref=e466]: 2560x1440
+                  - generic [ref=e467]: "[180]"
+                - generic [ref=e471] [cursor=pointer]:
+                  - generic [ref=e472]: 5120x2880
+                  - generic [ref=e473]: "[4]"
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic: 1280x1024
+                      - generic: "[0]"
+              - button "Afișează toate" [ref=e474] [cursor=pointer]
+          - button "Tip" [ref=e478] [cursor=pointer]
+          - button "Model" [ref=e486] [cursor=pointer]
+          - button "Tip panou" [ref=e494] [cursor=pointer]
+          - button "Rata maximă de reîmprospătare" [ref=e502] [cursor=pointer]
+          - button "Densitatea pixelilor (ppi)" [ref=e510] [cursor=pointer]
+          - button "Timp de răspuns" [ref=e518] [cursor=pointer]
+          - button "Aspect imagine" [ref=e526] [cursor=pointer]
+          - button "Nivel de performanță HDR" [ref=e534] [cursor=pointer]
+          - button "Unghi de vizualizare" [ref=e542] [cursor=pointer]
+          - button "Luminozitate (vârf)" [ref=e550] [cursor=pointer]
+          - button "Adâncime culori" [ref=e558] [cursor=pointer]
+          - button "Raport de contrast" [ref=e566] [cursor=pointer]
+          - button "Acoperire ecran" [ref=e574] [cursor=pointer]
+          - button "Tehnologia Adaptive Sync" [ref=e582] [cursor=pointer]
+          - button "DisplayPort" [ref=e590] [cursor=pointer]
+          - button "Intrări HDMI" [ref=e598] [cursor=pointer]
+          - button "Rotație" [ref=e606] [cursor=pointer]
+          - button "Interfata Video USB/Thunderbolt" [ref=e614] [cursor=pointer]
+        - generic [ref=e620]:
+          - button "Resetează" [ref=e621] [cursor=pointer]
+          - button "Aplică" [ref=e622] [cursor=pointer]
+      - generic [ref=e623]:
+        - generic [ref=e624]:
+          - generic [ref=e625]: "Total: 54 produse / 3 pagini"
+          - generic [ref=e627]:
+            - paragraph [ref=e628]: "Sortează:"
+            - generic [ref=e629]:
+              - button "Populare" [ref=e630] [cursor=pointer]
+              - button "Ieftine" [ref=e631] [cursor=pointer]
+              - button "Scumpe" [ref=e632] [cursor=pointer]
+              - button "Noi" [ref=e633] [cursor=pointer]
+              - button "Reduceri" [ref=e634] [cursor=pointer]
+        - generic [ref=e635]:
+          - generic [ref=e636]:
+            - generic [ref=e637]:
+              - button "Adaugă la favorite" [ref=e639] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e644] [cursor=pointer]
+            - link [ref=e648] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-0-philips-27e1n1800a-black-ips-3840x2160-60hz-4ms-350cd-megadcr-hdr10-hdmi-plusdp-spkrs
+              - img "Monitor Philips 27E1N1800A Negru" [ref=e649]
+              - paragraph [ref=e650]: Monitor Philips 27E1N1800A Negru
+              - paragraph [ref=e651]: 27" | IPS | 3840x2160 | 60 Hz | 163.1 ppi | 4 ms
+            - generic [ref=e652]:
+              - paragraph [ref=e653]: 4 999 lei
+              - generic [ref=e654]:
+                - generic [ref=e655]: 625 lei
+                - generic [ref=e657]:
+                  - generic [ref=e658]: 0%
+                  - generic [ref=e660]: 8 luni
+              - generic [ref=e661]:
+                - button "În coș" [ref=e662] [cursor=pointer]
+                - button "Cu 1 click" [ref=e667] [cursor=pointer]
+          - generic [ref=e671]:
+            - generic [ref=e672]:
+              - button "Adaugă la favorite" [ref=e674] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e679] [cursor=pointer]
+            - link [ref=e683] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-acer-b277kdbmiiprczx
+              - img "27" [ref=e684]
+              - paragraph [ref=e685]: 27" Monitor Acer B277KD, IPS 3840x2160 4K UHD, Negru
+              - paragraph [ref=e686]: 27" | IPS | 3840x2160 | 60 Hz | 4 ms
+            - generic [ref=e687]:
+              - paragraph [ref=e688]: 7 199 lei
+              - generic [ref=e689]:
+                - generic [ref=e690]: 900 lei
+                - generic [ref=e692]:
+                  - generic [ref=e693]: 0%
+                  - generic [ref=e695]: 8 luni
+              - generic [ref=e696]:
+                - button "În coș" [ref=e697] [cursor=pointer]
+                - button "Cu 1 click" [ref=e702] [cursor=pointer]
+          - generic [ref=e706]:
+            - generic [ref=e707]:
+              - button "Adaugă la favorite" [ref=e709] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e714] [cursor=pointer]
+            - link [ref=e718] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/samsung-s27d804ua-27-va-3840x2160-60-hz-negru
+              - img "Monitor Samsung S27D804UA Negru" [ref=e719]
+              - paragraph [ref=e720]: Monitor Samsung S27D804UA Negru
+              - paragraph [ref=e721]: 27" | VA | 3840x2160 | 60 Hz | 5 ms
+            - generic [ref=e722]:
+              - paragraph [ref=e723]: 7 499 lei
+              - generic [ref=e724]:
+                - generic [ref=e725]: 937 lei
+                - generic [ref=e727]:
+                  - generic [ref=e728]: 0%
+                  - generic [ref=e730]: 8 luni
+              - generic [ref=e731]:
+                - button "În coș" [ref=e732] [cursor=pointer]
+                - button "Cu 1 click" [ref=e737] [cursor=pointer]
+          - generic [ref=e741]:
+            - generic [ref=e742]:
+              - button "Adaugă la favorite" [ref=e744] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e749] [cursor=pointer]
+            - link [ref=e753] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-dell-s2725qs
+              - img "Monitor DELL S2725QS Argintiu" [ref=e754]
+              - paragraph [ref=e755]: Monitor DELL S2725QS Argintiu
+              - paragraph [ref=e756]: 27" | IPS | 3840x2160 | 120 Hz | 163 ppi
+            - generic [ref=e757]:
+              - paragraph [ref=e758]: 7 999 lei
+              - generic [ref=e759]:
+                - generic [ref=e760]: 1 000 lei
+                - generic [ref=e762]:
+                  - generic [ref=e763]: 0%
+                  - generic [ref=e765]: 8 luni
+              - generic [ref=e766]:
+                - button "În coș" [ref=e767] [cursor=pointer]
+                - button "Cu 1 click" [ref=e772] [cursor=pointer]
+          - generic [ref=e776]:
+            - generic [ref=e777]:
+              - button "Adaugă la favorite" [ref=e779] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e784] [cursor=pointer]
+            - link [ref=e788] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-lenovo-thinkvision-t27ud-40blackips
+              - img "Monitor Lenovo ThinkVision T27UD-40 Negru" [ref=e789]
+              - paragraph [ref=e790]: Monitor Lenovo ThinkVision T27UD-40 Negru
+              - paragraph [ref=e791]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 4 ms
+            - generic [ref=e792]:
+              - paragraph [ref=e793]: 8 899 lei
+              - generic [ref=e794]:
+                - generic [ref=e795]: 1 112 lei
+                - generic [ref=e797]:
+                  - generic [ref=e798]: 0%
+                  - generic [ref=e800]: 8 luni
+              - generic [ref=e801]:
+                - button "În coș" [ref=e802] [cursor=pointer]
+                - button "Cu 1 click" [ref=e807] [cursor=pointer]
+          - generic [ref=e811]:
+            - generic [ref=e812]:
+              - button "Adaugă la favorite" [ref=e814] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e819] [cursor=pointer]
+            - link [ref=e823] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-benq-pd2705ublackips3840x216060hz5ms350cdhdr-hdmi-plusdp-plususb-plustypeckvmspkrspivot
+              - img "Monitor BenQ PD2705U Gri" [ref=e824]
+              - paragraph [ref=e825]: Monitor BenQ PD2705U Gri
+              - paragraph [ref=e826]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=e827]:
+              - paragraph [ref=e828]: 9 999 lei
+              - generic [ref=e829]:
+                - generic [ref=e830]: 1 250 lei
+                - generic [ref=e832]:
+                  - generic [ref=e833]: 0%
+                  - generic [ref=e835]: 8 luni
+              - generic [ref=e836]:
+                - button "În coș" [ref=e837] [cursor=pointer]
+                - button "Cu 1 click" [ref=e842] [cursor=pointer]
+          - generic [ref=e846]:
+            - generic [ref=e847]:
+              - button "Adaugă la favorite" [ref=e849] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e854] [cursor=pointer]
+            - link [ref=e858] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/aoc-u27u3cv-27-ips-3840x2160-60-hz-negru
+              - img "Monitor profesional AOC U27U3CV Negru" [ref=e859]
+              - paragraph [ref=e860]: Monitor profesional AOC U27U3CV Negru
+              - paragraph [ref=e861]: 27" | IPS | 3840x2160 | 60 Hz | 4 ms
+            - generic [ref=e862]:
+              - paragraph [ref=e863]: 10 399 lei
+              - generic [ref=e864]:
+                - generic [ref=e865]: 1 300 lei
+                - generic [ref=e867]:
+                  - generic [ref=e868]: 0%
+                  - generic [ref=e870]: 8 luni
+              - generic [ref=e871]:
+                - button "În coș" [ref=e872] [cursor=pointer]
+                - button "Cu 1 click" [ref=e877] [cursor=pointer]
+          - generic [ref=e881]:
+            - generic [ref=e882]:
+              - button "Adaugă la favorite" [ref=e884] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e889] [cursor=pointer]
+            - link [ref=e893] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-benq-pd2706ugrayips3840x216060hz5ms350cdhdr10-hdmi-plusdp-plususb-plustypeckvmspkrspivot
+              - img "Monitor BenQ PD2706U Gri" [ref=e894]
+              - paragraph [ref=e895]: Monitor BenQ PD2706U Gri
+              - paragraph [ref=e896]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=e897]:
+              - paragraph [ref=e898]: 10 699 lei
+              - generic [ref=e899]:
+                - generic [ref=e900]: 1 337 lei
+                - generic [ref=e902]:
+                  - generic [ref=e903]: 0%
+                  - generic [ref=e905]: 8 luni
+              - generic [ref=e906]:
+                - button "În coș" [ref=e907] [cursor=pointer]
+                - button "Cu 1 click" [ref=e912] [cursor=pointer]
+          - generic [ref=e916]:
+            - generic [ref=e917]:
+              - button "Adaugă la favorite" [ref=e919] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e924] [cursor=pointer]
+            - link [ref=e928] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/benq-pd2705ua-27-ips-3840x2160-60-hz-negru
+              - img "Monitor de birou BenQ PD2705UA Negru" [ref=e929]
+              - paragraph [ref=e930]: Monitor de birou BenQ PD2705UA Negru
+              - paragraph [ref=e931]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=e932]:
+              - paragraph [ref=e933]: 10 999 lei
+              - generic [ref=e934]:
+                - generic [ref=e935]: 1 375 lei
+                - generic [ref=e937]:
+                  - generic [ref=e938]: 0%
+                  - generic [ref=e940]: 8 luni
+              - generic [ref=e941]:
+                - button "În coș" [ref=e942] [cursor=pointer]
+                - button "Cu 1 click" [ref=e947] [cursor=pointer]
+          - generic [ref=e951]:
+            - generic [ref=e952]:
+              - button "Adaugă la favorite" [ref=e954] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e959] [cursor=pointer]
+            - link [ref=e963] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-aoc-u27g4rblackips3840x21601920x1080-dual-frameuhd160hzfhd320hzadaptivesync1msmprt-450c
+              - img "Monitor Gaming AOC U27G4R Negru" [ref=e964]
+              - paragraph [ref=e965]: Monitor Gaming AOC U27G4R Negru
+              - paragraph [ref=e966]: 27" | IPS | 3840x2160 | 160 Hz | 163 ppi | 1 ms
+            - generic [ref=e967]:
+              - paragraph [ref=e968]: 11 299 lei
+              - generic [ref=e969]:
+                - generic [ref=e970]: 1 412 lei
+                - generic [ref=e972]:
+                  - generic [ref=e973]: 0%
+                  - generic [ref=e975]: 8 luni
+              - generic [ref=e976]:
+                - button "În coș" [ref=e977] [cursor=pointer]
+                - button "Cu 1 click" [ref=e982] [cursor=pointer]
+          - generic [ref=e986]:
+            - generic [ref=e987]:
+              - button "Adaugă la favorite" [ref=e989] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e994] [cursor=pointer]
+            - link [ref=e998] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/asus-tuf-gaming-vg27uqel5a-27-ips-3840x2160-80-hz-negru
+              - img "Monitor Gaming ASUS TUF Gaming VG27UQEL5A Negru" [ref=e999]
+              - paragraph [ref=e1000]: Monitor Gaming ASUS TUF Gaming VG27UQEL5A Negru
+              - paragraph [ref=e1001]: 27" | IPS | 3840x2160 | 80 Hz | 1 ms
+            - generic [ref=e1002]:
+              - paragraph [ref=e1003]: 11 299 lei
+              - generic [ref=e1004]:
+                - generic [ref=e1005]: 1 412 lei
+                - generic [ref=e1007]:
+                  - generic [ref=e1008]: 0%
+                  - generic [ref=e1010]: 8 luni
+              - generic [ref=e1011]:
+                - button "În coș" [ref=e1012] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1017] [cursor=pointer]
+          - generic [ref=e1021]:
+            - generic [ref=e1022]:
+              - button "Adaugă la favorite" [ref=e1024] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1029] [cursor=pointer]
+            - link [ref=e1033] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/samsung-odyssey-g7-s27fg706-27-ips-3840x2160-180-hz-negru
+              - img "Monitor Gaming Samsung Odyssey G7 S27FG706 Negru" [ref=e1034]
+              - paragraph [ref=e1035]: Monitor Gaming Samsung Odyssey G7 S27FG706 Negru
+              - paragraph [ref=e1036]: 27" | IPS | 3840x2160 | 180 Hz | 1 ms
+            - generic [ref=e1037]:
+              - paragraph [ref=e1038]: 11 299 lei
+              - generic [ref=e1039]:
+                - generic [ref=e1040]: 1 412 lei
+                - generic [ref=e1042]:
+                  - generic [ref=e1043]: 0%
+                  - generic [ref=e1045]: 8 luni
+              - generic [ref=e1046]:
+                - button "În coș" [ref=e1047] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1052] [cursor=pointer]
+          - generic [ref=e1056]:
+            - generic [ref=e1057]:
+              - button "Adaugă la favorite" [ref=e1059] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1064] [cursor=pointer]
+            - link [ref=e1068] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-dell-p2725qe
+              - img "Monitor DELL P2725QE Negru | Argintiu" [ref=e1069]
+              - paragraph [ref=e1070]: Monitor DELL P2725QE Negru | Argintiu
+              - paragraph [ref=e1071]: 27" | IPS | 3840x2160 | 100 Hz | 163 ppi | 8 ms
+            - generic [ref=e1072]:
+              - paragraph [ref=e1073]: 11 599 lei
+              - generic [ref=e1074]:
+                - generic [ref=e1075]: 1 450 lei
+                - generic [ref=e1077]:
+                  - generic [ref=e1078]: 0%
+                  - generic [ref=e1080]: 8 luni
+              - generic [ref=e1081]:
+                - button "În coș" [ref=e1082] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1087] [cursor=pointer]
+          - generic [ref=e1091]:
+            - generic [ref=e1092]:
+              - button "Adaugă la favorite" [ref=e1094] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1099] [cursor=pointer]
+            - link [ref=e1103] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-asus-rog-strix-xg27ucgblackips3840x21604k160hzfhd320hzg-sync-plusfreesync1msgtg400cdhdr10h
+              - img "Monitor Gaming ASUS ROG Strix XG27UCG Negru" [ref=e1104]
+              - paragraph [ref=e1105]: Monitor Gaming ASUS ROG Strix XG27UCG Negru
+              - paragraph [ref=e1106]: 27" | IPS | 3840x2160 | 160 Hz | 163 ppi | 1 ms
+            - generic [ref=e1107]:
+              - paragraph [ref=e1108]: 11 599 lei
+              - generic [ref=e1109]:
+                - generic [ref=e1110]: 1 450 lei
+                - generic [ref=e1112]:
+                  - generic [ref=e1113]: 0%
+                  - generic [ref=e1115]: 8 luni
+              - generic [ref=e1116]:
+                - button "În coș" [ref=e1117] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1122] [cursor=pointer]
+          - generic [ref=e1126]:
+            - generic [ref=e1127]:
+              - button "Adaugă la favorite" [ref=e1129] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1134] [cursor=pointer]
+            - link [ref=e1138] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/lenovo-legion-27u-10-27-ips-3840x2160-160-hz-negru
+              - img "Monitor Gaming Lenovo Legion 27U-10 Negru" [ref=e1139]
+              - paragraph [ref=e1140]: Monitor Gaming Lenovo Legion 27U-10 Negru
+              - paragraph [ref=e1141]: 27" | IPS | 3840x2160 | 160 Hz | 163 ppi | 0.5 ms
+            - generic [ref=e1142]:
+              - paragraph [ref=e1143]: 11 999 lei
+              - generic [ref=e1144]:
+                - generic [ref=e1145]: 1 500 lei
+                - generic [ref=e1147]:
+                  - generic [ref=e1148]: 0%
+                  - generic [ref=e1150]: 8 luni
+              - generic [ref=e1151]:
+                - button "În coș" [ref=e1152] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1157] [cursor=pointer]
+          - generic [ref=e1161]:
+            - generic [ref=e1162]:
+              - button "Adaugă la favorite" [ref=e1164] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1169] [cursor=pointer]
+            - link [ref=e1173] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-benq-ma270uwhiteips3840x216060hz5ms350cdhdr10-hdmi-plusdp-plususb-plustypeckvmspkrspivot
+              - img "Monitor BenQ MA270U Alb" [ref=e1174]
+              - paragraph [ref=e1175]: Monitor BenQ MA270U Alb
+              - paragraph [ref=e1176]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=e1177]:
+              - paragraph [ref=e1178]: 12 199 lei
+              - generic [ref=e1179]:
+                - generic [ref=e1180]: 1 525 lei
+                - generic [ref=e1182]:
+                  - generic [ref=e1183]: 0%
+                  - generic [ref=e1185]: 8 luni
+              - generic [ref=e1186]:
+                - button "În coș" [ref=e1187] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1192] [cursor=pointer]
+          - generic [ref=e1196]:
+            - generic [ref=e1197]:
+              - button "Adaugă la favorite" [ref=e1199] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1204] [cursor=pointer]
+            - link [ref=e1208] [cursor=pointer]:
+              - /url: https://ultra.md/tehnica-computer/monitoare/lenovo-thinkvision-p27u-20-27-ips-3840x2160-60-hz-negru
+              - img "Monitor Lenovo ThinkVision P27u-20 Negru" [ref=e1209]
+              - paragraph [ref=e1210]: Monitor Lenovo ThinkVision P27u-20 Negru
+              - paragraph [ref=e1211]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 4 ms
+            - generic [ref=e1212]:
+              - paragraph [ref=e1213]: 13 699 lei
+              - generic [ref=e1214]:
+                - generic [ref=e1215]: 1 712 lei
+                - generic [ref=e1217]:
+                  - generic [ref=e1218]: 0%
+                  - generic [ref=e1220]: 8 luni
+              - generic [ref=e1221]:
+                - button "În coș" [ref=e1222] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1227] [cursor=pointer]
+          - generic [ref=e1231]:
+            - generic [ref=e1232]:
+              - button "Adaugă la favorite" [ref=e1234] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1239] [cursor=pointer]
+            - link [ref=e1243] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-hp-s7-pro-727pk
+              - img "27" [ref=e1244]
+              - paragraph [ref=e1245]: 27" Monitor HP S7 Pro 727pk, IPS 3840x2160 4K UHD, Argintiu
+              - paragraph [ref=e1246]: 27" | IPS | 3840x2160 | 60 Hz | 163 ppi | 5 ms
+            - generic [ref=e1247]:
+              - paragraph [ref=e1248]: 14 299 lei
+              - generic [ref=e1249]:
+                - generic [ref=e1250]: 1 787 lei
+                - generic [ref=e1252]:
+                  - generic [ref=e1253]: 0%
+                  - generic [ref=e1255]: 8 luni
+              - generic [ref=e1256]:
+                - button "În coș" [ref=e1257] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1262] [cursor=pointer]
+          - generic [ref=e1266]:
+            - generic [ref=e1267]:
+              - button "Adaugă la favorite" [ref=e1269] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1274] [cursor=pointer]
+            - link [ref=e1278] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-hp-s7-pro-727pm
+              - img "27" [ref=e1279]
+              - paragraph [ref=e1280]: 27" Monitor HP S7 Pro 727pm, IPS 3840x2160 4K UHD, Argintiu
+              - paragraph [ref=e1281]: 27" | IPS | 3840x2160 | 163 ppi | 5 ms
+            - generic [ref=e1282]:
+              - paragraph [ref=e1283]: 16 999 lei
+              - generic [ref=e1284]:
+                - generic [ref=e1285]: 2 125 lei
+                - generic [ref=e1287]:
+                  - generic [ref=e1288]: 0%
+                  - generic [ref=e1290]: 8 luni
+              - generic [ref=e1291]:
+                - button "În coș" [ref=e1292] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1297] [cursor=pointer]
+          - generic [ref=e1301]:
+            - generic [ref=e1302]:
+              - button "Adaugă la favorite" [ref=e1304] [cursor=pointer]
+              - button "Adaugă pentru comparare" [ref=e1309] [cursor=pointer]
+            - link [ref=e1313] [cursor=pointer]:
+              - /url: https://ultra.md/product/27-aoc-agon-pro-ag276uzd-black-qd-oled-3840x2160-240hz-adaptivesync0-03msgtg250cdhdr400hdm
+              - img "Monitor Gaming AOC Agon Pro AG276UZD Negru" [ref=e1314]
+              - paragraph [ref=e1315]: Monitor Gaming AOC Agon Pro AG276UZD Negru
+              - paragraph [ref=e1316]: 27" | QD OLED | 3840x2160 | 240 Hz | 0.03 ms
+            - generic [ref=e1317]:
+              - paragraph [ref=e1318]: 24 999 lei
+              - generic [ref=e1319]:
+                - generic [ref=e1320]: 3 125 lei
+                - generic [ref=e1322]:
+                  - generic [ref=e1323]: 0%
+                  - generic [ref=e1325]: 8 luni
+              - generic [ref=e1326]:
+                - button "În coș" [ref=e1327] [cursor=pointer]
+                - button "Cu 1 click" [ref=e1332] [cursor=pointer]
+        - generic [ref=e1337]:
+          - button "Afișează mai multe produse" [ref=e1339] [cursor=pointer]
+          - generic [ref=e1340]:
+            - generic [ref=e1341]: "1"
+            - link "2" [ref=e1343] [cursor=pointer]:
+              - /url: tehnica-computer/monitoare?p[2134][3]=46197&p[2169][0]=46024&page=2
+            - link "3" [ref=e1345] [cursor=pointer]:
+              - /url: tehnica-computer/monitoare?p[2134][3]=46197&p[2169][0]=46024&page=3
+            - link "Treci pe pagina următoare" [ref=e1347] [cursor=pointer]:
+              - /url: tehnica-computer/monitoare?p[2134][3]=46197&p[2169][0]=46024&page=2
+          - paragraph [ref=e1350]:
+            - text: Afișat
+            - generic [ref=e1351]: 1 pe 20 din 54
+            - text: rezultate
+    - generic [ref=e1352]:
+      - 'heading "Tot ce trebuie să știi despre un monitor: caracteristici esențiale și avantaje care fac diferența" [level=2] [ref=e1353]'
+      - paragraph [ref=e1354]: Monitorul este, fără îndoială, una dintre cele mai esențiale componente ale oricărui calculator. Oricât de performant ar fi sistemul dumneavoastră, experiența vizuală - fie că este vorba despre muncă, jocuri sau vizionarea unui film - depinde în mod direct de calitatea monitorului. Claritatea imaginii, confortul în utilizare și chiar gradul de oboseală resimțit de ochi după ore întregi petrecute în fața ecranului sunt influențate de performanțele acestuia.
+      - paragraph [ref=e1355]: Tocmai de aceea, alegerea unui monitor nu se rezumă doar la o listă de specificații tehnice - ea devine o decizie legată de confortul personal și de longevitatea experienței digitale. Un monitor bine ales nu este doar un obiect de birou, dar un partener de încredere care, ani la rând, vă va oferi imagini clare, culori vii și un plus de relaxare în fiecare moment petrecut în fața ecranului.
+      - paragraph [ref=e1356]: Într-o eră în care tehnologia avansează într-un ritm amețitor, piața ne oferă o diversitate impresionantă de modele, adaptate tuturor nevoilor și bugetelor. Tocmai din acest motiv, ne-am propus, prin acest articol, să vă ghidăm în procesul de alegere a unui monitor de calitate, explicând care sunt acele caracteristici esențiale pe care ar trebui să le luați în considerare atunci când luați o decizie.
+      - heading "Cum să alegi un monitor de calitate pentru PC" [level=3] [ref=e1357]
+      - paragraph [ref=e1358]: Astăzi, mai mult ca oricând, oferta de monitoare este vastă și diversificată - un adevărat univers de forme, culori şi tehnologii. Dacă alegerea designului este, de cele mai multe ori, o reacție instinctivă la ceea ce ne atrage vizual - în ceea ce privește partea tehnică, lucrurile devin mai complexe, iar alegerea corectă cere înțelegere și atenție.
+      - paragraph [ref=e1359]: "Astfel, ne propunem să vă fim alături în această explorare și să vă ghidăm printre acele detalii esențiale care nu se văd la prima privire, dar care definesc cu adevărat calitatea unui monitor. Pentru că, dincolo de estetică, contează ceea ce rămâne: claritatea imaginii, confortul ochilor și experiența pe care o trăiești, zi de zi, în fața ecranului."
+      - heading "Diagonala ecranului:" [level=4] [ref=e1360]
+      - paragraph [ref=e1361]: Alegerea unui monitor cu o diagonală mai mică de 20 de inch nu este recomandată, deoarece astfel de modele oferă o vizibilitate limitată și pot cauza oboseală oculară. Diagonala ideală este, desigur, subiectivă, iar fiecare utilizator își alege dimensiunea care îi oferă cel mai mare confort. Totuși, modelele cu diagonala de 21 de inch sau mai mult sunt, de obicei, cele mai potrivite. Merită menționate și monitoarele curbate sau ultrawide, care oferă un unghi de vizualizare mai larg. În cazul acestora, cel mai important este raportul de aspect, care trebuie să fie confortabil pentru ochii dumneavoastră. Totuși, pentru a obține o imagine de calitate, un ecran mare nu este suficient. Este esențial să luați în considerare și densitatea pixelilor pe inch, precum și rezoluția, pentru a vă asigura că imaginea este clară și detaliată.
+      - heading "Rezoluția ecranului:" [level=4] [ref=e1362]
+      - paragraph [ref=e1363]: "Calitatea imaginii depinde în mod direct de rezoluția ecranului și de densitatea pixelilor. Pe măsură ce diagonala ecranului crește, este necesar ca atât rezoluția, cât și densitatea pixelilor să fie proporționale, pentru a preveni o imagine „pixelată” ce poate reduce semnificativ claritatea vizuală. În acest sens, există trei tipuri principale de rezoluție care domină în prezent piața:"
+      - list [ref=e1364]:
+        - listitem [ref=e1365]: FullHD (1920x1080) - unul dintre cele mai răspândite tipuri de rezoluție, fiind compatibil cu aproape orice sistem PC. O alegere universală, ideală pentru jocuri mai puțin solicitante și pentru activitățile de zi cu zi, cum ar fi lucrul la birou. Această rezoluție se recomandă în special monitoarelor cu diagonala de până la 24 de inch.
+        - listitem [ref=e1366]: Rezoluția 2K (2560x1440) - face parte dintr-o generație mai recentă, fiind perfectă pentru monitoare cu diagonala mai mare de 27 de inch. Această rezoluție reprezintă o alegere excelentă și pentru gameri.
+        - listitem [ref=e1367]: Rezoluția 4K (3840x2160) - acest tip de rezoluție necesită un sistem compatibil pentru a fi utilizat la potențial maxim. Este perfect pentru jocuri de ultimă generație și aplicații avansate, oferind o claritate remarcabilă. Rezoluția 4K se recomandă monitoarelor cu diagonale mari.
+      - heading "Tipul matricei:" [level=4] [ref=e1368]
+      - paragraph [ref=e1369]: "Astăzi, monitoarele se împart în patru tipuri principale de matrice, fiecare având propriile sale trăsături care influențează calitatea imaginii și performanța generală:"
+      - list [ref=e1370]:
+        - listitem [ref=e1371]: "TN - unul dintre cele mai „vechi” tipuri de matrice. Cu toate acestea, principalele sale avantaje sunt timpul de răspuns extrem de rapid și prețul accesibil, care îl fac să rămână o alegere populară. Este o opțiune excelentă pentru gameri. Totuși, trebuie menționate și dezavantajele: luminozitatea maximă mai scăzută și unghiurile de vizualizare mai restrânse, comparativ cu alte tipuri de matrice."
+        - listitem [ref=e1372]: IPS - unul dintre cele mai apreciate tipuri de matrice, IPS oferă unghiuri de vizualizare excelente, o paletă de culori extinsă, o luminozitate maximă și un contrast deosebit. În plus, acest tip de matrice se remarcă printr-un consum redus de energie. Totuși, un dezavantaj semnificativ îl reprezintă timpul mai mare de răspuns. Este ideal pentru jocuri mai puțin dinamice și pentru utilizarea zilnică.
+        - listitem [ref=e1373]: VA -acest tip de matrice este un compromis între TN și IPS. Oferă unghiuri de vizualizare mai bune, culori mai naturale și o ajustare precisă a saturației și contrastului. Totuși, timpul de răspuns rămâne mai mare decât cel al matricei TN.
+        - listitem [ref=e1374]: OLED - cel mai recent tip de matrice, încă destul de rar întâlnit. Principalul său avantaj este absența distorsiunilor de culoare. Imaginile sunt generate de diode organice, asigurând o redare perfectă a culorilor și o claritate remarcabilă a imaginii.
+      - heading "Rata de reîmprospătare a ecranului:" [level=4] [ref=e1375]
+      - paragraph [ref=e1376]: Rata de reîmprospătare ne spune cât de des monitorul poate reface complet imaginea pe ecran într-o singură secundă - și, implicit, cât de cursivă va fi experiența vizuală. Această valoare se exprimă în hertzi (Hz).
+      - paragraph [ref=e1377]: "Pentru a înțelege mai bine: un monitor cu o frecvență de 60 Hz poate afișa 60 de cadre pe secundă. Este standardul minim acceptabil și, totodată, cel mai răspândit. Însă tehnologia a avansat, iar monitoarele actuale pot atinge frecvențe impresionante de 240 Hz sau chiar mai mult - oferind o tranziție extrem de lină între cadre."
+      - paragraph [ref=e1378]: Totuși, performanța monitorului trebuie să fie susținută și de hardware-ul calculatorului. Mai precis, placa video trebuie să fie capabilă să genereze un număr de cadre pe secundă compatibil cu frecvența ecranului. Un monitor de 300 Hz va fi limitat la 60 de cadre pe secundă dacă sistemul nu poate livra mai mult - iar experiența vizuală nu va fi cu nimic mai bună decât pe un ecran standard.
+      - paragraph [ref=e1379]: O rată de reîmprospătare mai mare asigură imagini clare și fluide, esențiale în jocuri, unde fiecare mișcare și secundă contează.
+      - heading "Luminozitatea și contrastul:" [level=4] [ref=e1380]
+      - list [ref=e1381]:
+        - listitem [ref=e1382]: Luminozitatea determină intensitatea culorilor și claritatea imaginii, mai ales în condiții de lumină puternică, cum ar fi expunerea la soare. Aceasta este măsurată în candele pe metru pătrat (cd/m²), conform specificațiilor producătorului.
+        - listitem [ref=e1383]: Contrastul poate fi dinamic sau static. Contrastul dinamic măsoară diferența dintre alb strălucitor la maximă luminozitate și negru adânc la minim, dar dacă detaliile de adâncire a culorilor nu sunt importante, atunci nu este un parametru esențial. Contrastul static arată diferența de luminozitate între alb și negru într-un singur cadru. Cu cât această diferență este mai mare, cu atât monitorul va reda culorile mai precis, iar imaginea va fi de o calitate superioară.
+      - heading "Interfețele de conectare ale monitoarelor:" [level=4] [ref=e1384]
+      - paragraph [ref=e1385]: "Acestea sunt porturile prin care monitorul se conectează la calculator. Deși poate părea un detaliu minor, merită totuși să îi acordăm atenție. În momentul de față, există patru interfețe principale de conectare:"
+      - list [ref=e1386]:
+        - listitem [ref=e1387]: VGA - este cea mai „veche” interfață, care transmite semnal analogic, nu digital. Se potrivește doar monitoarelor „vechi”.
+        - listitem [ref=e1388]: DVI - spre deosebire de VGA, transmite semnal digital de înaltă calitate. Totuși, un dezavantaj important este că nu include suport pentru semnal audio direct către monitor.
+        - listitem [ref=e1389]: HDMI - este unul dintre cele mai folosite tipuri de conexiuni, oferind o lățime de bandă cu rezoluția de până la 10k și capacitatea de a transmite sunet direct către monitor.
+        - listitem [ref=e1390]: DisplayPort - este o conexiune perfectă pentru calculatoarele de gaming, fiind capabilă să redea imagini în 4K chiar și în prima sa versiune.
+      - heading "Tipul de acoperire al ecranului:" [level=4] [ref=e1391]
+      - paragraph [ref=e1392]: "Există două tipuri de acoperire pentru monitoare: lucios și mat. Este recomandat să optezi pentru ecrane mate sau lucioase cu strat anti-reflex, deoarece acestea reduc reflexiile luminii și oferă o vizibilitate mai bună în condiții de iluminare naturală. Pe ecranele lucioase, fără acest strat, riscul de a nu vedea imaginea din cauza luminii naturale este mult mai mare."
+      - paragraph [ref=e1393]: Pentru cei care nu sunt familiarizați cu detaliile tehnice, alegerea unui monitor poate părea complicată. În acest caz, vă recomandăm să apelați la consultanții noștri, care vă vor răspunde la orice întrebare și vă vor ajuta să găsiți varianta ideală, cu cel mai bun raport între preț și calitate.
+      - heading "Cumpără un monitor pentru PC în Moldova" [level=3] [ref=e1394]
+      - paragraph [ref=e1395]: Alege monitorul perfect pentru tine direct din magazinul nostru online - cele mai bune prețuri din Chișinău, de la producători de top. Indiferent dacă ai un buget mai restrâns sau cauți performanță de vârf, ai la dispoziție o gamă largă de opțiuni care îți răspund exact nevoilor.
+      - paragraph [ref=e1396]: Iar ca experiența să fie complet lipsită de griji, la Ultra poți achiziționa orice produs în rate fără dobândă, fără avans și fără taxe ascunse.
+  - contentinfo [ref=e1397]:
+    - generic [ref=e1398]:
+      - generic [ref=e1399]:
+        - generic [ref=e1400]:
+          - img "footer-top-gradient"
+        - generic [ref=e1404]:
+          - link "facebook" [ref=e1405] [cursor=pointer]:
+            - /url: https://www.facebook.com/ultra.moldova
+          - link "instagram" [ref=e1409] [cursor=pointer]:
+            - /url: https://www.instagram.com/ultra.moldova
+          - link "tiktok" [ref=e1413] [cursor=pointer]:
+            - /url: https://www.tiktok.com/@ultra.moldova
+          - link "youtube" [ref=e1417] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCGs9xB1rdCvik526qeoiRCw
+        - generic [ref=e1421]:
+          - generic [ref=e1422]:
+            - button [ref=e1423]:
+              - paragraph [ref=e1424]: Informație
+            - list [ref=e1425]:
+              - listitem [ref=e1426]:
+                - link "Contactele noastre" [ref=e1427] [cursor=pointer]:
+                  - /url: contacts
+              - listitem [ref=e1428]:
+                - link "Livrare" [ref=e1429] [cursor=pointer]:
+                  - /url: delivery
+              - listitem [ref=e1430]:
+                - link "Politica de confidențialitate" [ref=e1431] [cursor=pointer]:
+                  - /url: page/politica-de-confidentialitate
+              - listitem [ref=e1432]:
+                - link "Returnare si Garantie" [ref=e1433] [cursor=pointer]:
+                  - /url: page/returnare-si-garantie
+              - listitem [ref=e1434]:
+                - link "Metode de plată" [ref=e1435] [cursor=pointer]:
+                  - /url: payment-methods
+              - listitem [ref=e1436]:
+                - link "Ultra Credit" [ref=e1437] [cursor=pointer]:
+                  - /url: credit
+          - generic [ref=e1438]:
+            - button [ref=e1439]:
+              - paragraph [ref=e1440]: Promoții și Certificate
+            - list [ref=e1441]:
+              - listitem [ref=e1442]:
+                - link "Promoții" [ref=e1443] [cursor=pointer]:
+                  - /url: /promo
+              - listitem [ref=e1444]:
+                - link "Certificate cadou" [ref=e1445] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-cadou
+              - listitem [ref=e1446]:
+                - link "Certificate de instalare" [ref=e1447] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-de-instalare
+              - listitem [ref=e1448]:
+                - link "Certificate promotionale" [ref=e1449] [cursor=pointer]:
+                  - /url: certificate-si-carduri-cadou/certificate-promotionale
+          - generic [ref=e1450]:
+            - button [ref=e1451]:
+              - paragraph [ref=e1452]: Categorii populare
+            - list [ref=e1453]:
+              - listitem [ref=e1454]:
+                - link "Telefoane" [ref=e1455] [cursor=pointer]:
+                  - /url: telefoane/smartphone
+              - listitem [ref=e1456]:
+                - link "Laptopuri" [ref=e1457] [cursor=pointer]:
+                  - /url: tehnica-computer/laptopuri
+              - listitem [ref=e1458]:
+                - link "Televizoare" [ref=e1459] [cursor=pointer]:
+                  - /url: televizoare-si-accesorii/televizoare
+              - listitem [ref=e1460]:
+                - link "Frigidere" [ref=e1461] [cursor=pointer]:
+                  - /url: electrocasnice-mari-pentru-bucatarie/frigidere
+              - listitem [ref=e1462]:
+                - link "Aspiratoare" [ref=e1463] [cursor=pointer]:
+                  - /url: ingrijire-locuinta/aspiratoare
+              - listitem [ref=e1464]:
+                - link "Mașini de Spălat Rufe" [ref=e1465] [cursor=pointer]:
+                  - /url: spalare-si-uscare/masini-de-spalat-rufe
+          - generic [ref=e1466]:
+            - generic [ref=e1467]:
+              - paragraph [ref=e1468]: Online - magazin
+              - list [ref=e1469]:
+                - listitem [ref=e1470]:
+                  - text: "Email:"
+                  - link "online@ultra.md" [ref=e1471] [cursor=pointer]:
+                    - /url: mailto:online@ultra.md
+                - listitem [ref=e1472]:
+                  - text: "Tel:"
+                  - link "+373-6000-0000" [ref=e1473] [cursor=pointer]:
+                    - /url: tel:+37360000000
+            - generic [ref=e1474]:
+              - paragraph [ref=e1475]: Vânzări persoane juridice
+              - list [ref=e1476]:
+                - listitem [ref=e1477]:
+                  - text: "Email:"
+                  - link "sales_sb@ultra.md" [ref=e1478] [cursor=pointer]:
+                    - /url: mailto:sales_sb@ultra.md
+                - listitem [ref=e1479]:
+                  - text: "Tel:"
+                  - link "+373-6000-0005" [ref=e1480] [cursor=pointer]:
+                    - /url: tel:+37360000005
+            - generic [ref=e1481]:
+              - paragraph [ref=e1482]: Suport clienți
+              - list [ref=e1483]:
+                - listitem [ref=e1484]:
+                  - text: "Email:"
+                  - link "reclamatii@ultra.md" [ref=e1485] [cursor=pointer]:
+                    - /url: mailto:reclamatii@ultra.md
+                - listitem [ref=e1486]:
+                  - text: "Tel:"
+                  - link "+373-6000-0009" [ref=e1487] [cursor=pointer]:
+                    - /url: tel:+37360000009
+            - generic [ref=e1488]:
+              - paragraph [ref=e1489]: Showroom
+              - list [ref=e1490]:
+                - listitem [ref=e1491]:
+                  - link "Vedeți poziția noastră pe hartă" [ref=e1492] [cursor=pointer]:
+                    - /url: https://maps.app.goo.gl/nuqDoRi2Z8N82kLo8
+                    - text: Chisinau str. Columna 170
+      - generic [ref=e1494]:
+        - generic [ref=e1495]:
+          - img "Ultra"
+        - paragraph [ref=e1496]: "© 2013-2026 Toate drepturile rezervate. “ULTRA DISTRIBUTION” SRL MD-2069, Republica Moldova, mun. Chișinău, str. Ion Creanga 6/v IDNO: 1012600027403 | Cod TVA: 0506875 Notificarea nr. P-22620/2021 din 10.08.2021 IBAN: MD40ML000000022510361547 | BC' Moldindconbank'S.A. fil.Kiev Chisinau"
+        - generic [ref=e1497]:
+          - generic:
+            - img "Visa"
+          - generic:
+            - img "Visa Electron"
+          - generic:
+            - img "Master Card"
+          - generic:
+            - img "Maestro"
+      - generic [ref=e1498]:
+        - generic [ref=e1500]:
+          - generic [ref=e1501]:
+            - link "Telefoane" [ref=e1502] [cursor=pointer]:
+              - /url: /telefoane
+            - generic [ref=e1503]:
+              - link "Smartphone" [ref=e1504] [cursor=pointer]:
+                - /url: /telefoane/smartphone
+              - link "iPhone" [ref=e1505] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple
+              - link "iPhone 17" [ref=e1506] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17
+              - link "iPhone 17 Pro" [ref=e1507] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17-pro
+              - link "iPhone 17 Pro Max" [ref=e1508] [cursor=pointer]:
+                - /url: /telefoane/smartphone/apple-iphone-17-pro-max
+              - link "Telefoane Samsung" [ref=e1509] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung
+              - link "Samsung Galaxy s26" [ref=e1510] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26
+              - link "Samsung Galaxy s26 Plus" [ref=e1511] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26-plus
+              - link "Samsung Galaxy s26 Ultra" [ref=e1512] [cursor=pointer]:
+                - /url: /telefoane/smartphone/samsung-galaxy-s26-ultra
+              - link "Telefoane cu butoane" [ref=e1513] [cursor=pointer]:
+                - /url: /telefoane/telefoane-cu-butoane
+          - generic [ref=e1514]:
+            - link "Accesorii Telefoane Mobile" [ref=e1515] [cursor=pointer]:
+              - /url: /accesorii-pentru-telefoane
+            - generic [ref=e1516]:
+              - link "Sticle de protecție pentru telefoane" [ref=e1517] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/sticle-de-protectie-pentru-telefoane
+              - link "Huse pentru telefoane" [ref=e1518] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/huse-pentru-telefoane
+              - link "Încărcătoare" [ref=e1519] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/incarcatoare
+              - link "Power Bank" [ref=e1520] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/power-bank
+              - link "Cablu și adaptoare USB / Lightning" [ref=e1521] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/cablu-si-adaptoare-usb-lightning
+              - link "Trepiede pentru telefoane" [ref=e1522] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/trepiede-pentru-telefoane
+          - generic [ref=e1523]:
+            - link "Tablete și eBook Readere" [ref=e1524] [cursor=pointer]:
+              - /url: /tablete-si-carti-electronice
+            - generic [ref=e1525]:
+              - link "Tablete" [ref=e1526] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete
+              - link "Tablete grafice" [ref=e1527] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete-grafice
+              - link "Cărți electronice" [ref=e1528] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/carti-electronice
+              - link "iPad" [ref=e1529] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple
+              - link "iPad Air" [ref=e1530] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-air
+              - link "iPad Pro" [ref=e1531] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-pro
+              - link "Apple iPad 11 2025" [ref=e1532] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/apple-ipad-11-2025
+              - link "Samsung Galaxy Tab" [ref=e1533] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/samsung
+              - link "Tablete Xiaomi" [ref=e1534] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/xiaomi
+              - link "Tablete Lenovo" [ref=e1535] [cursor=pointer]:
+                - /url: /tablete-si-carti-electronice/tablete/lenovo
+          - generic [ref=e1536]:
+            - link "Accesorii pentru Tablete" [ref=e1537] [cursor=pointer]:
+              - /url: /accesorii-pentru-tablete
+            - generic [ref=e1538]:
+              - link "Sticlă de protecție pentru tablete" [ref=e1539] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/sticle-de-protectie-pentru-tablete
+              - link "Huse pentru tablete" [ref=e1540] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/huse-pentru-tablete
+              - link "Încărcătoare" [ref=e1541] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/incarcatoare
+              - link "Power Bank" [ref=e1542] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/power-bank
+              - link "Cablu și adaptoare USB / Lightning" [ref=e1543] [cursor=pointer]:
+                - /url: /accesorii-pentru-telefoane/cablu-si-adaptoare-usb-lightning
+              - link "Stilouri pentru tablete" [ref=e1544] [cursor=pointer]:
+                - /url: /accesorii-pentru-tablete/stilouri-pentru-tablete
+          - generic [ref=e1545]:
+            - link "Ceasuri și brățări inteligente" [ref=e1546] [cursor=pointer]:
+              - /url: /ceasuri-si-bratari-inteligente
+            - generic [ref=e1547]:
+              - link "Ceasuri inteligente" [ref=e1548] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente
+              - link "Ceasuri inteligente pentru copii" [ref=e1549] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/pentru-copii
+              - link "Brățări fitness" [ref=e1550] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/bratari-fitness
+              - link "Mi Band" [ref=e1551] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/bratari-fitness/xiaomi-smart-band
+              - link "Apple Watch" [ref=e1552] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/apple
+              - link "Apple Watch Ultra 3" [ref=e1553] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/apple-watch-ultra-3
+              - link "Samsung Galaxy Watch" [ref=e1554] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/samsung
+              - link "Ceasuri inteligente Xiaomi" [ref=e1555] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/xiaomi
+              - link "Ceasuri inteligente Huawei" [ref=e1556] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente/huawei
+              - link "Curele pentru ceasuri inteligente" [ref=e1557] [cursor=pointer]:
+                - /url: /ceasuri-si-bratari-inteligente/curele-pentru-ceasuri-inteligente
+          - generic [ref=e1558]:
+            - link "Produse auto" [ref=e1559] [cursor=pointer]:
+              - /url: /produse-auto
+            - generic [ref=e1560]:
+              - link "Camere Auto" [ref=e1561] [cursor=pointer]:
+                - /url: /produse-auto/camere-auto
+              - link "Suporturi pentru telefoane" [ref=e1562] [cursor=pointer]:
+                - /url: /produse-auto/suporturi-pentru-telefoane
+              - link "Accesorii Auto" [ref=e1563] [cursor=pointer]:
+                - /url: /produse-auto/accesorii-auto
+        - generic [ref=e1564]:
+          - link:
+            - /url: /telefoane/smartphone
+          - link:
+            - /url: /ceasuri-si-bratari-inteligente/ceasuri-inteligente
