@@ -9,6 +9,7 @@ interface ActionRow {
   id: string;
   action: string;
   telegram_user_id: number | null;
+  payload: { html?: string } | null;
 }
 
 // Drains pending rows from bot_actions and executes them. Called every tick.
@@ -22,7 +23,7 @@ export async function processCommands(): Promise<void> {
   const supabase = createAdminClient();
   const { data, error } = await supabase
     .from("bot_actions")
-    .select("id, action, telegram_user_id")
+    .select("id, action, telegram_user_id, payload")
     .eq("status", "pending")
     .order("created_at", { ascending: true })
     .limit(20);
@@ -70,6 +71,17 @@ export async function processCommands(): Promise<void> {
           ok = r.ok;
           result = r.ok ? `reminded ${missing.length}` : (r.description ?? "send failed");
         }
+      }
+    } else if (cmd.action === "send_message") {
+      // Custom admin message to the group. payload.html is pre-built and
+      // pre-escaped by the gym-app (plain text escaped + tg://user mentions).
+      const html = cmd.payload?.html?.trim();
+      if (!html) {
+        result = "empty message";
+      } else {
+        const r = await sendMessage(groupChatId, html, { parse_mode: "HTML" });
+        ok = r.ok;
+        result = r.ok ? "message sent" : (r.description ?? "send failed");
       }
     } else if (cmd.action === "send_summary") {
       const r = await morningSummary();
